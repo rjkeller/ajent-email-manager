@@ -1,0 +1,31 @@
+.waxon {
+background-color: #F0F0EE;
+}
+.waxoff {
+background-color: #FFFFFF;
+}
+.hilight {
+background-color: #FEE0E8;
+}
+
+.waxon,.waxoff,.hilight { vertical-align: middle; height: 32px; line-height:2.5;
+}
+
+.waxon a,
+.waxoff a,
+.hilight a {
+    display:block;
+ }
+
+.sectiontableheader,th {
+	font-weight:bold;
+	padding:4px;
+	background:url(/images/dot.gif) repeat-x bottom left;
+}
+
+.waxon a:hover,
+.waxoff a:hover,
+.hilight a:hover {
+	border: none;
+	text-decoration: underline;
+ }

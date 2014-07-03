@@ -1,0 +1,7 @@
+AlertsBundleRedirectToAlert:
+    pattern: /vendors/{vendor_id}/alert
+    defaults: { _controller: AlertBundle:RedirectToAlert:index }
+
+AlertRemindMeLater:
+    pattern: /alerts/{alert_id}/remind_me_later
+    defaults: { _controller: AlertBundle:Alerts:RemindMeLater }

@@ -1,0 +1,37 @@
+{% if showAlertNotification %}
+	{% include 'AlertBundle:shadowbox:AlertNotification.twig.html' with {
+			'alert': notificationAlert
+		}
+	%}
+{% endif %}
+<script type="text/javascript">
+
+function showAlertBox()
+{
+{% if showAlertNotification %}
+	showLightbox(document.getElementById("AlertNotification"));
+{% endif %}
+}
+
+</script>
+<div id="alerts" class="menu" onmouseout="mclosetime()" onmouseover="mcancelclosetime()">
+
+	{% for alert in alerts %}
+	<div class="alertsBox">
+		<h3>{{ alert.ExpirationDate }}</h3>
+		<div class="unit size1of5" style="text-align: center;">
+			<img src="http://www.google.com/s2/favicons?domain={{ alert.Vendor['email_suffix'] }}" style="border: 1px solid #d0d0d0" width="20" height="20" align="absmiddle">
+		</div>
+		<div class="unit size4of5">
+			<p><a href="{{ path('VendorBundleViewCategoryVendor', { 'category_name': alert.Vendor.Category['name'],  'vendor_id': alert.Message['vendor_id'] } ) }}">
+				<strong>{{alert.Vendor['name'] }}</strong><br>
+				{% if alert['message'] == "" %}
+					{{ alert.Message.TruncatedSubject }}
+				{% else %}
+					{{ alert['message'] }}
+				{% endif %}
+					</a></p>
+		</div>
+	</div>
+	{% endfor %}
+</div>

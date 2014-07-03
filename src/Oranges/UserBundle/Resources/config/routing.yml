@@ -1,0 +1,23 @@
+UserBundleLogin:
+    pattern:  /login
+    defaults: { _controller: UserBundle:login:index }
+
+UserBundleHiWidget:
+    pattern:  /users/HiWidget
+    defaults: { _controller: UserBundle:HiWidget:index }
+
+UserBundleForgotPassword:
+    pattern:  /user/reset-password
+    defaults: { _controller: UserBundle:ForgotPassword:index }
+
+UserBundleForgotPasswordReset:
+    pattern:  /user/reset-password/{request_id}
+    defaults: { _controller: UserBundle:ForgotPassword:reset }
+
+UserBundleLogout:
+    pattern: /logout
+    defaults: { _controller: UserBundle:Logout:index }
+
+UserBundleRegister:
+    pattern: /register
+    defaults: { _controller: UserBundle:Register:index }

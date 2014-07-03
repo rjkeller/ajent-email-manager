@@ -1,0 +1,78 @@
+
+#allItems {
+	background: white;
+}
+
+.box .vendorImage {
+	float: left;
+	padding: 4px;
+}
+
+.box .details {
+	float: left;
+	width: 190px;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+.mainContent { max-width: none; margin: 10px 10px 0;}
+
+
+.messageBorder {
+	border-bottom: 1px solid #d7d7d7;
+}
+
+
+.floatBox {
+	margin: 0 10px;
+	background: #f2f2f2;
+	cursor: pointer;
+	color: #a7a084;
+	height: 52px;
+}
+
+.floatBox .subject {
+	font-style: italic;
+}
+
+.floatBox:hover {
+	background: white;
+}
+
+.selectFloatBox, .selectFloatBox:hover {
+	background: #f3a421 url('/bundles/socialmail/images/arrow.png') no-repeat top right;
+	margin-right: 4px;
+	padding-right: 6px;
+	color: white;
+}
+
+.box .details .icons {
+	float: right;
+}
+
+.box {
+	margin: 0;
+}
+
+.toolbar .rightButton {
+	float: right;
+}
+
+.allItems {
+	margin: 10px 0;
+}
+
+.top {
+	border-top: 1px solid #d7d7d7;
+}
+
+/** Mail Toolbar **/
+
+.toolbar { background: url("/bundles/ajenthomepage/images/background-dark.png"); height: 25px; color: white; padding-top: 5px; text-align: center; }
+.toolbar h1 { margin: 0; float: left; }
+.toolbarNoImage { background-image: none; }
+
+.toolbar ul { margin: 0; padding: 0; }
+.toolbar li { list-style: none; margin: 0; float: left; padding: 0 10px 10px; }
+.toolbar a { color: white; text-transform: uppercase; font: bold 1em Helvetica, sans-serif; }
+.toolbar a:hover { color: white; text-decoration: none; }

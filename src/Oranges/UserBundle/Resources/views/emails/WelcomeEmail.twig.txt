@@ -1,0 +1,10 @@
+Thank You for Joining {{ company_name }}! Your account information is below:
+
+Username: {{ username }}
+Password: [removed for security reasons]
+
+Name:     {{ name }}
+
+Thank you for registering!
+
+The {{ company_name }} Team

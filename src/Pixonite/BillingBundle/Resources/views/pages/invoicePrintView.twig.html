@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Invoice</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 24px}
+.style2 {
+    font-size: 24px;
+    color: #00CCFF;
+}
+.style3 {font-size: 24px; color: #FF3300; }
+
+.tbl, .tbl td, .tbl tr { border: 1px solid black; border-collapse: collapse; padding: 3px; }
+-->
+</style>
+</head>
+<body>
+<div id="rightarea">
+
+<table width="100%"><tr><td valign="top">
+<img src="/bundles/ajent/images/logo.jpg"><br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+</td><td width="250" align="right" valign="top">
+	<span style="font: 36pt Arial;font-weight: bold; color: #ccc;">INVOICE</span>
+	<table>
+		<tr><td><strong>Created:</strong></td><td>{{ invoice.DateIssued }}</td></tr>
+		<tr><td><strong>Due:</strong></td><td>{{ invoice.DateDue }}</td></tr>
+	</table>
+</td></tr></table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="40%" rowspan="4" style="border: 1px solid black; padding: 10px;">
+    	<strong>Bill To:</strong><br>
+    	{{ invoice.BillingContact | raw }}<br>
+                                </td>
+                                <td width="22%" align="center"><strong>Invoice ID</strong></td>
+                                <td width="19%" align="center"><strong> Amount </strong></td>
+                                <td width="19%" align="center"><strong>Total Due </strong></td>
+                              </tr>
+
+                              <tr>
+                                <td align="center">{{ invoice['id'] | upper }}</td>
+                                <td align="center">${{ invoice.Amount }}</td>
+                                <td align="center">${{ invoice.TotalDue }}</td>
+                              </tr>
+                              <tr>
+                                <td align="center"><strong>Transaction ID </strong></td>
+                                <td align="center"><strong>Billing Cycle </strong></td>
+                                <td align="center"><strong>Next Renewal </strong></td>
+                              </tr>
+                              <tr>
+							<td align="center">{{ invoice['transaction_id'] }}</td>
+							<td align="center">{{ invoice.BillingCycle }}</td>
+							<td align="center">{{ invoice.NextRenewal }}</td>
+                              </tr>
+                            </table>
+                            <p><br>
+                            </p>
+                            <table width="100%" border="1" cellpadding="0" cellspacing="0" class="tbl">
+                              <tr>
+                                <td width="72%" style="background: #E6E8E9;"><strong>Package</strong></td>
+                                <td width="12%" style="background: #E6E8E9;"><strong>QTY</strong></td>
+                                <td width="16%" style="background: #E6E8E9;"><strong>Price</strong></td>
+                              </tr>
+                          	{% for package in invoice.Packages %}
+                          	<tr>
+                          		<td><p>&nbsp;</p>
+                          		<p>{{ package['description'] }}</p>
+                          		<p>&nbsp;</p></td>
+                          		<td>{{ package['quantity'] }}</td>
+                          		<td>${{ package['price'] }}{{ invoice.ShortBillingCycle }}</td>
+                          	</tr>
+                          	{% endfor %}
+                              <tr>
+                                <td rowspan="4">&nbsp;</td>
+                                <td align="right"><strong>Subtotal</strong></td>
+								<td align="right">${{ invoice.Subtotal }}</td>
+                              </tr>
+                              <tr>
+                                <td align="right"><strong>Credits</strong></td>
+								<td align="right">{{ invoice.Credits }}</td>
+                              </tr>
+                              <tr>
+                                <td><div align="right"><strong>Tax</strong></div></td>
+								<td align="right">{{ invoice.Tax }}</td>
+                              </tr>
+                              <tr>
+                                <td><div align="right"><strong>Total</strong></div></td>
+								<td align="right">${{ invoice.Total }}</td>
+                              </tr>
+                            </table>
+</body></html>

@@ -1,0 +1,67 @@
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Welcome to Ajent!</title>
+{% endblock metatags %}
+
+
+{% block content %}
+
+<h1 class="homeTitle">Simplify. Manage. Alert. Reduce. Track</h1>
+<center>
+	<img src="/bundles/ajenthomepage/images/homepage-intro.png">
+</center>
+<div class="darkBg" style="padding: 10px;">
+	<div class="line">
+		<div class="unit size3of4">
+			<div class="homeBox ssHomeBox">
+			<p><strong class="ajent">Ajent</strong> is the SMART email subscription service that simplifies your life by helping you better sort, manage and share messages from daily deals, retailers, travel sites and blogs. </p>
+
+			<p>Sick of the spam 24/7? Let <strong class="ajent">Ajent</strong> handle your email subscriptions, so you can keep your inbox free... and never give out your personal email address again!</p>
+
+			</div>
+		</div>
+		<div class="unit size1of4 buttonBox">
+			<a href="{{ path('UserBundleRegister') }}" class="big-button">Sign Up Now!</a><br>
+			&nbsp;<br>
+			<span>&nbsp;&nbsp;&nbsp;</span>
+			<strong>or</strong> <span>&nbsp;&nbsp;&nbsp;</span><br>
+			&nbsp;<br>
+
+			<button onclick="window.location.href='{{ path('UserBundleLogin') }}'" class="button loginButton">Log In &raquo;</button>
+		
+		</div>
+	</div>
+</div>
+
+
+<h2 class="highlightHeader greenHeader"><span>How it Works</span></h2>
+
+<div class="line">
+
+	<ol class="steps2 ssHomeBox">
+		<li class="red">
+			<h3>1 Sign Up</h3>
+			<p>and receive your own simple, easy-to-remember <strong>Ajent</strong> email address</p>
+		</li>
+		<li class="arrow">&nbsp;</li>
+		<li class="red">
+			<h3>2 Move</h3>
+			<p>your existing subscriptions to your <strong>Ajent</strong> account</p>
+		<li class="arrow">&nbsp;</li>
+		<li class="green">
+			<h3>3 Use Ajent</h3>
+			<p>to sort your emails and set up subscription alerts</p>
+		</li>
+		<li class="arrow">&nbsp;</li>
+		<li class="green">
+			<h3>4 Share</h3>
+			<p>your favorite things with your friends!</p>
+		</li>
+	</ol>
+</div>
+
+
+{% endblock content %}

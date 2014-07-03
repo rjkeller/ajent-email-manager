@@ -1,0 +1,18 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'EditCategory',
+	'form': 'EditCategory',
+	'alert': 'BlueAlert'
+}
+%}
+
+<h1>Edit Category</h1>
+
+<p>Category Name: <input type="text" name="name" class="inputbox" value="{{ category_name }}"></p>
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Save',
+	'noButton': 'Cancel'
+}
+%}

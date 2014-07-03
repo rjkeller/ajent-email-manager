@@ -1,0 +1,19 @@
+BillingBundle:
+    pattern:  /billing
+    defaults: { _controller: BillingBundle:index:index }
+
+BillingBundleDefault:
+    pattern:  /billing/default
+    defaults: { _controller: BillingBundle:defaultBillingBundle:index }
+
+BillingBundleInvoiceCreate:
+    pattern:  /billing/create_invoice
+    defaults: { _controller: BillingBundle:invoiceCreate:index }
+
+BillingBundleInvoicePrint:
+    pattern:  /billing/invoice_print/{invoiceid}
+    defaults: { _controller: BillingBundle:invoice:PrintView }
+
+BillingBundleInvoice:
+    pattern:  /billing/invoice/{invoiceid}
+    defaults: { _controller: BillingBundle:invoice:index }

@@ -1,0 +1,33 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'SetItem',
+	'form': 'SetItem'
+}
+%}
+
+<input type="hidden" name="category_id" value="{{ category_id }}">
+<input type="hidden" name="slot_num" value="{{ slot_num }}">
+
+<h1>Set Category Item</h1>
+
+<p>Existing Vendor: <select name="previous_vendor_id">
+	{% for vendor in vendors %}
+	<option value="{{ vendor['_id'] }}"
+		{% if currentItem is defined and currentItem['vendor_id'] == vendor['__id'] %}
+		 	selected
+		{% endif %}>
+		{{ vendor['name'] }}</option>
+	{% endfor %}
+	</select>
+
+<p>---------------------- or --------------------</p>
+
+<p>New Vendor: <input type="text" name="vendor_name"><br>
+Website: <input type="text" name="vendor_website"></p>
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Save',
+	'noButton': 'Cancel'
+}
+%}

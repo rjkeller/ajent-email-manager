@@ -1,0 +1,22 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% extends "::layout.twig.html" %}
+
+{% block content %}
+
+<h1>View Products</h1>
+
+<table id="mymsg" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="10%">&nbsp;</td>
+    <td width="5%">&nbsp;</td>
+  </tr>
+{% for product in products %}
+{{ tableWax.start(products) }}
+	<td>{{ product['name'] }}</td>
+{{ tableWax.end(products) }}
+{% endfor %}
+</table>
+
+{% endblock content %}

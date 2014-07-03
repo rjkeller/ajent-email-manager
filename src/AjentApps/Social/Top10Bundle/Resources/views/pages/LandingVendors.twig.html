@@ -1,0 +1,97 @@
+<div class="box{#% if isFirst %} firstBox{% endif %#}">
+	{% set listItemsLen = listItems | length + 1 %}
+	{% include 'Top10Bundle:shadowbox:SetItem.twig.html'
+	 	with {
+			'incr': category['_id'] ~ listItemsLen,
+			'category_id': category['_id'],
+			'slot_num': listItemsLen,
+			'vendors': vendors
+		} %}
+
+
+
+	<h1 class="category_title {{ category.CategoryClass }} red">
+
+		<div class="editBox">
+			<div class="line">
+			<a href="javascript:showLightbox(document.getElementById('SetItem{{ category['_id'] ~ listItemsLen }}'))" class="addNewButton">
+				Add Favorite
+			</a>
+
+			<a onmouseout="mclosetime('editButton{{ category['_id'] }}');" onmouseover="mopen('editCategoryBox{{ category['_id'] }}', 'editButton{{ category['_id'] }}');" id="editButton{{ category['_id'] }}" class="editButton">
+				&nbsp;
+			</a>
+			</div>
+
+			<div id="editCategoryBox{{ category['_id'] }}" class="menu" onmouseout="mclosetime('editButton{{ category['_id'] }}')" onmouseover="mcancelclosetime('editButton{{ category['_id'] }}')" style="visibility: hidden; width: 75px;right:0">
+
+
+				<ul>
+					<li><a href="javascript:showLightbox(document.getElementById('EditCategory{{ category['_id'] }}'))">Edit</a>
+						{% include "MailBundle:shadowbox:EditCategory.twig.html"
+							with {
+								'incr': category['_id'],
+								'category_name': category['name']
+							}
+						%}
+					</li>
+					<li><a href="javascript:showLightbox(document.getElementById('DeleteCategory{{ category['_id'] }}'))">Remove</a>
+						{% include "MailBundle:shadowbox:DeleteCategory.twig.html"
+							with {
+								'incr': category['_id']
+							}
+						%}
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<span class="innerTitle">
+			<a href="{{ path('MailBundleViewCategory', {'category': category['name'] } ) }}">{{ category.Name }}</a>
+		</span>
+	</h1>
+
+	<div class="line mainBox">
+			<div class="line vendors" id="categoryItems{{ category['_id'] }}" style="margin: 10px;">
+
+			{% set item = 0 %}
+			{% for listItem in listItems %}
+				{% set item = item + 1 %}
+				{% include 'Top10Bundle:shadowbox:SetItem.twig.html'
+				 	with {
+						'incr': category['_id'] ~ item,
+						'category_id': category['_id'],
+						'slot_num': item,
+						'vendors': vendors
+					} %}
+
+				<div class="unit size1of3 socialBox{% if item <= 3 %} top{% endif %}{% if item == 1 %} number1{% endif %}">
+					<div class="unit number">
+						{% if item == 1 %}#{% endif %}{{ item }}{% if item > 1 %}.{% endif %}
+					</div>
+					<div class="unit" style="width:180px;"
+					onmouseover="showButton('closeButton{{ item }}')"
+					onmouseout="hideButton('closeButton{{ item }}')"
+					>
+						<div style="float:right;visibility: hidden;" id="closeButton{{ item }}">
+							<form method="POST" name="delete{{ item }}">
+							{% render 'FormsBundle:PrintCid:index' with { 'form_name': 'DeleteItemForm' } %}
+							<input type="hidden" name="category_id" value="{{ category['_id'] }}">
+							<input type="hidden" name="slot_num" value="{{ item }}">
+			
+							<a href="javascript:document.forms['delete{{ item }}'].submit()" class="deleteButton">&nbsp;</a>
+							</form>
+						</div>
+						<div onclick="javascript:showLightbox(document.getElementById('SetItem{{ category['_id'] ~ item }}'))">
+							<img src="http://www.google.com/s2/favicons?domain={{ listItem.Vendor['email_suffix'] }}" style="border: 1px solid #d0d0d0" width="20" height="20" align="absmiddle">
+							{{ listItem.vendorName | raw }}
+						</div>
+						
+					</div>
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</div>

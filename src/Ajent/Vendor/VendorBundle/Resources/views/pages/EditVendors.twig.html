@@ -1,0 +1,107 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Vendors - {{ company_name_long }}</title>
+{% endblock metatags %}
+
+
+{% block tabs %}
+<ul class="tabs">
+	<li class="active">
+		<a href="{{ path('MailBundleVendor') }}">My Subscriptions</a>
+	</li>
+</ul>
+{% endblock %}
+
+
+{% block header %}
+<div class="line topHeader">
+	<div class="unit size1of5">
+		<h1>Subscriptions</h1>
+	</div>
+	<div class="unit size4of5">
+		Manage all your email subscriptions, favorite web sites, and vendors in one place.
+	</div>
+</div>
+{% endblock %}
+
+{% set disableRightBar = true %}
+
+{% block content %}
+
+<table width="100%" cellpadding="5" cellspacing="0" class="scan-table">
+	<tr>
+		<th style="text-align: left;">Vendor</th>
+		<th>Subscription Status</th>
+		<th>Bundle by</th>
+		<th>Unsubscribe</th>
+		<th>Category</th>
+		{% render 'AddonBundle:Addon:printBlock' with {
+				'addon_page': 'EditVendors',
+				'block': 'TableHeader'
+			}
+		%}
+	</tr>
+	{% for vendor in vendors %}
+		<tr>
+			<td ><a href="#">
+				{{ vendor['name'] }}</a></td>
+			<td align="center">
+				<form method="POST">
+				{% render 'FormsBundle:PrintCid:index' with { 'form_name': 'ChangeSubscription' } %}
+				<input type="hidden" name="vid" value="{{ vendor['_id'] }}">
+				{% if not vendor['is_unsubscribed'] %}
+					<input type="image" src="/bundles/mail/images/greenbtn_esm.png">
+				{% else %}
+					<input type="image" src="/bundles/mail/images/redbtn_esm.png">
+				{% endif %}
+				</form>
+			</td>
+			<td align="center">
+				<form method="POST">
+				{% render 'FormsBundle:PrintCid:index' with { 'form_name': 'ChangeTerm' } %}
+				<input type="hidden" name="vid" value="{{ vendor['_id'] }}">
+
+				<select name="term" onchange="this.form.submit()">
+					<option value="">[none]</option>
+					<option value="weekly"{% if vendor['term'] == "weekly" %} selected{% endif %}>Weekly</option>
+					<option value="monthly"{% if vendor['term'] == "monthly" %} selected{% endif %}>Monthly</option>
+					<option value="yearly"{% if vendor['term'] == "yearly" %} selected{% endif %}>Yearly</option>
+				</select>
+				</form>
+			</td>
+			<td align="center"><a href="javascript:showLightbox(document.getElementById('DeleteVendor{{ vendor['_id'] }}'))"><img src="/bundles/mail/images/vendors/unsubscribe.png"></a>
+    		    {% include "MailBundle:shadowbox:DeleteVendor.twig.html"
+            		with {
+            			'incr': vendor['_id']
+            		}
+            	%}
+            </td>
+			<td align="center"><a href="javascript:showLightbox(document.getElementById('EditVendorCategory{{ vendor['_id'] }}'))"><img src="/bundles/mail/images/vendors/switch.png"></a>
+    		    {% include "VendorBundle:shadowbox:EditVendorCategory.twig.html"
+            		with {
+            			'incr': vendor['_id'],
+						'vendor': vendor
+            		}
+            	%}
+            </td>
+			{{ addon_manager.setVariable('vendor', vendor) }}
+			{% render 'AddonBundle:Addon:printBlock' with {
+					'addon_page': 'EditVendors',
+					'block': 'EditVendor'
+				}
+			%}
+		</tr>
+	{% else %}
+		<tr><td colspan="3">
+			You have no vendors set up in Ajent.
+		</td></tr>
+	{% endfor %}
+</table>
+
+<p>Think we missed some of your subscriptions? <a class="button" href="{{ path('AjentBundleEmailScan') }}">Click here</a> to rescan your email account.</p>
+
+{% endblock content %}

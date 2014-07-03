@@ -1,0 +1,18 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'InviteAFriend',
+	'form': 'InviteAFriend'
+}
+%}
+
+<h1>Invite a Friend</h1>
+
+<p>Enter email addresses below (separate by comma):</p>
+
+<input type="text" class="inputbox" size="30" name="q" style="width: 100%">
+
+<p>Invite a friend using Facebook</p>
+
+<a href="#"><img src="/bundles/social/images/fb-connect-large.png" height="30"></a>
+
+{% include "FrontendBundle:shadowbox:okButton.twig.html" with { 'label': 'Invite', 'style': 'text-align:right' } %}

@@ -1,0 +1,90 @@
+<table width="100%" cellpadding="5" cellspacing="0" class="scan-table">
+	<tr>
+		<th style="text-align:left">Email From</th>
+        <th style="text-align:center">Switch</th>
+		<th style="text-align:center">Unsubscribe</th>
+		<th style="text-align:center">Ignore</th>
+	</tr>
+	{% for vendor in results %}
+		{#
+		 # if an option has already been selected for this vendor, then hide it
+		 # from the user.
+		 #}
+		{% if vendor['is_invisible'] and (not vendor['is_unsubscribed'] and not vendor['is_ignored']) %}
+			<tr>
+				<td>{{ vendor['name'] }}</td>
+				<td align="center">
+
+					{% include "MailRegistrationBundle:shadowbox:SwitchToAjent.twig.html"
+						with {
+							'incr': vendor['_id']
+						}
+					%}
+
+						<a href="javascript:showLightbox(document.getElementById('SwitchToAjent{{ vendor['_id'] }}'))">
+		                	<input type="image" src="/bundles/mail/images/vendors/switch.png">
+						</a>
+				</td>
+				<td align="center">
+					<form method="POST">
+						<input type="hidden" name="cid" value="Unsubscribe">
+						<input type="hidden" name="vid" value="{{ vendor['_id'] }}">
+
+	                	<input type="image" src="/bundles/mail/images/vendors/unsubscribe.png">
+					</form>
+				</td>
+				<td align="center">
+						<form method="POST">
+							<input type="hidden" name="cid" value="IgnoreVendor">
+							<input type="hidden" name="vid" value="{{ vendor['_id'] }}">
+
+		                	<input type="image" src="/bundles/mail/images/vendors/ignore.png">
+						</form>
+				</td>
+			</tr>
+		{% else %}
+		    {% if vendor['is_unsubscribed'] %}
+		    <tr>
+				<td>{{ vendor['name'] }}</td>
+				<td></td>
+				<td align="center">
+				    <img src="/bundles/mail/images/vendors/yay.png">
+				</td>
+				<td></td>
+			</tr>
+			{% elseif vendor['pendingAddToAjent'] %}
+		    <tr>
+				<td>{{ vendor['name'] }}</td>
+				<td align="center">
+				    <img src="/bundles/mail/images/vendors/yay.png">
+				</td>
+				<td colspan="2"></td>
+			</tr>
+			{% else %}
+			<tr>
+				<td>{{ vendor['name'] }}</td>
+				<td colspan="2"></td>
+				<td align="center">
+				    <img src="/bundles/mail/images/vendors/yay.png">
+				</td>
+			</tr>
+			{% endif %}
+		{% endif %}
+	{% else %}
+	    <tr><td colspan="4"> 
+	    
+	    </td></tr>
+	{% endfor %}
+	<tr>
+		<td style="border:none;">
+			{% if searchResults.hasPrev() %}
+			<a href="{{ searchResults.prevLink }}" class="button">&laquo; Back</a>
+			{% endif %}
+		</td>
+		<td colspan="3" align="right" style="border:none;">
+			{% if searchResults.hasNext() %}
+			<a href="{{ searchResults.nextLink }}" class="button">View More Vendors &raquo;</a>
+			{% endif %}
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,25 @@
+<div id="{{ name }}{% if incr is defined %}{{ incr }}{% endif %}" class="lc">
+	<div style="width: 389px;" id="lightboxImage">
+		{% if form is defined %}
+		{% if isUpload is defined %}
+		<form method="POST" enctype="multipart/form-data" name="{{ form }}"{% if redir is defined %} action="{{ redir }}"{% endif %}>
+		{% else %}
+		<form method="POST" name="{{ form }}"{% if redir is defined %} action="{{ redir }}"{% endif %}>
+		{% endif %}
+		{% render 'FormsBundle:PrintCid:index' with { 'form_name': form } %}
+
+		{% if incr is defined %}
+		<input type="hidden" name="id" value="{{ incr }}">
+		{% endif %}
+
+		{% endif %}
+
+{% if noCloseButton is not defined %}
+		<a href="javascript:hideLightbox()"><img src="/bundles/ajent/images/shadowbox/close.png" align="right" style="margin-top:-5px; margin-right:-8px"></a>
+{% endif %}
+		<div class="shadowboxTop">
+			&nbsp;
+		</div>
+
+		<div class="shadowboxContent">
+			<div class="line">

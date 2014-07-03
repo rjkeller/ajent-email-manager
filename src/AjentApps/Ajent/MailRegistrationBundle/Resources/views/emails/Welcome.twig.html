@@ -1,0 +1,17 @@
+{% extends "::email-layout.twig.html" %}
+
+
+{% block content %}
+
+<p>Dear <strong>{{ first_name }}</strong>,</p>
+
+<p>Thank you for joining <strong>Ajent</strong>, your SMART email subscription assistant.</p>
+
+<p>Your <strong>Ajent</strong> email address is: <span class="emailAddress">{{ username}}@{{ default_email_domain }}</p>
+	
+<p>Don't forget to use your new <strong>Ajent</strong> email address every time you sign up for a new subscription or newsletter or purchase an item.</p>
+
+<p>For ways you can use <strong>Ajent</strong>, <a href="{{ path('AjentBundleWhatIsAjent') }}" target="_new"><img src="/bundles/mailregistration/images/click-here.png" align="absmiddle"></a></p>
+
+
+{% endblock content %}

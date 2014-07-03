@@ -1,0 +1,3 @@
+{% for page in pages %}
+	{% render page['route'] ~ ':' ~ block with template_vars %}
+{% endfor %}

@@ -1,0 +1,90 @@
+enable_debug:           true
+enable_sql_profiler:    false
+is_in_beta:             true
+enable_security_checks: false
+cron_mode:              false
+
+kill_system:            false
+
+allow_scary_options:    true
+
+private_beta:           true
+
+company_name_long:      Ajent
+company_name_short:     Ajent
+
+#email sent here when bad stuff happens
+admin_email:            rjkeller@pixonite.com
+
+from_email:             do-not-reply@ajent.com
+help_email:             info@begslistinc.com
+from_name:              Ajent
+error_email:            rjkeller@pixonite.com
+
+enable_email:           false
+
+root_url:       http://ajent.dev4
+
+SearchBundle:
+    AjentEmail:
+        Spec:           Ajent\MailBundle\Query\EmailSpec
+        Template:       MailBundle:query:results.twig.html
+    VendorScan:
+        Spec:           Ajent\MailRegistrationBundle\Query\VendorSpec
+        Template:       MailRegistrationBundle:query:results.twig.html
+    FriendsSearch:
+        Spec:           Ajent\SocialBundle\Query\FriendsSearch
+        Template:       SocialBundle:query:friends.twig.html
+    FavoritesSearch:
+        Spec:           Ajent\SocialBundle\Query\FavoritesSpec
+    RecentPostsSearch:
+        Spec:           Ajent\SocialBundle\Query\RecentPostsSpec
+    MyPostsSearch:
+        Spec:           Ajent\SocialBundle\Query\MyPostsSpec
+    Logging:
+        Spec:           Oranges\LoggingBundle\Query\AuditLogSpec
+        Template:       LoggingBundle:query:results.twig.html
+
+MongoDbModel:
+    DbCache:
+        CategoryCache:
+            Model:  Ajent\MailBundle\Entity\EmailMessage
+            Class:  Ajent\MailBundle\Cache\CategoryCache
+        VendorCategoryCache:
+            Model:  Ajent\MailBundle\Entity\EmailMessage
+            Class:  Ajent\VendorBundle\Cache\VendorCategoryCache
+    ModelEvent:
+        VendorEvent:
+            Model:  Ajent\MailBundle\Entity\EmailMessage
+            Class:  Ajent\VendorBundle\Event\MailEventsListener
+
+TagCloudBundle:
+    TagProductInterface:   Ajent\MailBundle\Helper\EmailTagInterface
+    maxValue:               1000
+    lowestNumEntries:       1
+    highestNumEntries:      2000
+    TagEntityName:          Tags
+
+LoggingBundle:
+    scanParser:         LoggingHandlerBundle:pages:scanParser.twig.html
+    imapSearch:         LoggingHandlerBundle:pages:imapSearch.twig.html
+
+MailBundle:
+    MailDirPath:        /home/vmail/
+    HtmlPath:           /var/ajent/
+    DefaultEmailDomain: pixinite.com
+    InboxName:          Miscellaneous
+
+#AddonBundle:
+#    Extensions:
+#        ViewVendorsPage:
+#            PasswordManager:
+#                class: AjentExtensions\PasswordManagerBundle\Controller\PasswordManagerController
+#                route: PasswordManagerBundle:PasswordManager
+
+CartBundle:
+    AvailableFactories:
+        appStore:       Ajent\AppStoreBundle\Helper\PurchaseAppFactory
+
+billingMethods:
+    AdminBillingMethod: Pixonite\BillingBundle\Entity\AdminBillingMethod

@@ -1,0 +1,15 @@
+#currentBalance { background: url('/bundles/billing/images/current-balance.gif') no-repeat; width: 276px; height: 71px;
+ 	font: bold 3em Arial;
+	color: #71D078;
+	padding-top: 33px;
+	margin-top: 10px;
+}
+
+a.addFunds { background: url('/bundles/billing/images/AddFunds.gif') no-repeat; }
+a.addFunds:hover { background: url('/bundles/billing/images/AddFundsHover.gif') no-repeat; }
+
+a.autoFund { background: url('/bundles/billing/images/AutoFund.gif') no-repeat; }
+a.autoFund:hover { background: url('/bundles/billing/images/AutoFundHover.gif') no-repeat; }
+
+a.fundAlert { background: url('/bundles/billing/images/Alerting.gif') no-repeat; }
+a.fundAlert:hover { background: url('/bundles/billing/images/AlertingHover.gif') no-repeat; }

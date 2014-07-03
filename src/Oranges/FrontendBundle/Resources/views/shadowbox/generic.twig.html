@@ -1,0 +1,23 @@
+<div id="{{ name }}{% if incr is defined %}{{ incr }}{% endif %}" class="lc">
+	<div style="width: {% if width is defined %}{{ width }}{% else %}640{% endif %}px;" id="lightboxImage">
+		<div style="background: url(/bundles/frontend/images/shadowbox-tl.gif) no-repeat;">
+			<div style="background: transparent url(/bundles/frontend/images/shadowbox-tr.gif) repeat-x scroll right top; margin-left: 6px; height: 10px;"></div>
+		</div>
+		<div style="background: url(/bundles/frontend/images/shadowbox-ml.gif) repeat-y;">
+			<div style="background: transparent url('/bundles/frontend/images/shadowbox-mr.gif') repeat-y scroll right top; margin-left: 2px;" class="shadowboxContent">
+				{% if form is defined %}
+				{% if isUpload is defined %}
+				<form method="POST" enctype="multipart/form-data" name="{{ form }}"{% if redir is defined %} action="{{ redir }}"{% endif %}>
+				{% else %}
+				<form method="POST" name="{{ form }}"{% if redir is defined %} action="{{ redir }}"{% endif %}>
+				{% endif %}
+    			{% render 'FormBundle:PrintCid:index' with { 'form_name': form } %}
+
+				{% if incr is defined %}
+				<input type="hidden" name="id" value="{{ incr }}">
+				{% endif %}
+
+				{% endif %}
+				<table width="100%"><tr valign="top"><td>
+					{% if alert is defined %}
+			<img src="/bundles/frontend/images/{{ alert }}.gif" alt=""/>{% endif %}</td><td>

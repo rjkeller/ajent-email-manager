@@ -1,0 +1,70 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% set tab = 'support' %}
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>View Profile - {{ company_name }}</title>
+{% endblock %}
+
+
+
+
+
+{% block tabs %}
+{% set leftNavTab = 'Comments' %}
+{% include 'SocialBundle:nav:Profile.twig.html' %}
+{% endblock %}
+
+{% block header %}
+<div class="line topHeader">
+	<div class="unit size1of5">
+		<h1>Profile</h1>
+	</div>
+	<div class="unit size4of5">
+		Find a product or service online that you want to share with your Ajent community? Post it here and let everyone know!
+	</div>
+</div>
+{% endblock %}
+
+
+
+
+
+{% block content %}
+
+
+<div style="background: #f5f5f5; border: 1px solid #ccc; padding: 5px;">
+	<h2>{{ profile['name'] }}</h2>
+</div>
+
+<div style="border: 1px solid #ccc; border-top: none; padding: 5px;" class="wallBox">
+
+	<h3>My Comments</h3>
+
+	{% for msg in comments %}
+		<table width="100%" style="border-bottom: 1px dotted #ccc;">
+			<tr valign="top">
+				<td width="60"><img src="{{ msg.AuthorUserProfile.ProfilePictureUrl }}" width="50" height="50"></td>
+				<td>
+					<h4>{{ msg.AuthorUserProfile['name'] }}</h4>
+					<p>{{ msg.Message | raw }}</p>
+					<p><strong><a href="{{ msg.Product['url'] }}">{{ msg.Product['product_name'] }}</a></strong></p>
+					<small>{{ msg['date'] }}</small>
+				</td>
+			</tr>
+		</table>
+	{% else %}
+		There are no products to display.
+	{% endfor %}
+
+</div>
+
+{% endblock %}
+
+
+
+{% block rightNav %}
+{% render 'SocialBundle:Followers:index' with {'profile_user_id': profile['user_id'] } %}
+{% endblock %}

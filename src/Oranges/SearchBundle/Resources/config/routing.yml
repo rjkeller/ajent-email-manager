@@ -1,0 +1,3 @@
+SearchBundleAjaxDelete:
+    pattern: /search_ajax/{adapterName}/{query}/{item_id}/delete
+    defaults: { _controller: SearchBundle:Ajax:delete }

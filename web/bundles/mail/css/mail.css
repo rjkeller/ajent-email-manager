@@ -1,0 +1,31 @@
+.floatBox {
+	margin: 10px auto 0 auto;
+	border: 1px solid black;
+	background: white;
+	cursor: pointer;
+	border: 2px solid #ccc;
+	padding: 5px;
+	display: table;
+}
+
+.floatBox div { margin: auto; display:table-cell; vertical-align:middle; text-align: center; }
+
+.unreadFloatBox {
+	border: 2px solid #cc3333;
+}
+
+.selectFloatBox {
+	box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
+	-moz-box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
+}
+
+#allItems {
+	background: #ccc;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.emailMessageText {
+	font-size: 0.8em;
+}

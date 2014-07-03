@@ -1,0 +1,53 @@
+{% extends "::layout.twig.html" %}
+
+{% block content %}
+
+{% render "FrontendBundle:MessageBox:printErrorBoxes" %}
+
+<h2>Login</h2>
+
+<form method="POST">
+<input type="hidden" name="sublogin" value="1">
+
+<table>
+	<tr>
+		<td width="180">Username:</td>
+		<td><input type="text" name="user" class="inputbox"></td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td><input type="password" name="pass" class="inputbox"></td>
+
+	</tr>
+	<tr><td><input type="submit" value="Login" class="button"></td></tr>
+</table>
+</form>
+
+<h2>Not a {{ company_name }} member?</h2>
+<p>Registration for {{ company_name }} is free. Sign up today!</p>
+
+<form method="POST" name="regform">
+<input type="hidden" name="cid2" value="1">
+
+<table>
+	<tr><td width="180">First Name:</td><td>{{ frm.printField("reg_fname") }}</td></tr>
+	<tr><td>Last Name:</td><td>{{ frm.printField("reg_lname") }}</td></tr>
+	<tr><td>Your Email:</td><td>{{ frm.printField("reg_email") }}</td></tr>
+	<tr></tr>
+	<tr><td>Username:</td><td>{{ frm.printField("reg_user") }}</td></tr>
+	<tr><td>Password:</td><td>{{ frm.printField("reg_pass") }}</td></tr>
+	<tr><td>Confirm Password:</td><td>{{ frm.printField("reg_passc") }}</td></tr>
+
+</table><br>
+<label><input type="checkbox" name="receiveEmailAlerts" checked> I'd like to receive email updates from {{ company_name }} about new product updates.</a></label>
+
+{#
+	<label>{{ frm.printField("agree") }} I understand and agree the <a href="#">{{ company_name }} Terms of Service</a></label>
+#}
+<br>&nbsp;<br>
+
+<input type="submit" value="Register" class="button" id="btnSubmit">
+</form>
+
+
+{% endblock content %}

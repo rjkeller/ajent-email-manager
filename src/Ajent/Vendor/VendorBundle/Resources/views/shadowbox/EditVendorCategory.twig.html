@@ -1,0 +1,29 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'EditVendorCategory',
+	'form': 'EditVendorCategory'
+}
+%}
+
+<h1>Edit Category</h1>
+
+<ol>
+	<li>Select From a Predefined Category:<br>&nbsp;<br>
+    <select name="category_select" class="inputbox">
+	<option value="">---</option>
+	{% render 'MailRegistrationBundle:PrintCategories:setCategory' with {
+		'category_id': vendor['category_id']
+	} %}
+	</select><br>&nbsp;<br>
+	</li>
+	<li>Place this Vendor in a New Category:<br>&nbsp;<br>
+	<input type="text" name="new_vendor_name" class="inputbox"></li>
+</ol>
+
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Change',
+	'noButton': 'Cancel'
+}
+%}

@@ -1,0 +1,18 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'DeleteEmail',
+	'form': 'DeleteEmail',
+	'alert': 'BlueAlert'
+}
+%}
+
+<h1>Move Email to Trash</h1>
+
+<p>Are you sure you want to delete this message?</p>
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Delete',
+	'noButton': 'Cancel'
+}
+%}

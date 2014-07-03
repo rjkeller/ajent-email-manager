@@ -1,0 +1,23 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'CategoryChange',
+	'form': 'CategoryChange',
+	'alert': 'BlueAlert'
+}
+%}
+<input type="hidden" name="message_id" value="{{ message_id }}">
+
+<h1>Category Change</h1>
+
+<p>Would you like to move all emails of this vendor to this category?<br>
+	<select class="inputbox" name="move_all_emails">
+		<option value="no">No, I only want to move this email</option>
+		<option value="yes">Yes! Please move all future emails from this vendor to this category</option>
+	</select></p>
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Move',
+	'noButton': 'Cancel'
+}
+%}

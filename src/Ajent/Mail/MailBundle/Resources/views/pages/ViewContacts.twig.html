@@ -1,0 +1,33 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Contacts - {{ company_name }}</title>
+{% endblock metatags %}
+
+
+{% block content %}
+<h1>My Contacts</h1>
+
+
+<table class="stripeMe messages">
+  <thead>
+    <tr class="alt">
+      <th class="thumb" style="width:320px">Name</th>
+
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody class="checkeditems">
+	{% for contact in contacts %}
+    <tr id="item-{{ contact['id'] }}" class=" adBox">
+      <td class="thumb reply"><img style="float:left; margin-right:10px" width="16" height="16" src="/img/imgres-2.jpeg">{{ contact['name'] }}</td>
+
+      <td class="reply">{{ contact['email'] }}</td>
+    </tr>
+	{% endfor %}
+</table>
+
+{% endblock content %}

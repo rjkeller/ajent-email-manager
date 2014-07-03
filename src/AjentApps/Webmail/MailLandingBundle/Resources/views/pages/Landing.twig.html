@@ -1,0 +1,199 @@
+{% extends "::layout.twig.html" %}
+{% block headTag %}
+<script type="text/javascript" src="/ajax.js"></script>
+<script type="text/javascript" src="/jquery.js"></script>
+<script src="/ui/jquery.ui.core.js"></script>
+<script src="/ui/jquery.ui.widget.js"></script>
+<script src="/ui/jquery.ui.datepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" type="text/css" href="/bundles/socialmail/css/mail.css">
+
+
+
+<script type="text/javascript">
+
+var TimeToFade = 250.0;
+var NUM_TIME = 10;
+
+var RUN_THIS_METHOD = null;
+var RUN_AFTERWARDS = null;
+var BOX_OFFSET = new Array();
+var FadeTimeLeft;
+function fade()
+{
+  FadeTimeLeft = TimeToFade;
+  setTimeout("animateFade(" + new Date().getTime() + ")", NUM_TIME);
+}
+
+function animateFade(lastTick)
+{  
+  var curTick = new Date().getTime();
+  var elapsedTicks = curTick - lastTick;
+  
+  if(FadeTimeLeft <= elapsedTicks)
+  {
+	RUN_THIS_METHOD(1);
+	RUN_AFTERWARDS();
+    return;
+  }
+ 
+  FadeTimeLeft -= elapsedTicks;
+  var newOpVal = FadeTimeLeft/TimeToFade;
+
+  RUN_THIS_METHOD(1-newOpVal);
+  
+  setTimeout("animateFade(" + curTick + ")", NUM_TIME);
+}
+
+var OLD_OFFSET = new Array();
+
+function selectBox(innerDivId, newOffset)
+{
+	if (OLD_OFFSET[innerDivId] == undefined)
+		OLD_OFFSET[innerDivId] = 0;
+
+	RUN_THIS_METHOD = function (percent) {
+		var ELE_WIDTH = -326;
+
+		var current_width = (ELE_WIDTH*OLD_OFFSET[innerDivId])
+		var goal_width = (ELE_WIDTH*newOffset) * percent;
+
+		var width = current_width + ELE_WIDTH*(newOffset-OLD_OFFSET[innerDivId])*percent;
+		var innerDiv = document.getElementById(innerDivId);
+		innerDiv.style.marginLeft = width + "px";
+	};
+	RUN_AFTERWARDS = function() {
+		var old_button = document.getElementById("pag_" + innerDivId + OLD_OFFSET[innerDivId]);
+		OLD_OFFSET[innerDivId] = newOffset;
+		
+		var new_button = document.getElementById("pag_" + innerDivId + OLD_OFFSET[innerDivId]);
+
+		old_button.src = "/bundles/ajenthomepage/images/pagination.png";
+		new_button.src = "/bundles/ajenthomepage/images/pagination-selected.png";
+	};
+	fade();
+
+}
+
+</script>
+
+
+
+
+<script type="text/javascript">
+
+
+function hideShare()
+{
+	document.getElementById("shareBox").style.display = "none";
+}
+
+function showShare()
+{
+	document.getElementById("shareBox").style.display = "block";
+}
+
+
+function showButton(id)
+{
+	document.getElementById(id).style.visibility = "visible";
+}
+function hideButton(id)
+{
+	document.getElementById(id).style.visibility = "hidden";
+}
+
+</script>
+<script src="/bundles/search/js/search_ajax.js"></script>
+<link rel="stylesheet" type="text/css" href="/bundles/vendor/css/VendorManager.css">
+
+{% endblock %}
+
+
+
+
+{% block onLoad %}
+{% if showWelcomeMessage %}
+showLightbox(document.getElementById('Welcome'));
+{% endif %}
+{% if loadMessageId is defined %}
+search_loadItem('{{ loadMessageId }}');
+{% endif %}
+showAlertBox();
+" onkeydown="mailKeyPress(event);
+{% endblock onLoad%}
+
+
+{% block content %}
+{% if showWelcomeMessage %}
+{% include "VendorBundle:shadowbox:Welcome.twig.html" %}
+{% endif %}
+
+
+
+
+<div class="line">
+	<div class="unit" style="width:724px;">
+
+	<div class="box" style="margin-top: 0; min-height: 269px">
+		<h1 class="category_title red">
+
+			<span class="innerTitle">
+				<a href="#">Unread Deals</a>
+			</span>
+		</h1>
+
+		<div class="line mainBox">
+			<div class="allItems">
+				<div class="line vendors" style="margin: 10px;">
+					{% set i = 0 %}
+					{% for message in messages %}
+					<div class="line iconBox highlightCell{% if i == 0 %} top{% endif %}" onclick="window.location.href='{{ path('VendorBundleViewCategoryVendor', { 'vendor_id': message['vendor_id'], 'category_name': message.Category['name'] } ) }}?message_id={{ message['_id'] }}">
+						<div class="unit" style="width: 32px; text-align: center;">
+							<img src="http://www.google.com/s2/favicons?domain={{ message.Vendor['email_suffix'] }}" style="border: 1px solid #d0d0d0" width="16" height="16" align="absmiddle">
+						</div>
+						<div class="unit" style="width: 200px" style="font-style: italic">
+							{{ message.Vendor.TruncatedVendorName | raw }}
+						</div>
+						<div class="unit" style="width: 440px;">
+							{{ message['subject'] }}
+						</div>
+					</div>
+
+					{% set i = i + 1 %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	</div>
+	<div class="unit" style="width:300px;">
+		<div style="padding-left: 10px;">
+			<img src="/bundles/ajenthomepage/images/advertisement-placeholder.png">
+		</div>
+	</div>
+</div>
+
+<h3 class="highlightHeader"><span>Your Categories</span></h3>
+
+
+<div class="line">
+	{% set isFirst = '1' %}
+	{% set i = -1 %}
+	{% for category in categories %}
+		{% set i = i + 1 %}
+	
+		{% render 'SocialMailBundle:Landing:printCategory' with {
+				'category': category,
+				'addon_manager': addon_manager,
+				'isFirst': isFirst,
+				'i': i
+			}
+		%}
+		{% set isFirst = '0' %}
+	{% endfor %}
+</div>
+
+{% endblock %}

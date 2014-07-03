@@ -1,0 +1,90 @@
+{% set i = 0 %}
+{% for message in results %}
+{#
+ # NOTE: class "emailItem" and ID of item{msg->id} MUST be present below or
+ # else the JavaScript query search will get messed up.
+ #}
+	{% set i = i + 1 %}
+    <div class="line floatBox" id="item{{ message['_id'] }}" onclick="search_loadItem('{{ message['_id'] }}')">
+		<div class="messageBorder{% if i == 1 %} top{% endif %}">
+
+	        <div class="unit vendorImage">
+	            <img src="http://www.google.com/s2/favicons?domain={{ message.Vendor['email_suffix'] }}" width="16">
+	        </div>
+	        <div class="unit details">
+	        	<div class="icons">
+	        		{% if message.hasAlert %}
+	        			<img src="/bundles/vendor/images/alerts-small.png" align="absmiddle">
+	        		{% endif %}&nbsp;
+	        	</div>
+
+				{{ message.Vendor.TruncatedVendorName | raw }}<br>
+	            <span class="subject">{{ message.TruncatedSubject | raw }}</span>
+	    	</div>
+
+		</div>
+
+    </div>
+
+	{# shadowbox stuff goes here #}
+	{% include "MailBundle:shadowbox:DeleteEmail.twig.html"
+		with {
+			'incr': message['_id']
+		}
+	%}
+
+	{% include "MailBundle:shadowbox:MakeEmailPublic.twig.html"
+		with {
+			'incr': message['_id']
+		}
+	%}
+
+	{% include "MailBundle:shadowbox:EmailMakeFavorite.twig.html"
+		with {
+			'incr': message['_id']
+		}
+	%}
+
+
+	{% include "MailBundle:shadowbox:EmailExpiration.twig.html"
+		with {
+			'incr': message['_id']
+		}
+	%}
+
+	{% include "MailBundle:shadowbox:ForwardEmail.twig.html"
+		with {
+			'incr': message['_id']
+		}
+	%}
+
+	{% include "MailBundle:shadowbox:DeleteAllFolder.twig.html"
+		with {
+			'incr': message['_id']
+		}
+	%}
+
+	{% include "MailBundle:shadowbox:DeleteAllVendor.twig.html"
+		with {
+			'incr': message['_id']
+		}
+	%}
+{% endfor %}
+
+{#
+<div class="nextResults">					
+	{% if searchResults.hasPrev() %}
+	<a href="{{ searchResults.prevLink }}">&laquo;</a>
+	{% else %}
+	&laquo;
+	{% endif %}
+
+	   <strong>{{ searchResults.min() }} - {{ searchResults.max() }}</strong> of <strong>{{ searchResults.total() }}</strong>
+
+	{% if searchResults.hasNext() %}
+	<a href="{{ searchResults.nextLink }}">&raquo;</a>
+	{% else %}
+	&raquo;
+	{% endif %}
+</div>
+#}

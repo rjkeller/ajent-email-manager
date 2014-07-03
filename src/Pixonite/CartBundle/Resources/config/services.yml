@@ -1,0 +1,4 @@
+services:
+    pixonite.cart:
+        class:     Pixonite\CartBundle\Helper\Cart
+        arguments: [@database_connection]

@@ -1,0 +1,15 @@
+{% for favorite in results %}
+<div class="line" style="border-top: 1px solid #ccc; margin-top: 10px; padding-top: 10px;">
+	<div class="unit" style="width:94px">
+		<img src="http://ajent.adiop.com/mef/config/picture.php?w=30&amp;h=30&amp;img=http://ajent.adiop.com//mef/upload/2011/07/rihanna-for-vp.jpg" width="82" height="82" style="margin-left: 10px;">
+	</div>
+	<div class="unit" style="width: 130px;">
+		<h4 style="margin-top: 0; margin-bottom: 0;font-size: 0.9em;">{{ favorite['message'] }}</h4>
+		<p style="font-size: 0.8em; color: #757575;margin-top: 2px;">Posted by Meghan Higney<br>
+			Yesterday at 10:42 am</p>
+		<p style="font-size: 0.8em; color: #757575; margin: 0;"><img src="/bundles/social/images/icons/comments.png" align="absmiddle"> Comment</p>
+	</div>
+</div>
+{% else %}
+	<p>Search for favorites above.</p>
+{% endfor %}

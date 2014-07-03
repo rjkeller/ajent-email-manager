@@ -1,0 +1,27 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'EmailMakeFavorite',
+	'form': 'EmailMakeFavorite',
+	'alert': 'BlueAlert'
+}
+%}
+<h1>Mark Vendor as Favorite</h1>
+
+<input type="hidden" name="EmailMakeFavorite" value="1">
+
+<p>Are you sure you want to mark this vendor as a favorite?</p>
+
+<table width="100%" cellpadding="3">
+	<tr valign="top">
+		<td align="right"><label for="vendorFavoriteMessage">Message</label></td>
+		<td><textarea name="message" class="textbox" id="vendorFavoriteMessage" style="width:200px;" rows="5"></textarea></td>
+	</tr>
+</table>
+
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Save',
+	'noButton': 'Cancel'
+}
+%}

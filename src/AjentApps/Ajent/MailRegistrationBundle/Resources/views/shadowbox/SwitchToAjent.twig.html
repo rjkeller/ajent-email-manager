@@ -1,0 +1,27 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'SwitchToAjent',
+	'form': 'SwitchToAjent'
+}
+%}
+
+<h1>Select a Category</h1>
+
+<ol>
+	<li>Select From a Predefined Category:<br>&nbsp;<br>
+    <select name="category_select" class="inputbox">
+	<option value="">---</option>
+	{% render 'MailRegistrationBundle:PrintCategories:index' %}
+	</select><br>&nbsp;<br>
+	</li>
+	<li>Place this Vendor in a New Category:<br>&nbsp;<br>
+	<input type="text" name="new_vendor_name" class="inputbox"></li>
+</ol>
+
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Switch',
+	'noButton': 'Cancel'
+}
+%}

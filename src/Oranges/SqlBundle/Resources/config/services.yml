@@ -1,0 +1,4 @@
+services:
+    Oranges.SqlBundle.Database:
+        class:     Oranges\SqlBundle\Helper\Database
+        arguments: [@doctrine.orm.entity_manager]

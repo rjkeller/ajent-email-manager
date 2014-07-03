@@ -1,0 +1,137 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% set tab = 'support' %}
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>View Profile - {{ company_name_short }}</title>
+<link rel="stylesheet" type="text/css" href="/bundles/social/css/social.css">
+
+<script type="text/javascript" src="/ajax.js"></script>
+<script type="text/javascript">
+
+function addUrl()
+{
+	document.getElementById("addUrl").style.visibility = "hidden";
+	document.getElementById("urlBox").style.display = "table-row";
+}
+
+function addPhoto()
+{
+	document.getElementById("addPhoto").style.visibility = "hidden";
+	document.getElementById("photoBox").style.display = "table-row";
+}
+
+</script>
+{% endblock %}
+
+
+
+
+
+{% block tabs %}
+{% set leftNavTab = 'Activities' %}
+{% include 'SocialBundle:nav:Profile.twig.html' %}
+{% endblock %}
+
+
+
+
+
+{% block content %}
+<h1>Search results for R.J. Keller</h1>
+<div class="line" style="width:400px; padding-top: 20px;">
+	<div class=" unit size1of2">
+		<div class="line leftNav">
+		<a href="javascript:showLightbox(document.getElementById('ProfilePhotoUpload'))">
+			<img src="
+			{% if profile['picture_id'] is defined %}
+			{{ path('SocialBundleViewPicture', {'picture_id': profile['picture_id'] } ) }}
+			{% else %}
+			/bundles/social/images/placeholder.png
+			{% endif %}" align="left" width="50" height="50">
+		</a>
+		<div style="padding-left:5px; float: left;">
+			<strong>{{ profile['name'] }}</strong><br>
+		</div>
+		</div>
+	</div>
+	<div class="unit size1of2">
+		<div style="padding:15px 0 0 5px;">
+			<button class="awesome">Follow</button>
+		</div>
+	</div>
+</div>
+
+<div class="line" style="width:400px; padding-top: 20px;">
+	<div class=" unit size1of2">
+		<div class="line leftNav">
+		<a href="javascript:showLightbox(document.getElementById('ProfilePhotoUpload'))">
+			<img src="
+			{% if profile['picture_id'] is defined %}
+			{{ path('SocialBundleViewPicture', {'picture_id': profile['picture_id'] } ) }}
+			{% else %}
+			/bundles/social/images/placeholder.png
+			{% endif %}" align="left" width="50" height="50">
+		</a>
+		<div style="padding-left:5px; float: left;">
+			<strong>{{ profile['name'] }}</strong><br>
+		</div>
+		</div>
+	</div>
+	<div class="unit size1of2">
+		<div style="padding:15px 0 0 5px;">
+			<button class="awesome">Follow</button>
+		</div>
+	</div>
+</div>
+
+
+<div class="line" style="width:400px; padding-top: 20px;">
+	<div class=" unit size1of2">
+		<div class="line leftNav">
+		<a href="javascript:showLightbox(document.getElementById('ProfilePhotoUpload'))">
+			<img src="
+			{% if profile['picture_id'] is defined %}
+			{{ path('SocialBundleViewPicture', {'picture_id': profile['picture_id'] } ) }}
+			{% else %}
+			/bundles/social/images/placeholder.png
+			{% endif %}" align="left" width="50" height="50">
+		</a>
+		<div style="padding-left:5px; float: left;">
+			<strong>{{ profile['name'] }}</strong><br>
+		</div>
+		</div>
+	</div>
+	<div class="unit size1of2">
+		<div style="padding:15px 0 0 5px;">
+			<button class="awesome">Follow</button>
+		</div>
+	</div>
+</div>
+
+<div class="line" style="width:400px; padding-top: 20px;">
+	<div class=" unit size1of2">
+		<div class="line leftNav">
+		<a href="javascript:showLightbox(document.getElementById('ProfilePhotoUpload'))">
+			<img src="
+			{% if profile['picture_id'] is defined %}
+			{{ path('SocialBundleViewPicture', {'picture_id': profile['picture_id'] } ) }}
+			{% else %}
+			/bundles/social/images/placeholder.png
+			{% endif %}" align="left" width="50" height="50">
+		</a>
+		<div style="padding-left:5px; float: left;">
+			<strong>{{ profile['name'] }}</strong><br>
+		</div>
+		</div>
+	</div>
+	<div class="unit size1of2">
+		<div style="padding:15px 0 0 5px;">
+			<button class="awesome">Follow</button>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

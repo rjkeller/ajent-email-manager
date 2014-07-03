@@ -1,0 +1,33 @@
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+
+{% if status_code == "404" %}
+<title>Oops! Page could not be found! - Ajent</title>
+{% else %}
+<title>Error: {{ status_text }} - Ajent</title>
+{% endif %}
+
+{% endblock metatags %}
+
+
+{% block content %}
+
+{% if status_code == "404" %}
+<h1>Oops! The page you requested could not be found.</h1>
+
+<p>If you got here from a link on Ajent, please email <a href="mailto:support@ajent.net">support@ajent.net</a>.</p>
+
+{% else %}
+
+<h1>Oops! Ajent has experienced a problem.</h1>
+
+<p>An internal issue has occurred within Ajent. This issue has been logged and will be reviewed by our development team. If you need immediate assistance with this problem, please email <a href="mailto:support@ajent.net">support@ajent.net</a> and reference the information below:</p>
+
+<p>Status {{ status_code }}: {{ status_text }}</p>
+
+{% endif %}
+
+{% endblock content %}

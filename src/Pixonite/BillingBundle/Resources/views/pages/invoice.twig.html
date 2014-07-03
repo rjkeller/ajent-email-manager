@@ -1,0 +1,125 @@
+{% set tab = 'billing' %}
+{% extends "::layout.twig.html" %}
+
+{% block content %}
+
+<h1><img src="/images/admin_images/billing_mds.gif" alt="" width="32" height="32" align="absmiddle">
+	Invoice</h1>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2" align="center" class="style2">{{ invoice.Status }}</td>
+	</tr>
+	<tr>
+		<td width="70"><a href="/billing/invoice_print/{{ invoice['id'] }}"><img src="/images/admin_images/print_now.png" width="16" height="16" align="absmiddle"> Print</a></td>
+{% if invoice['status'] == "due" %}
+		<td width="100"><a href="#"><img src="/images/admin_images/ManPay.png" width="16" height="16" align="absmiddle"> Pay Now</a></td>
+		<td width="100"><a href="#"><img src="/images/admin_images/CancelPack.gif" width="16" height="17" align="absmiddle"> Cancel</a></td>
+{% endif %}
+		<td width="100"><strong>Created:<br>{{ invoice.DateIssued }}</strong></td>
+		<td width="100"><strong>Due:<br>{{ invoice.DateDue }} </strong></td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#6699CC">
+	<tr>
+		<td width="40%" rowspan="4">
+			{{ invoice.BillingContact | raw }}
+			<br>
+		</td>
+		<td width="22%" align="center"><strong>Invoice ID</strong></td>
+		<td width="19%" align="center"><strong> Amount </strong></td>
+		<td width="19%" align="center"><strong>Total Due </strong></td>
+	</tr>
+	<tr>
+		<td align="center">{{ invoice['id'] | upper }}</td>
+		<td align="center">${{ invoice.Amount }}</td>
+		<td align="center">${{ invoice.TotalDue }}</td>
+	</tr>
+	<tr>
+		<td align="center"><strong>Transaction ID </strong></td>
+		<td align="center"><strong>Billing Cycle </strong></td>
+		<td align="center"><strong>Next Renewal </strong></td>
+	</tr>
+	<tr>
+		<td align="center">{{ invoice['transaction_id'] }}</td>
+		<td align="center">{{ invoice.BillingCycle }}</td>
+		<td align="center">{{ invoice.NextRenewal }}</td>
+	</tr>
+</table>
+
+<p><br></p>
+
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#6699CC">
+	<tr>
+		<td width="72%"><strong>Package</strong></td>
+		<td width="12%"><strong>QTY</strong></td>
+		<td width="16%"><strong>Price</strong></td>
+	</tr>
+	{% for package in invoice.Packages %}
+	<tr>
+		<td><p>&nbsp;</p>
+		<p>{{ package['description'] }}</p>
+		<p>&nbsp;</p></td>
+		<td>{{ package['quantity'] }}</td>
+		<td>${{ package['price'] }}{{ invoice.ShortBillingCycle }}</td>
+	</tr>
+	{% endfor %}
+	<tr>
+		<td rowspan="4">&nbsp;</td>
+		<td align="right"><strong>Subtotal</strong></td>
+		<td align="right">${{ invoice.Subtotal }}</td>
+	</tr>
+	<tr>
+		<td align="right"><strong>Credits</strong></td>
+		<td align="right">{{ invoice.Credits }}</td>
+	</tr>
+	<tr>
+		<td><div align="right"><strong>Tax</strong></div></td>
+		<td align="right">{{ invoice.Tax }}</td>
+	</tr>
+	<tr>
+		<td><div align="right"><strong>Total</strong></div></td>
+		<td align="right">${{ invoice.Total }}</td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+
+{% if invoice.doesInvoiceSupportAutorenew %}
+{% if not invoice.isAutorenewEnabled %}
+<table width="465" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="9%"><div align="center"><img src="/images/admin_images/BillingRecur_esm.gif" width="24" height="24"></div></td>
+		<td width="76%">Auto Renew can pay your invoices automatically however, it is not enabled for this account. Would you like to enable Auto Renew? </td>
+		<td width="15%"><div align="center">
+			<form method="POST">
+			<input type="hidden" name="autorenew" value="true">
+			<input type="submit" value="Enable" class="button">
+			</form>
+			</div>
+		</td>
+	</tr>
+</table>
+{% else %}
+<table width="465" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="9%"><div align="center"><img src="/images/admin_images/BillingRecur_esm.gif" width="24" height="24"></div></td>
+		<td width="76%">Auto Renew is enabled, and this invoice will be paid automatically. Would you like to disable Auto Renew? </td>
+		<td width="15%"><div align="center">
+			<form method="POST">
+				<input type="hidden" name="autorenew" value="true">
+				<input type="submit" value="Disable" class="button">
+			</form>
+		</div></td>
+
+	</tr>
+</table>
+{% endif %} {# is autorenew enabled #}
+{% endif %} {# is enable autorenew option in invoice available for this invoice type #}
+
+<p>&nbsp;</p>
+
+{% endblock content %}

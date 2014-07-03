@@ -1,0 +1,209 @@
+{% extends "::layout.twig.html" %}
+{% block headTag %}
+<script type="text/javascript" src="/ajax.js"></script>
+<script type="text/javascript" src="/jquery.js"></script>
+<script src="/ui/jquery.ui.core.js"></script>
+<script src="/ui/jquery.ui.widget.js"></script>
+<script src="/ui/jquery.ui.datepicker.js"></script>
+<script src="/bundles/search/js/search_ajax.js"></script>
+<link rel="stylesheet" type="text/css" href="/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" type="text/css" href="/bundles/socialmail/css/view_mail.css">
+<link rel="stylesheet" type="text/css" href="/bundles/socialmail/css/mail.css">
+
+<script type="text/javascript">
+
+function resizeIframe(newHeight)
+{
+    document.getElementById('previewPane').style.height = parseInt(newHeight,10) + 10 + 'px';
+}
+
+
+function mailKeyPress(e)
+{
+	var keynum;
+
+	if (window.event)
+	{
+		keynum = e.keyCode;
+	}
+	else
+	{
+		keynum = e.which;
+	}
+
+	switch(keynum)
+	{
+	case 38:
+		search_loadPreviousMessage();
+        if (e.preventDefault)
+            e.preventDefault();
+		else
+			e.returnValue = false;
+		break;
+	
+	case 40:
+		search_loadNextMessage();
+        if (e.preventDefault)
+            e.preventDefault();
+		else
+			e.returnValue = false;
+		break;
+	}
+}
+
+function search_onItemLoadEvent(item_id)
+{
+	document.getElementById("previewPane").src = '/messages/' + item_id + '/body';
+	ajaxpage('/messages/' + item_id + '/category', 'moveToCategory');
+	document.getElementById("mailToolbar").style.visibility = "visible";
+}
+
+function search_unselectItem()
+{
+	document.getElementById("previewPane").src = '{{ path('MailBundleWelcome') }}';
+	document.getElementById("mailToolbar").style.visibility = "hidden";
+}
+
+function addCategory(message_id)
+{
+	var newcategory = document.getElementById("category_name").value;
+
+	if (prev_current != -1)
+		document.getElementById('msg' + prev_current).setAttribute("class", "");
+
+	prev_current = message_id;
+	document.getElementById('msg' + prev_current).setAttribute("class", "current");
+	ajaxpage('/messages/' + message_id + '/body/addCategory/' + newcategory, 'messagePane');
+
+	document.getElementById('addCategoryLink').style.display = 'block';
+	document.getElementById('addCategory').style.display = 'none';
+	document.getElementById('currentCategories').style.display = 'block';
+}
+
+
+function loadAlertJs()
+{
+
+$(function() {
+	$( "#datepicker" ).datepicker();
+	$( "#datepicker" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
+});
+
+}
+
+function loadExpirationJs()
+{
+
+$(function() {
+	$( "#datepicker2" ).datepicker();
+	$( "#datepicker2" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
+});
+
+}
+
+
+
+function hideShare()
+{
+	document.getElementById("shareBox").style.display = "none";
+}
+
+function showShare()
+{
+	document.getElementById("shareBox").style.display = "block";
+}
+
+
+</script>
+
+{% if is_safari %}
+<style type="text/css">
+.floatBox { width: 196px; background: transparent; }
+.selectFloatBox { background: white; }
+</style>
+{% endif %}
+
+
+{% endblock %}
+
+
+
+
+{% block onLoad %}
+{% if loadMessageId is defined %}
+search_loadItem('{{ loadMessageId }}');
+{% else %}
+search_loadItem(search_allItems[0]);
+{% endif %}
+" onkeydown="mailKeyPress(event);
+{% endblock onLoad%}
+
+
+
+{% block content %}
+
+    <div class="line">
+		<div class="unit" style="width: 250px;">
+
+            <div class="borderTable">
+				<div class="box line {{ colorCode }}" style="font-size: 1.2em; font-weight: bold;">
+					<h1 class="category_title red"><a href="#">{{ title }}</a></h1>
+
+					<div class="allItems">
+						{% render 'SearchBundle:Ajax:printList' with { 'adapterName': 'AjentEmail', 'spec': spec } %}
+					</div>
+
+            	</div>
+            </div>
+		</div>
+		<div style="margin-left: 260px;padding-right: 10px;">
+			<div class="toolbar line {{ colorCode }}" id="mailToolbar">
+				<div class="unit size1of2">
+				<ul>
+					<li><a href="javascript:search_deleteCurrentItem()">Delete <img src="/bundles/mail/images/toolbar/trash.png" align="absmiddle"></a></li>
+					<li><a href="#" onmouseover="mopen('deleteAll');" onmouseout="mclosetime();">Delete All <img src="/bundles/mail/images/toolbar/trash.png" align="absmiddle"></a>
+						<div class="menu" id="deleteAll" onmouseover="mcancelclosetime()" 
+						            onmouseout="mclosetime()">
+							<ul>
+								<li><a href="javascript:showLightbox(document.getElementById('DeleteAllVendor' + search_currentItem))">This Vendor</a></li>
+								<li><a href="javascript:showLightbox(document.getElementById('DeleteAllFolder' + search_currentItem))">This Category</a></li>
+							</ul>
+						</div></li>
+				</ul>
+				</div>
+				
+				<div class="unit size1of2">
+				<ul>
+					<li class="rightButton"><a href="#" onmouseover="mopen('shareBox');" onmouseout="mclosetime();">Share <img src="/bundles/mail/images/toolbar/share.png" align="absmiddle"></a>
+
+						<div class="menu" id="shareBox" onmouseover="mcancelclosetime()" 
+						            onmouseout="mclosetime()">
+							<ul>
+								<li><a href="javascript:showLightbox(document.getElementById('MakeEmailPublic' + search_currentItem))">Share Email</a></li>
+								<li><a href="javascript:showLightbox(document.getElementById('ForwardEmail' + search_currentItem))">Forward</a></li>
+							</ul>
+						</div></li>
+					<li class="rightButton"><a href="javascript:showLightbox(document.getElementById('EmailExpiration' + search_currentItem));loadExpirationJs();">Alert <img src="/bundles/mail/images/toolbar/alerts.png" align="absmiddle"></a></li>
+					<li class="rightButton"><a href="#" onmouseover="mopen('moveToCategory');" onmouseout="mclosetime();">Move <img src="/bundles/mail/images/toolbar/move-to.png" align="absmiddle"></a>
+						<div class="menu" id="moveToCategory" onmouseover="mcancelclosetime()" 
+						            onmouseout="mclosetime()">
+						</div></li>
+
+						{#
+									<li class="toolbarButton leftToolbarButton"><a href="{{ path('MailBundleCompose') }}">Compose <img src="/bundles/mail/images/trash-button.jpg" align="absmiddle"></a></li>
+									<li class="toolbarButton leftToolbarButton"><a href="javascript:replyTo()">Reply <img src="/bundles/mail/images/trash-button.jpg" align="absmiddle"></a></li>
+									<li class="toolbarButton leftToolbarButton"><a href="{{ path('MailBundleCompose') }}">Feedback <img src="/bundles/mail/images/trash-button.jpg" align="absmiddle"></a></li>
+						#}
+
+				</ul>
+				</div>
+			</div>
+
+			<div style="border: 1px solid #e5e5e5">
+				<iframe height="100%" width="100%" border="0" id="previewPane" src="/welcome_message" border="0" style="background:white;border:none" scrolling="no"></iframe>
+			</div>
+		</div>
+    </div>
+
+
+{% endblock %}

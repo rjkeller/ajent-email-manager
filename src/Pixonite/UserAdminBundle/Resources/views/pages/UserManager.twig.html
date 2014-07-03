@@ -1,0 +1,55 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>User Manager</title>
+<link rel="stylesheet" type="text/css" href="/bundles/useradmin/css/style.css">
+<script type="text/javascript" src="/bundles/useradmin/js/wax.js"></script>
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1><img src="/bundles/useradmin/images/profile_mds.gif" alt="" width="30" height="32" align="absmiddle"> Account Users</h1>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<th></th>
+			<th>Username</th>
+			<th>Email</th>
+			<th>Role</th>
+{#
+			<th align="center">Pause</th>
+			<th align="center">Delete</th>
+#}
+		</tr>
+		{% for user in users %}
+{{ tableWax.start(users) }}
+				<td><a href="{{ path('UserAdminBundleEditUser', { 'user_id': user['id'] }) }}"><img src="/bundles/useradmin/images/profile_mds.gif" height="24" align="absmiddle"></a></td>
+				<td><a href="{{ path('UserAdminBundleEditUser', { 'user_id': user['id'] }) }}">{{ user['username'] }}</a></td>
+				<td><a href="{{ path('UserAdminBundleEditUser', { 'user_id': user['id'] }) }}">{{ user['email'] }}</a></td>
+				<td><a href="{{ path('UserAdminBundleEditUser', { 'user_id': user['id'] }) }}">{{ user['role'] }}</a></td>
+{#
+				{% if user['role'] != "Inactive" %}
+					<td align="center"><a href="#"><img src="/bundles/useradmin/images/pause.png"></a>
+						{% include file="shadowbox/admin_users_suspend.smarty" %}</td>
+				{% else %}
+				<td align="center"><a href="#"><img src="/bundles/useradmin/images/playbutton.png"></a>
+					{% include file="shadowbox/admin_users_reactivate.smarty" %}</td>
+				{% endif %}
+				<td align="center"><a href="#"><img src="/bundles/useradmin/images/delete.png"></a>
+					{% include file="shadowbox/admin_users_delete.smarty" %}</td>
+#}
+{{ tableWax.end(users) }}
+		{% else %}
+			<tr>
+				<td colspan="4" align="center">There are no registered users to display</td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+{% endblock %}

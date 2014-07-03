@@ -1,0 +1,35 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'isUpload' : true,
+	'name': 'ProfilePhotoUpload',
+	'form': 'ProfilePhotoUpload',
+	'alert': 'BlueAlert'
+}
+%}
+
+<h1>Photo Upload</h1>
+
+<p>Upload from Facebook</p>
+
+<a href="#"><img src="/bundles/social/images/fb-connect-large.png" height="30"></a>
+
+<p>Upload from computer</p>
+
+<table><tr><td>
+<input type="file" name="post_pic"></td>
+<td>
+	<input type="submit" class="infoButton awesome" value="Upload">
+</td></tr></table>
+
+		</div>
+		<div class="line" style="text-align: right;">
+		</div>
+
+		{% if cmd is not defined %}</form>{% endif %}
+		</div>
+		<div class="shadowboxBottom">
+			&nbsp;
+		</div>
+		</form>
+	</div>
+</div>

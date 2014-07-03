@@ -1,0 +1,18 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'AddNewVendor'
+}
+%}
+
+<h1>Find a new vendor</h1>
+
+<form method="get" action="http://www.google.com/search" target="_blank">
+<input type="hidden"  name="sitesearch" value="">
+
+<p>Enter your vendor name below:<br>
+    <input type="text" id="betaInviteName" class="inputbox" size="30" name="q"> <input type="submit" value="Search" />    
+</p>
+
+</form>
+
+{% include "FrontendBundle:shadowbox:okButton.twig.html" %}

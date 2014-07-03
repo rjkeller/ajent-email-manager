@@ -1,0 +1,34 @@
+<head><title>Signup - Ajent</title>
+
+<link rel="stylesheet" type="text/css" href="/css/ajent.css">
+<link rel="stylesheet" type="text/css" href="/bundles/frontend/style/alertbox.css">
+<script type="text/javascript" language="JavaScript" src="/lightbox.js"></script>
+<style type="text/css"> form { margin: 0; }</style>
+
+<script type="text/javascript" src="/ajax.js"></script>
+<script type="text/javascript">
+function performScan()
+{
+	loadAjaxPage("{{ path('AjentBundleEmailScanMessages') }}?loadEmails=1", "{{ path('Index') }}?welcome=1");
+}
+</script>
+</head>
+<body onload="initLightbox();performScan()">
+    
+    {% include "FrontendBundle:shadowbox:generic.twig.html"
+    with {
+    	'redir': '/',
+    	'name': 'LoadingBox',
+    	'form': 'LoadingBox',
+    	'alert': 'BlueAlert',
+    	'noCloseButton': true
+    }
+    %}
+
+    <img src="/bundles/ajent/images/loading.gif" width="331" height="93" alt="">
+
+    <p>Patience is a virtue! And also an important step as we unsubscribe from any emails you selected and move over your existing subscriptions to your @Ajent account. Please do not click away from this screen. It should only take a minute or two at most.</p>
+
+    {% include "FrontendBundle:shadowbox:noButtons.twig.html" %}
+</body>
+</html>

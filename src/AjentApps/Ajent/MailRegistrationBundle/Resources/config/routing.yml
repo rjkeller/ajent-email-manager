@@ -1,0 +1,11 @@
+UserBundleRegister:
+    pattern: /sign-up
+    defaults: { _controller: MailRegistrationBundle:Register:index }
+
+AjentBundleEmailScanMessages:
+    pattern: /sign-up/import_mail/import-emails
+    defaults: { _controller: MailRegistrationBundle:ImportVendorEmails:index }
+
+AjentBundleVendorSearch:
+    pattern: /vendor_search
+    defaults: { _controller: MailRegistrationBundle:FindVendor:index }

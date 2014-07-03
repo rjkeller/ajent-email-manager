@@ -1,0 +1,47 @@
+<html>
+<head><link rel="stylesheet" type="text/css" href="/css/ajent-email.css">
+</head>
+<body onload="externalLinks();parent.resizeIframe(document.body.scrollHeight);">
+<script type="text/javascript">
+function externalLinks()
+{
+    if (!document.getElementsByTagName) return;
+
+    var anchors = document.getElementsByTagName("a");
+
+    for ( var i=0; i < anchors.length; i++ )
+    {
+        var anchor = anchors[i];
+        anchor.target = "_blank";
+    }
+}
+</script>
+<style type="text/css">
+.sf-toolbarreset { display: none; }
+pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	font-size: 1em;
+}
+</style>
+{#
+<div class="toolbar line email_message" id="emailToolbar" style="border-bottom: 1px solid #ccc;">
+	<ul>
+		<li class="toolbarButton leftToolbarButton" style="width: 200px;">{{ message.FromEmail }} to {{ message['to_address'] }}
+		</li>
+		<li class="toolbarButton"><a href="#">Info</a></li>
+		<li class="toolbarButton"><a href="#">Reply</a></li>
+		<li class="toolbarButton"><a href="#">Forward</a></li>
+		<li class="toolbarButton">{{ message.CreationDate }}</li>
+	</ul>
+</div>
+#}
+
+{% if message['type'] == 'bundle' %}
+	{{ messageBody | raw }}
+{% else %}
+	{{ message.printMessageBody | raw }}
+{% endif %}
+</body>
+</html>

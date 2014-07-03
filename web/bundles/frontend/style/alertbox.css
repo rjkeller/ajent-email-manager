@@ -1,0 +1,29 @@
+/*** WG ALERT BOXES ***/
+.redbox { background: url(/bundles/frontend/images/redbox-top.gif) no-repeat top left; padding-top: 11px;}
+.redbox3 { background: url(/bundles/frontend/images/redbox-bottom.gif) no-repeat bottom left; padding-bottom: 11px;}
+
+.greenbox2 { background: url(/bundles/frontend/images/greenbox-top.gif) no-repeat top left; padding-top: 11px;}
+.greenbox { background: url(/bundles/frontend/images/greenbox-bottom.gif) no-repeat bottom left; padding-bottom: 11px;}
+
+.redbox2 {
+	padding-left: 10px;
+	background: transparent url(/bundles/frontend/images/redbox-middle.gif) repeat-y top left; }
+
+.redbox2 { color: #333; text-align: left; }
+.redbox2 h2,
+.yellowbox h2,
+.greenbox h2 {
+    background: url('/bundles/frontend/images/redbox-border.gif') no-repeat left bottom;
+    font-size: 1.2em;
+    color: #353430;
+    margin: 0;
+    line-height: 1.75em;
+    font-weight: normal;
+}
+.greenbox h2 { background: url('/bundles/frontend/images/happybox-line.gif') no-repeat left bottom; }
+.yellowbox h2 { background: url('/bundles/frontend/images/warningbox-line.gif') no-repeat left bottom; }
+
+.yellowbox { background: transparent url(/bundles/frontend/images/yellowbox-middle.gif) repeat-y top left; }
+.greenboxContent { background: transparent url(/bundles/frontend/images/greenbox-middle.gif) repeat-y top left; }
+
+.yellowbox { padding-left: 10px; }

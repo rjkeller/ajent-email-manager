@@ -1,0 +1,5 @@
+services:
+    AlertMailListener:
+        class: Ajent\AlertBundle\Event\AlertMailListener
+        tags:
+            - { name: kernel.event_listener, event: MailBundle.EmailMessage.trash, method: onEmailMessageTrash }

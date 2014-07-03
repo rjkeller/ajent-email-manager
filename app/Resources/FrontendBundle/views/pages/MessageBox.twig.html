@@ -1,0 +1,80 @@
+{% if error['title'] != null %}
+<div class="error-box">
+	<div class="error-box-top">&nbsp;</div>
+
+    <div class="line">
+    	<div class="unit" style="width: 60px; text-align: right;">
+    		<img src="/bundles/ajent/images/errorbox/error-icon.png">
+    	</div>
+    	<div class="unit" style="width: 518px;">
+    	    <h3>{{ error['title'] }}</h3>
+		    {% if error['message'] | length == 1 %}
+		        <p>{{ error['message'][0] | raw }}</p>
+		    {% else %}
+		        <ul>
+		        {% for errorItem in error['message'] %}
+		            <li>{{ errorItem | raw }}</li>
+		        {% endfor %}
+		        </ul>
+		    {% endif %}
+    	</div>
+	</div>
+
+	<div class="error-box-bottom">&nbsp;</div>
+</div>
+
+{% endif %}
+
+{% if success['title'] != null %}
+
+
+<div class="happy-box">
+	<div class="happy-box-top">&nbsp;</div>
+
+    <div class="line">
+    	<div class="unit" style="width: 60px; text-align: center; padding-top: 5px;">
+    		<img src="/bundles/ajent/images/happybox/icon.png">
+    	</div>
+    	<div class="unit" style="width: 518px;">
+    	    <h3>{{ success['title'] }}</h3>
+		    {% if success['message'] | length == 1 %}
+		        <p>{{ success['message'][0] | raw }}</p>
+		    {% else %}
+		        <ul>
+		        {% for successItem in success['message'] %}
+		            <li>{{ successItem | raw }}</li>
+		        {% endfor %}
+		        </ul>
+		    {% endif %}
+    	</div>
+	</div>
+
+	<div class="happy-box-bottom">&nbsp;</div>
+</div>
+{% endif %}
+
+{% if warning['title'] != null %}
+<div class="messagebox">
+<img src="/bundles/frontend/images/yellowbox-top.gif" alt="" width="583" height="11" border="0" class="navimg">
+
+<div class="yellowbox">
+    <table width="565" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="50"><img src="/bundles/frontend/images/warningbox-img.gif" align="absmiddle"></td>
+            <td style="color:#333">
+			    <h2>{{ warning['title'] }}</h2>
+			    {% if warning['message'] | length == 1 %}
+			        {{ warning['message'][0] | raw }}
+			    {% else %}
+			        {% for warningItem in warning['message'] %}
+			            - {{ warningItem | raw }}<br>
+			        {% endfor %}
+			    {% endif %}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<img src="/bundles/frontend/images/yellowbox-bottom.gif" alt="" width="583" height="11" class="navimg">
+</div>
+{% endif %}

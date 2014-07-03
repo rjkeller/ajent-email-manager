@@ -1,0 +1,69 @@
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Edit User</title>
+
+<link rel="stylesheet" type="text/css" href="/bundles/useradmin/css/style.css">
+<script type="text/javascript" src="/bundles/useradmin/js/wax.js"></script>
+
+{% endblock %}
+
+
+
+{% block content %}
+<div class="line">
+	<div class="unit size3of4">
+
+<h1><img src="/images/admin_images/profile_mds.gif" alt="" width="30" height="32" align="absmiddle"> {{ user['username'] }}</h1>
+
+<table width="100%">
+    <tr>
+        <td>Permissions:</td>
+        <td><input type="radio" name="role" value="accountant"> Accountant - Can only view billing and search status<br>
+            <input type="radio" name="role" value="administrator"> Administrator - Can view everything<br>
+            <input type="radio" name="role" value="developer"> Developer - Can view everything except billing<br>
+    </tr>
+</table>
+
+
+<? //-------------------------- END TABS --------------------------------------// ?>
+	</div>
+	<div class="unit size1of4">
+		<div class="alerts">
+			<h3><img src="/bundles/useradmin/images/AddOn_sm.gif" width="32" height="32" alt="" align="absmiddle"> User Options</h3>
+    <table>
+      <tr>
+        <td>Created:</td>
+        <td>{{ user['creation_date'] }}</td>
+      </tr>
+      <tr>
+        <td>Role:</td>
+        <td>{{ user['role'] }}</td>
+      </tr>
+    </table>
+    <table id="mymsg" cellpadding="0" cellspacing="0" width="100%">
+
+      <tr class="waxoff" onmouseover="this.className='hilight'" onmouseout="this.className='waxoff'">
+        <td align="center">
+        	<a href="#"><img src="/bundles/useradmin/images/banlist_32.png" width="24" height="24" border="0" alt=""></a>
+        </td>
+        <td>
+            <a href="#">Delete</a></td>
+      </tr>
+      <tr class="waxoff" onmouseover="this.className='hilight'" onmouseout="this.className='waxoff'">
+        <td align="center">
+        	<a href="{Shadowbox->showShadowbox name="acctNote"}">
+        		<img src="/bundles/useradmin/images/logout_32.png" width="24" height="24" border="0" alt=""></a>
+        </td>
+        <td>
+            <a href="{Shadowbox->showShadowbox name="resetpasswd"}">Reset Password</a></td>
+      </tr>
+  </table>
+
+		</div>
+	</div>
+</div>
+
+{% endblock %}

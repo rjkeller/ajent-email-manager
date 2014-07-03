@@ -1,0 +1,28 @@
+{#
+<ul>
+{% for category in categories %}
+	<li>
+		{% if message['category_id'] == category['_id'] %}<em>{% endif %}
+		<a href="/messages/{{ message['_id'] }}/body/changeCategory/{{ category['_id'] }}">{{ category['name'] }}</a>
+		{% if message['category_id'] == category['_id'] %}</em>{% endif %}
+	</li>
+{% endfor %}
+</ul>
+#}
+
+<ul>
+{% for category in categories %}
+	<li>
+		{% if message['category_id'] == category['_id'] %}<em>{% endif %}
+		<a href="javascript:showLightbox(document.getElementById('CategoryChange{{ category['_id'] }}'))">{{ category['name'] }}</a>
+		{% if message['category_id'] == category['_id'] %}</em>{% endif %}
+
+		{% include "MailBundle:shadowbox:CategoryChange.twig.html"
+			with {
+				'incr': category['_id'],
+				'message_id': message['_id']
+			}
+		%}
+	</li>
+{% endfor %}
+</ul>

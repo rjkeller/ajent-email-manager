@@ -1,0 +1,11 @@
+This message was created automatically by the Ajent Mail Delivery system.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  {{ email_address }}
+	{{ error }}
+
+------ This is a copy of the message, including all the headers. ------
+
+{{ funcs.StreamEmail() }}

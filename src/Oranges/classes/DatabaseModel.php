@@ -1,0 +1,391 @@
+<?php
+namespace Oranges\classes;
+
+/**
+ A database model in the WordGrab system
+
+ @author R.J. Keller <rjkeller@wordgrab.com>
+ */
+abstract class DatabaseModel
+{
+	private $tableName = "";
+	protected $row;
+	/**
+	 An array of booleans. The boolean is set to true if the specified row was
+	 modified.
+	*/
+	protected $isChanged;
+
+	private $dbh;
+
+	private $wasInited = false;
+
+	private $convertCheckboxesToBool = false;
+	private $encrypt;
+
+	private $key;
+
+	/**
+	 Returns the name of this table.
+	*/
+	abstract protected function getTable();
+
+	/**
+	 Initialize the $this->row and $this->encrypt variables.
+	*/
+	abstract protected function getRows();
+
+	/**
+	 If you want debug output to be printed by this class, set this equal to
+	 true.
+	*/
+	public $printOnly = false;
+
+	/**
+	 @param $tableName - The name of the table to use in this object instance.
+	 @param $dbh - The database connection to use for all SQL operations.
+	 @param $key - If this table uses encryption, then pass in the key to
+	   encrypt with.
+	 */
+	public function __construct($dbh = null, $key = null)
+	{
+		if ($key == null)
+			$key = "f|7hk&O*U[g\$D%IE4fw@*&v\$+zki]N";
+		if ($dbh == null)
+			$dbh = Database::getDatabase();
+
+		$this->key = $key;
+
+		$this->row = $this->getRows();
+
+		$this->isChanged = $this->getRows();
+		foreach ($this->isChanged as $key => $value)
+			$this->isChanged[$key] = false;
+
+		$this->tableName = $this->getTable();
+		$this->dbh = $dbh;
+
+		if (!($dbh instanceof mysqli))
+			throw new UnrecoverableSystemException("", "",
+				"SQL Error: Database is not of type mysqli");
+	}
+
+	public function __get($get) { return $this->getColumn($get); }
+	public function __set($set, $val) { $this->setColumn($set, $val); }
+
+	/**
+	 Sets the value of the specified column in MySQL.
+	
+	 @param $set - The name of the column.
+	 @param $val - The value to set the column to.
+	*/
+	public function setColumn($set, $val)
+	{
+		//ignore bogus data
+		if (!array_key_exists($set, $this->row))
+			throw new InternalException("row $set doesn't exist");
+		$this->isChanged[$set] = true;
+		$this->row[$set] = $val;
+	}
+
+	/**
+	Returns the value of the specified column.
+	
+	@param $get - The name of the column.
+	@return The value of the column passed in.
+	*/
+	public function getColumn($get)
+	{
+		if (!array_key_exists($get, $this->row))
+			throw new InternalException("row $get doesn't exist");
+		return $this->row[$get];
+	}
+
+	/**
+	 Load the row with the specified ID from this table for modification.
+	 */
+	public function load($id, $forceSuccess = false)
+	{
+		return $this->loadQuery("id = '$id'", $forceSuccess);
+	}
+
+	/**
+	 Load the row with the specified query parameters from this table for modification.
+	 */
+	protected function loadQuery($query, $forceSuccess = false)
+	{
+		$rows = $this->getRowString();
+		$results = $this->query("
+			SELECT
+				$rows
+			FROM
+				$this->tableName
+			WHERE
+				$query
+			LIMIT
+				1
+		");
+		$out = $this->parseArray($results->fetch_assoc());
+		$results->close();
+
+		if (empty($out['id']))
+		{
+			if ($forceSuccess)
+				return false;
+			throw new UnrecoverableSystemException("", "",
+				"Cannot initialize $this->tableName because table row does not exist: $query");
+		}
+
+		$this->row = $out;
+		$this->wasInited = true;
+		return true;
+	}
+
+	/**
+	 Run this function to convert checkboxe values to booleans MySQL Boolean
+	 values for the setArray function (helps automate form processing)
+	 */
+	public function convertCheckboxesToBool()
+	{
+		$this->convertCheckboxesToBool = true;
+	}
+
+	/**
+	 Returns an array with key=>value pairs that correspond a column to the
+	 value stored in the class.
+	*/
+	public function getArray()
+	{
+		return $this->row;
+	}
+
+	/**
+	 This function is useful for form output (because you can do
+	 setArray($_POST)). The idea here is to take all the values in the array
+	 and set them to the values in the table.
+
+	 @param $array - The array to update values in this table with.
+	 */
+	public function fill($array)
+	{
+		if (!is_array($array))
+			throw new UnrecoverableSystemException("", "",
+				"Argument to DatabaseModel->fill() is not an array.");
+
+		foreach ($this->row as $key => $value)
+		{
+			if (isset($array[$key]))
+			{
+				if ($this->convertCheckboxesToBool && $array[$key] == "on")
+					$this->row[$key] = true;
+				else
+					$this->row[$key] = $array[$key];
+			}
+		}
+	}
+
+	public function fillWithObject($obj)
+	{
+		$this->initRow();
+
+		foreach ($this->row as $key => $value)
+		{
+			if ($key == "id")
+				continue;
+			if (isset($obj->$key))
+			{
+				if ($this->convertCheckboxesToBool && $array[$key] == "on")
+					$this->row[$key] = true;
+				else
+					$this->row[$key] = $obj->$key;
+			}
+		}
+	}
+
+	/**
+	 Inserts these entries into the database. It also generates a unique 33
+	 character id that goes in the ID column of the table.
+	 */
+	public function create($cap = false, $generateNewId = true)
+	{
+		$query = $this->getCreateQuery($cap, $generateNewId);
+
+		$this->query($query);
+
+		//if applicable, update the "id" attribute. If the ID is manually
+		//generated by the user, then do nothing.
+		if ($this->row['id'] == "NULL")
+		{
+			$this->row['id'] = $this->dbh->insert_id;
+		}
+		$this->wasInited = true;
+
+		return $this->row['id'];
+	}
+
+	/**
+	 Returns the SQL query executed if you were to run the create() function.
+	 This helps with certain scripts that need to generate recommended SQL
+	 operations.
+	*/
+	public function getCreateQuery($cap = false, $generateNewId = true)
+	{
+		$values = "";
+		$isStart = true;
+
+		foreach ($this->row as $col => $i)
+		{
+			ForceError::$inst->checkStr($i, true);
+			if ($isStart)
+				$isStart = false;
+			else
+				$values = $values . ", ";
+
+			if ($this->encrypt[$col])
+				$values .= "AES_ENCRYPT('$i', '$this->key')";
+			else if ($col == "timestamp")
+				$values .= "'". date("Y-m-d H:i:s") . "'";
+			else if ($i == "DEFAULT" || $i == "NULL" || $i == "TRUE" ||
+					 $i == "FALSE")
+				$values .= $i;
+			else
+				$values .= "'$i'";
+		}
+
+		return "INSERT INTO $this->tableName VALUES ($values)";
+	}
+
+	/**
+	 Updates the SQL ID with $this->id to the entry values in this table.
+	 */
+	public function save()
+	{
+		if (!$this->wasInited)
+				throw new UnrecoverableSystemException("", "",
+					"DatabaseModel Error: Cannot update entry without an initialization");
+
+		$results = $this->query("DESCRIBE $this->tableName");
+		$values = "";
+		$isStart = true;
+
+		$id = -1;
+
+		foreach ($this->row as $key => $value)
+		{
+			ForceError::$inst->checkStr($key, true);
+			ForceError::$inst->checkStr($value, true);
+			if ($key == "id")
+				continue;
+
+			if ($isStart)
+				$isStart = false;
+			else
+				$values = $values . ", ";
+
+		if ($this->encrypt[$key])
+		$values .= "
+			$this->tableName.$key = AES_ENCRYPT('$value', '$this->key')";
+			else if ($value == "DEFAULT" || $value == "NULL" || $value == "TRUE" ||
+					 $value == "FALSE")
+				$values = $values . "$this->tableName.$key = $value";
+			else
+				$values = $values . "$this->tableName.$key = '$value'";
+		}
+
+		$query = "
+			UPDATE
+				$this->tableName
+			SET
+				$values
+			WHERE
+				id = '". $this->row['id'] ."'
+		";
+		$this->query($query);
+	}
+
+	/**
+	 Deletes the row currently loaded, but does NOT clear its contents from
+	 this class instance.
+	*/
+	public function delete()
+	{
+		Database::query("
+			DELETE FROM
+				". $this->tableName ."
+			WHERE
+				id = '". $this->id ."'
+		");
+	}
+
+	/**
+	 Makes a copy of this row, and returns the ID of the newly created row.
+	 Note that this class will be updated to reflect the COPYied row, NOT the 
+	 original row. The original row will be forgotten in this class.
+	*/
+	public function copy($cap = false, $generateNewId = true)
+	{
+		//refresh the ID attribute.
+		$rows = $this->getRows();
+		$this->row['id'] = $rows['id'];
+
+		return $this->create($cap, $generateNewId);
+	}
+
+	//------------------------- PRIVATE METHODS -----------------------------//
+	private function query($q)
+	{
+		if ($this->printOnly)
+		{
+			echo $q ."<br>";
+			return;
+		}
+		SqlProfiler::addQuery($q);
+		if ($this->dbh == null)
+			throw new UnrecoverableSystemException("", "",
+				"Cannot connect to SQL database. Please try again later.");
+		$out = $this->dbh->query($q);
+		if (!$out)
+			$this->throwSqlException($q);
+		return $out;
+	}
+
+	//helper function for query($q).
+	static $count = 0;
+	private function throwSqlException($q)
+	{
+		$error = mysqli_error($this->dbh);
+		throw new UnrecoverableSystemException("", "",
+			"MySQL Error on Query:<br>$error<br>$q");
+	}
+
+	private function getRowString()
+	{
+		$rowName = "";
+		foreach ($this->row as $key => $value)
+		{
+			if ($rowName != null)
+				$rowName .= ",";
+			else
+				$rowName = "";
+
+			if ($this->encrypt[$key])
+				$rowName .= "AES_DECRYPT(`$key`, '$this->key')";
+			else
+				$rowName .= "`$key`";
+		}
+		return $rowName;
+	}
+
+	private function parseArray($array)
+	{
+		$a = array();
+		foreach ($this->row as $key => $value)
+		{
+			if ($this->encrypt[$key])
+				$a[$key] = $array["AES_DECRYPT(`$key`, '$this->key')"];
+			else
+				$a[$key] = $array[$key];
+		}
+		return $a;
+	}
+}

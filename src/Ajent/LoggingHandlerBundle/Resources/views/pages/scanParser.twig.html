@@ -1,0 +1,20 @@
+
+  	<td align="center" width="46"><a href="javascript:toggle('Results{{ logEntry['_id'] }}')"><img src="
+	{% if logEntry['is_good'] == "1" %}
+		/bundles/logging/images/DatabaseAdd_sm.gif
+	{% elseif logEntry['is_good'] == "neutral" %}
+			/bundles/logging/images/Database_esm.gif
+	{% else %}
+		/bundles/logging/images/DatabaseAuto_esm.gif
+	{% endif %}
+	" width="30" alt=""></a></td>
+    <td><a href="javascript:toggle('Results{{ logEntry['_id'] }}')">{{ logEntry.ShortDescription }}</a><a href="javascript:toggle('Results{{ logEntry['_id'] }}')">{{ logEntry['_id'] }}</a></td>
+    <td align="right" style="padding-right:5px;width: 150px;"><a href="javascript:toggle('Results{{ logEntry['_id'] }}')">{{ logEntry.Timestamp }}</a><a href="/logging?json={'user_id': '{{ logEntry['user_id'] }}'}"><img src="/bundles/logging/images/profile_mds.gif" height="16" align="absmiddle"> {{ logEntry.Username }}</a>
+</td>
+  </tr>
+  <tr id="Results{{ logEntry['_id'] }}" style="display:none;">
+	<td colspan="3">
+		<textarea rows="10" cols="67" wrap="off" style="width: 100%">
+{{ logEntry.printLogEntry }}
+</textarea>
+	</td>  

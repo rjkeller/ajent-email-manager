@@ -1,0 +1,140 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% set tab = 'support' %}
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>View Profile - {{ company_name_short }}</title>
+<link rel="stylesheet" type="text/css" href="/bundles/socialmail/css/mail.css">
+<link rel="stylesheet" type="text/css" href="/bundles/social/css/landing.css">
+<link rel="stylesheet" type="text/css" href="/bundles/top10/css/top10.css">
+
+<script src="/jquery.js"></script>
+<script src="/ui/jquery.ui.core.js"></script>
+<script src="/ui/jquery.ui.widget.js"></script>
+
+<script src="/ui/jquery.ui.mouse.js"></script>
+<script src="/ui/jquery.ui.sortable.js"></script>
+<script src="/ui/jquery.ui.draggable.js"></script>
+<script src="/ui/jquery.ui.droppable.js"></script>
+<script>
+$(function() {
+    $('.cloneBox .innerBox').each(function(){
+        //$(this).data('id',$(this).attr('id'));
+        $(this).attr('data-id',$(this).attr('id'));
+    });
+    var setUpSortable= function() {
+        $( ".dragBox" ).sortable({
+			connectWith: '.dragBox',
+            start: function(event,li){
+                $(event.srcElement).addClass('isold');
+            },
+            update: function(event,li){
+                $(event.srcElement).attr('id',$(event.srcElement).data('id'));
+				// so if > 5
+				if ($(this).children().length > 5) {
+					//ui.sender: will cancel the change.
+					//Useful in the 'receive' callback.
+					$(li.sender).sortable('cancel');
+					$(li.sender).draggable('cancel');
+				}
+                $('.cloneBox .isold').removeClass('isold');
+                setUpSortable();//re-initialize sortable
+            }
+        });
+        $('.cloneBox .innerBox').draggable({ opacity: 0.7, helper: "clone" , connectToSortable:".cloneBox,.dragBox",revert:false});
+        $( ".cloneBox,.dragBox" ).disableSelection();
+    };
+    setUpSortable();
+});
+
+</script>
+
+<style type="text/css">
+
+.dragBox:first-child img {
+	display: none;
+}
+
+.box .mainBox .innerBox {
+	height:45px;
+}
+
+</style>
+
+
+<script type="text/javascript" src="/ajax.js"></script>
+<script type="text/javascript">
+
+
+function showButton(id)
+{
+	document.getElementById(id).style.visibility = "visible";
+}
+function hideButton(id)
+{
+	document.getElementById(id).style.visibility = "hidden";
+}
+
+</script>{% endblock %}
+
+
+
+
+
+{% block tabs %}
+{% set leftNavTab = 'Activities' %}
+{% include 'SocialBundle:nav:Profile.twig.html' %}
+{% endblock %}
+
+
+{% block content %}
+{% include "SocialBundle:shadowbox:PhotoUpload.twig.html" %}
+<div class="line">
+	<div class="unit" style="width: 308px;">
+
+		<div class="leftNav">
+			<h2>Hello, {{ profile['name'] }}!</h2>
+
+			<div class="line">
+				<div class="unit" style="width: 112px;">
+					<div style="padding: 5px;">
+					<img src="
+					{% render 'SocialBundle:ProfilePicture:index' with {
+						'user_id': profile['user_id']
+						}
+					%}" width="101" height="102">
+					</div>
+				</div>
+				<div class="unit" style="width: 190px;">
+
+					<ul>
+						<li>156 Followers</li>
+					</ul>
+					
+					You currently have 12 unread offers and 3 new followers.
+
+					<button class="button" onclick="showLightbox(document.getElementById('ProfilePhotoUpload'))" style="margin-top:9px">
+						Edit Page
+					</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="unit" style="width: 732px;">
+		<div style="padding-left: 15px;">
+			<h1 class="top10h1">My Favorites</h1>
+
+			{% for category in categories %}
+				{% render 'Top10Bundle:Index:printCategoryList' with {
+					'category': category
+				} %}
+			{% endfor %}
+
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "::layout.twig.html" %}
+{% block metatags %}
+<script type="text/javascript">
+function remove(id) {
+    showLightbox(document.getElementById(id));
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="/bundles/cart/css/cart.css">
+{% endblock metatags %}
+{% block content %}
+{% include "CartBundle:shadowbox:removeAllCartItems.twig.html" %}
+
+<form method="POST" action="/purchase/load" name="sfm">
+
+{% include "CartBundle:ajax:cart.twig.html" %}
+
+</form>
+
+{% endblock content %}

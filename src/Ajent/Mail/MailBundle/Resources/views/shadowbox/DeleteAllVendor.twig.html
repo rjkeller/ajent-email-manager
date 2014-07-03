@@ -1,0 +1,18 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'DeleteAllVendor',
+	'form': 'DeleteAllVendor',
+	'alert': 'BlueAlert'
+}
+%}
+
+<h1>Delete All of Vendor</h1>
+
+<p>Are you sure you want to delete all emails of this vendor?</p>
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Delete',
+	'noButton': 'Cancel'
+}
+%}

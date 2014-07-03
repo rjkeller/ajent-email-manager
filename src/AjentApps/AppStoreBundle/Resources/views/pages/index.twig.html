@@ -1,0 +1,29 @@
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Welcome to Ajent!</title>
+{% endblock metatags %}
+
+
+{% block content %}
+<h1>
+	Ajent App Store
+</h1>
+
+<table width="100%">
+{% for app in apps %}
+	<tr>
+		<td><img src="{{ app['image'] }}"></td><td>
+<h2>{{ app['name'] }}</h2>
+<p>{{ app['description'] }}
+<p><a href="{{ path('AppStoreBundlePurchaseApp', { 'id': app['id'] } ) }}">
+	Purchase App!</a></p>
+
+		</td>
+	</tr>
+{% endfor %}
+</table>
+
+{% endblock content %}

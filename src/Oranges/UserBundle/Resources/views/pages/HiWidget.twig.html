@@ -1,0 +1,13 @@
+{% if is_logged_in %}
+<ul>
+	<li><strong>Welcome {{ user['username'] }}!</strong>
+	<ul>
+		<li><a href="/logout">Logout</a></li>
+	</ul></li>
+</ul>
+{% else %}
+<ul>
+	<li><a href="/login">Login</a></li>
+	<li><a href="/register">Join {{ company_name }}!</a></li>
+</ul>
+{% endif %}

@@ -1,0 +1,382 @@
+
+.scan-table th {
+	border-top: 1px solid #e5e5e5;
+}
+.scan-table td,
+.scan-table th {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+/* **************** DROP DOWN MENUS ***************** */
+
+.menu {
+	position: absolute;
+	visibility: hidden;
+	background: white;
+	width: 150px;
+	z-index: 100000;
+
+	border: 1px solid #ccc;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.menu ul { padding: 0; margin: 0; width: 100%; }
+.menu ul li,
+.topHeader .tabs .menu ul li { list-style: none; float: none; padding: 0; }
+.tabboxContent .tabs .menu li { background: none; float: none; width: auto; }
+.tabboxContent .tabs .menu li a { color: #666; line-height: 100%; }
+
+#topnav li .menu li { padding: 0; border: none; float: none; width: 150px; }
+
+.menu ul li:first-child a { border-top: none; }
+.menu ul li a {
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+	padding: 5px 5px 5px 10px;
+	border-top: 1px solid #ccc;
+	color: #A7A084;
+	text-align: left;
+	font-weight: normal;
+	text-transform: none;
+}
+.menu ul li a:hover { background: #f3a421; text-decoration: none; color: #fff; }
+
+
+/* **************** SHADOWBOX ***************** */
+
+#lightboxDetails{
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; color: black; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay {
+	filter:alpha(opacity=40); /* Transparency */
+	opacity:0.4; /* Transparency */
+	background-color: #111;
+}
+
+* html #overlay{
+	background-color: #111;
+	back\ground-color: transparent;
+	background-image: url(/css/blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/lightbox-overlay.png", sizingMethod="scale");
+}
+
+.lc { display: none; background: white; }
+
+.shadowboxContent {
+	background: transparent url('/bundles/ajent/images/shadowbox/box-middle.png') repeat-y scroll right top;
+	padding: 15px 30px;
+}
+
+.shadowboxContent label {
+	text-transform: uppercase;
+}
+
+.shadowboxContent h1 {
+	font-weight: bold;
+	color: black;
+	margin-top: 0;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+.shadowboxTop {
+	background: url('/bundles/ajent/images/shadowbox/box-top.png') no-repeat;
+	height: 16px;
+	margin-left: 11px;
+}
+
+.shadowboxBottom {
+	background: url(/bundles/ajent/images/shadowbox/box-bottom.png) no-repeat left bottom;
+	height:18px;
+	margin-left: 11px;
+}
+
+.ui-datepicker { font-size: 0.8em !important;}
+
+
+/* **************** GRIDS ***************** */
+.line:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.lastUnit:after{content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";visibility:hidden; clear:both;height:0 !important;display:block;line-height:0;}
+.line{*zoom:1;}
+.unit{float:left;}
+.size1of1{float:none;}
+.size1of2{width:50%;}
+.size1of3{width:33.33333%;}
+.size2of3{width:66.66666%;}
+.size1of4{width:25%;}
+.size3of4{width:75%;}
+.size1of5{width:20%;}
+.size2of5{width:40%;}
+.size3of5{width:60%;}
+.size4of5{width:80%;}
+
+
+/* **************** BUTTONS AND TEXTBOXES ***************** */
+
+.textfield input {
+	width: 100%;
+}
+
+.inputbox, .textbox {
+    border: 1px solid #d0d0d0;
+    font-size: 1em;
+}
+.inputbox {
+    width: 200px;
+	height: 18px;
+	padding: 3px;
+	color: #aeaeae;
+	font-family: 'Palatino Linotype', Palatino, 'Times New Roman';
+}
+
+select.inputbox {
+	height: 25px;
+}
+
+
+.superButton {
+	background: url('/bundles/ajent/images/button-left.png') no-repeat top left;
+	padding-left: 3px;
+	height: 25px;
+	float: left;
+}
+
+.superButton input {
+	background: #ce3234 url('/bundles/ajent/images/button-right.png') no-repeat top right;
+	padding: 2px 13px 0 10px;
+	height: 20px;
+
+	color: white;
+	text-align: center;
+	border: none;
+	font: bold 0.9em MryDlReg;
+	text-transform: uppercase;
+}
+
+.awesome, .button, .big-button {
+	height: 26px;
+	color: white;
+	text-align: center;
+	border: none;
+	font: bold 0.9em Helvetica, sans-serif;
+	padding: 6px;
+}
+.button {
+	background: url('/bundles/ajenthomepage/images/button.png') repeat-x;
+}
+.awesome, .big-button {
+	background: url('/bundles/ajenthomepage/images/awesome-button.png') repeat-x;
+}
+
+.button:hover {
+	background: url('/bundles/ajenthomepage/images/button-hover.png') repeat-x;
+	color: white;
+}
+
+.awesome:hover, .big-button:hover {
+	background: url('/bundles/ajenthomepage/images/awesome-button-hover.png') repeat-x;
+	color: white;
+}
+
+
+a.button {
+	padding-bottom: 0;
+}
+
+a.button:hover {
+	text-decoration: none;
+}
+
+body .big-button {
+	padding: 8px;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+
+.smallButton {
+	background: url('/bundles/ajent/images/button-small.gif') no-repeat;
+	width: 46px;
+	height: 18px;
+}
+
+.disabledButton {
+	background: url('/bundles/ajent/images/button-disabled.gif') no-repeat;
+}
+
+.alerts h3 {
+	border-bottom: 1px dotted #ccc; margin-top: 0;
+}
+
+/* **************** REGISTRATION PAGE HELP BOX ***************** */
+.helpBlurb {
+	position: absolute;
+	font-size: 0.8em;
+	line-height: 100%;
+	color: white;
+	margin-top: -32px;
+	margin-left: 5px;
+	visibility: hidden;
+	background: url('/bundles/ajent/images/help-blurb/bottom.png') no-repeat bottom left;
+}
+.helpBlurb div {
+	width: 170px;
+	padding: 10px 10px 5px 30px;
+	background: url('/bundles/ajent/images/help-blurb/top.png') no-repeat;
+	margin-bottom: 11px;
+}
+
+.helpBlurb a {
+	color: white;
+}
+
+div.innerFormBox {
+	margin: 0;
+}
+
+.formBox input,
+.formBox select,
+.formBox label {
+	margin: 5px;
+}
+
+
+/********* MESSAGE BOXES ********/
+.error-box { width: 587px; background: url('/bundles/ajent/images/errorbox/error-box-middle.jpg') repeat-y; padding: 0 2px; }
+.error-box-top { width: 587px; height: 13px; background: url('/bundles/ajent/images/errorbox/error-box-top.jpg'); }
+.error-box-bottom { width: 587px; height: 13px; background: url('/bundles/ajent/images/errorbox/error-box-bottom.jpg'); }
+
+.error-box p,
+.happy-box p { margin: 0;}
+.error-box h3,
+.happy-box h3 { font-family: Arial; text-transform: uppercase; border-bottom: 1px dotted #999; margin: 0;}
+.error-box ul,
+.happy-box ul { margin: 3px 0; padding: 0 20px; }
+.error-box ul li { list-style-image: url('/bundles/ajent/images/errorbox/error-bullet.png'); margin: 0; }
+.happy-box ul li { margin: 0; }
+
+
+.happy-box { width: 588px; background: url('/bundles/ajent/images/happybox/happy-box-middle.png') repeat-y; }
+.happy-box-top { width: 588px; height: 11px; background: url('/bundles/ajent/images/happybox/happy-box-top.png'); }
+.happy-box-bottom { width: 588px; height: 13px; background: url('/bundles/ajent/images/happybox/happy-box-bottom.png'); }
+
+
+.happy-box,
+.error-box {
+	font-size: 1.1em;
+}
+
+
+
+.category_title {
+	background: url('/bundles/ajenthomepage/images/theme2/category-background.png') repeat-x;
+	height: 31px;
+}
+
+div.noBgImage { background-image: none; }
+
+
+
+.box {
+	margin: 10px 0 0 10px;
+	background: white;
+}
+
+.testLine:after {
+	clear: both;
+}
+
+.box a {
+	color: #333;
+}
+
+.box h1 a {
+	color: black;
+	font-size: 1.2em;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+}
+
+.box h1 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 5px 5px 7px;
+	font-family: Arial,sans-serif;
+	text-transform: none;
+	text-align: left;
+}
+
+.box h1.red {
+	background: url('/bundles/ajenthomepage/images/background-dark.png');
+}
+
+.emailIcon {
+	width: 100px;
+	height: 100px;
+	display: block;
+}
+
+.innerTitle {
+	margin: 3px 0px 3px 30px;
+	display: block;
+}
+
+.fakeBox a {
+	color: #999;
+}
+
+.fakeBox {
+	border: 1px solid #ccc;
+	color: #999;
+}
+
+a.deleteButton {
+	background: url('/bundles/ajenthomepage/images/delete.png') no-repeat;
+	width: 12px;
+	height: 13px;
+	content: '';
+	float: right;
+}
+
+a:hover.deleteButton {
+	background: url('/bundles/ajenthomepage/images/delete-hover.png') no-repeat;
+	text-decoration: none;
+}
+
+a.editButton {
+	background: url('/bundles/ajenthomepage/images/edit_icon.png') no-repeat;
+	width: 16px;
+	height: 16px;
+	float: left;
+}
+
+a.editButtonHover {
+	text-decoration: none;
+	background: url('/bundles/ajenthomepage/images/edit_icon_hover.png') no-repeat;
+	background-position: 2px 2px;
+}
+
+a.addNewButton {
+	background: url('/bundles/ajenthomepage/images/add-new2.png') no-repeat;
+	padding-left: 20px;
+	margin-right: 15px;
+	height: 16px;
+	float: left;
+}
+
+a:hover.addNewButton {
+	text-decoration: none;
+	background: url('/bundles/ajenthomepage/images/add-new2_hover.png') no-repeat;
+	background-position: 2px 2px;
+}

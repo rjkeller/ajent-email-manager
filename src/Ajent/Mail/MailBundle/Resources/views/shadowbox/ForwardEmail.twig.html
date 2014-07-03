@@ -1,0 +1,27 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'ForwardEmail',
+	'form': 'ForwardEmail',
+	'alert': 'BlueAlert'
+}
+%}
+
+<h1>Forward Email</h1>
+
+<table width="100%" cellpadding="3">
+	<tr>
+		<td align="right"><label for="sendToEmail">Send To:</label></td>
+		<td><input type="text" id="sendToEmail" class="inputbox" size="30" name="to_email"></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><label for="forwardEmailMessage">Message</label></td>
+		<td><textarea name="message" class="textbox" id="forwardEmailMessage" style="width:200px;" rows="5"></textarea></td>
+	</tr>
+</table>
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Send',
+	'noButton': 'Cancel'
+}
+%}

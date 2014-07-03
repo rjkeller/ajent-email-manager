@@ -1,0 +1,128 @@
+{% block page %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+{% block metatags %}
+<title>{% block title %}Ajent{% endblock %}</title>
+{% endblock %}
+
+<link rel="stylesheet" type="text/css" href="/bundles/ajenthomepage/css/theme2.css">
+<link rel="stylesheet" type="text/css" href="/bundles/ajenthomepage/css/global.css">
+<link rel="stylesheet" type="text/css" href="/bundles/frontend/style/alertbox.css">
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="/bundles/ajent/css/ie.css">
+<![endif]-->
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+<script type="text/javascript" language="JavaScript" src="/lightbox.js"></script>
+
+
+{% block headTag %}
+{% endblock %}
+</head>
+
+<body onload="initLightbox();{% block onLoad %}{% endblock %}"{% if not is_logged_in %} style="background:#f3f3f3"{% endif %}>
+
+{% block body %}
+<div style="min-height: 100%; position: relative;">
+<div style="padding-bottom: 79px;">
+
+<div class="topHeader">
+<div class="content">
+	<div class="logo">
+		<a href="{{ path("Index") }}">
+		<img src="/bundles/ajenthomepage/images/theme2/logo.png">
+		</a>
+	</div>
+	<div class="topNav">
+		<ul>
+			{% if is_logged_in %}
+			<li><a href="{{ path('Index') }}">Inbox &nbsp;<img src="/bundles/ajenthomepage/images/theme2/inbox.png"></a></li>
+			<li><a href="{{ path('SocialBundleLanding') }}">Share &nbsp;<img src="/bundles/ajenthomepage/images/theme2/share.png"></a></li>
+			<li><a href="javascript:showLightbox(document.getElementById('InviteAFriend'))">Invite &nbsp;<img src="/bundles/ajenthomepage/images/theme2/invite.png"></a></li>
+{#
+			<li><a href="#" onmouseout="mclosetime();" onmouseover="mopen('appStoreBox');">App Store</a>
+				<div id="appStoreBox" class="menu" onmouseout="mclosetime()" onmouseover="mcancelclosetime()" style="visibility: hidden; float:right;">
+					<ul>
+						<li><a href="{{ path('AppStoreBundleAppStore') }}">Browse App Store</a></li>
+						<li><a href="{{ path('BillingBundle') }}">Billing</a></li>
+					</ul>
+				</div>
+			</li>
+#}
+			{% else %}{# is logged in #}
+				<li><img src="/bundles/ajent/images/theme2/your-smart-email-assistant.jpg" alt="Your SMART email assistant"></li>
+			{% endif %}
+		</ul>
+		
+		<div class="logout">
+
+			<div class="rightLinks">
+			{% if is_logged_in %}
+				<a href="{{ path('MailBundleVendor') }}">Subscriptions</a><a href="" onmouseout="mclosetime();" onmouseover="mopen('alerts');">Alerts</a><a href="{{ path('UserBundleLogout') }}">Logout</a>
+			{% else %}
+				<a href="/blog">Blog</a><a href="{{ path('UserBundleRegister') }}">Sign Up</a><a href="{{ path('UserBundleLogin') }}">Log in</a>
+			{% endif %}
+				<a href="{{ path('AjentBundleContactUs') }}" class="imgLink helpLink">&nbsp;</a>
+{% if is_logged_in %}
+{% render 'InviteAFriendBundle:Index:index' %}
+{% render 'AlertBundle:Alerts:index' %}
+{% endif %}
+			</div>
+		</div>
+	</div>
+
+	<div class="topSubNav">
+		{% block tabs %}
+		{% if is_logged_in %}
+			<ul class="tabs">
+			{% render 'CategoryWidgetBundle:Index:index' %}
+			</ul>
+		{% else %}
+			&nbsp;
+		{% endif %}
+		{% endblock %}
+	</div>
+</div>
+</div>
+
+<div class="content mainContent">
+
+{% render 'FrontendBundle:MessageBox:printErrorBoxes' %}
+
+{% block content %}
+{% endblock %}
+
+</div>
+
+
+</div>
+
+
+<div id="footer" class="lightGreenTop">
+<div id="footer2">
+	<div class="content">
+		<ul id="links">
+			<li class="firstItem"><a href="/blog">Blog</a></li>
+			<li><a href="{{ path('AjentBundleFaq') }}">FAQ</a></li>
+			<li><a href="{{ path('AjentBundlePrivacyPolicy') }}">Privacy</a></li>
+			<li><a href="{{ path('AjentBundleContactUs') }}">Contact Us</a></li>
+		</ul>
+		<div id="copyright">
+			&copy; 2012 {{ company_name_long }}
+		</div>
+	</div><br>&nbsp;
+</div>
+</div>
+{% endblock %}
+
+</div>
+</body>
+</html>
+{% endblock %}

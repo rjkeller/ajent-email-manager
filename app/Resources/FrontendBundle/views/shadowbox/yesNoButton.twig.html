@@ -1,0 +1,20 @@
+		</div>
+		<div class="line" style="text-align: center;">
+				{% if cmd is defined %}
+				<input type="button" onclick="{{ cmd }};hideLightbox()" class="infoButton awesome" value="{% if yesButton is defined %}{{ yesButton }}{% else %}Yes{% endif %}">
+				{% else %}
+				<input type="submit" class="infoButton awesome" value="{% if yesButton is defined %}{{ yesButton }}{% else %}Yes{% endif %}">
+				{% endif %}
+{#
+				<input type="button" onclick="hideLightbox()" class="infoButton awesome" value="{% if noButton is defined %}{{ noButton }}{% else %}No{% endif %}">
+#}
+		</div>
+
+		{% if cmd is not defined %}</form>{% endif %}
+		</div>
+		<div class="shadowboxBottom">
+			&nbsp;
+		</div>
+		</form>
+	</div>
+</div>

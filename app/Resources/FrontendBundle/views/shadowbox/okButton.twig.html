@@ -1,0 +1,21 @@
+		</div>
+		<div class="line" style="text-align: center;{% if style is defined %}{{ style }}{% endif %}">
+			{% if submitForm is defined %}
+			<input type="submit" class="button" value="OK"></td>
+			{% else %}
+				{% if cmd is defined %}
+				<input type="button" onclick="{{ cmd }};hideLightbox();" class="button" value="{% if label is defined %}{{ label }}{% else %}OK{% endif %}"></td>
+				{% else %}
+				<input type="button" onclick="hideLightbox()" class="button" value="{% if label is defined %}{{ label }}{% else %}OK{% endif %}"></td>
+				{% endif %}
+			{% endif %}
+		</div>
+
+		{% if cmd is not defined %}</form>{% endif %}
+		</div>
+		<div class="shadowboxBottom">
+			&nbsp;
+		</div>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+services:
+    Oranges.UserBundle.SessionManager:
+        class:     Oranges\UserBundle\Helper\SessionManager
+        arguments: [@database_connection]
+
+    twig.extension.TwigUserBundleExtension:
+        class:      Oranges\UserBundle\Helper\TwigUserBundleExtension
+        tags:
+            - { name: twig.extension }

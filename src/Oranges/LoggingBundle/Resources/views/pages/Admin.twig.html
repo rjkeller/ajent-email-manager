@@ -1,0 +1,112 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% extends "::layout2.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Logging Admin - {{ company_name_short }}</title>
+<link rel="stylesheet" type="text/css" href="/bundles/logging/css/log.css">
+<style type="text/css">
+	.waxon,.waxoff,.hilight { line-height: 1.8; }
+</style>
+<script>
+function toggle(id)
+{
+  var d = document.getElementById(id);
+  if (d.style.display == "none" || d.style.display == "")
+    d.style.display = "table-row";
+  else
+    d.style.display = "none";
+}
+
+function wghilight(e)
+{
+    e.className = 'hilight';
+}
+
+function wgwaxon(e, id)
+{
+	if (!document.getElementById(id) || !document.getElementById(id).checked)
+		e.className = "waxon";
+	else
+    	e.className = "hilight";
+}
+
+function wgwaxoff(e,id)
+{
+	if (!document.getElementById(id) || !document.getElementById(id).checked)
+		e.className = "waxoff";
+	else
+    	e.className = "hilight";
+}
+</script>
+
+{% endblock metatags %}
+
+
+
+{% block content %}
+
+<h1>Logging Admin</h1>
+
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+
+<table id="mymsg" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<th width="36">&nbsp;</th>
+		<th>Description</th>
+		<th align="center">Time of Request</th>
+	</tr>
+
+{% set i = 0 %}
+{% for logEntry in results %}
+{% set i = i + 1 %}
+{{ tableWax.start(i, logEntry['_id']) }}
+{% if logEntry.Template != "" %}
+{% include logEntry.Template with {
+	'logEntry': logEntry
+} %}
+{% else %}
+
+  	<td align="center" width="46"><a href="javascript:toggle('Results{{ logEntry['_id'] }}')"><img src="{{ logEntry.Image }}" width="30" alt=""></a></td>
+    <td><a href="javascript:toggle('Results{{ logEntry['_id'] }}')">{{ logEntry.ShortDescription }}</a><a href="javascript:toggle('Results{{ logEntry['_id'] }}')">{{ logEntry['_id'] }}</a></td>
+    <td align="right" style="padding-right:5px;width: 150px;"><a href="javascript:toggle('Results{{ logEntry['_id'] }}')">{{ logEntry.Timestamp }}</a><a href="/logging?json={% if logEntry['user_id'] is defined %}{'user_id': '{{ logEntry['user_id'] }}'}{% endif %}"><img src="/bundles/logging/images/profile_mds.gif" height="16" align="absmiddle"> {{ logEntry.Username }}</a>
+</td>
+  </tr>
+  <tr id="Results{{ logEntry['_id'] }}" style="display:none;">
+	<td colspan="3">
+		<textarea rows="10" cols="67" wrap="off" style="width: 100%">
+{{ logEntry.printLogEntry }}
+</textarea>
+	</td>  
+
+{% endif %}{# if logEntry.Template #}
+{{ tableWax.end(results) }}
+{% endfor %}
+<tr>
+	<td colspan="2">{% if searchResults.hasPrev() %}
+		<a href="{{ searchResults.prevLink }}">&lt; Back</a>
+		{% endif %}</td>
+	<td colspan="2" align="right">{% if searchResults.hasNext() %}
+		<a href="{{ searchResults.nextLink }}">Next &gt;</a>
+		{% endif %}</td>
+</tr>
+<tr>
+	<td colspan="5" align="center">{% if searchResults.min() != 0 or searchResults.max() != 0 %}
+		Displaying {{ searchResults.min() }} - {{ searchResults.max() }} of {{ searchResults.total() }}
+		{% endif %}</td>
+</tr>
+</table>
+
+<form method="GET">
+<p>Search Query (JSON):
+<textarea name="json" style="width: 100%" rows="5" cols"100">
+{
+}
+</textarea>
+<input type="submit" value="Go">
+</form>
+</p>
+{% endblock content %}
+
+

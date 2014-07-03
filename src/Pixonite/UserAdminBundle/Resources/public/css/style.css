@@ -1,0 +1,26 @@
+.waxon {
+    background-color: #F0F0EE;
+}
+.waxoff {
+    background-color: #FFFFFF;
+}
+.hilight {
+    background-color: #FEE0E8;
+}
+.waxon, .waxoff, .hilight {
+    height: 32px;
+    line-height: 2.5;
+    vertical-align: middle;
+}
+.waxon a, .waxoff a, .hilight a {
+    display: block;
+}
+
+th {
+    background: url("/bundles/usermanager/images/dot.gif") repeat-x scroll left bottom transparent;
+    font-weight: bold;
+    padding: 4px;
+}
+th {
+    text-align: left;
+}

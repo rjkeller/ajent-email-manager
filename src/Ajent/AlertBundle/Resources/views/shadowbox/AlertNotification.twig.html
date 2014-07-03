@@ -1,0 +1,35 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'AlertNotification',
+}
+%}
+
+<h1>Reminder!</h1>
+
+<table>
+	<tr>
+		<td>Message:</td>
+		<td>{{ alert['message'] }}</td>
+	</tr>
+	<tr>
+		<td>Date:</td>
+		<td>{{ alert.CreationDate }}</td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+
+		</div>
+		<div class="line" style="text-align: center;">
+			<input type="hidden" name="cid2" value="{{ alert['_id'] }}">
+			<a href="{{ alert.ViewEmailUrl }}" class="button">View Email</a>
+			<a href="{{ path('AlertRemindMeLater', { 'alert_id': alert['_id'] } ) }}" class="button">Remind Me Later</a>
+		</div>
+
+		</div>
+		<div class="shadowboxBottom">
+			&nbsp;
+		</div>
+		</form>
+	</div>
+</div>

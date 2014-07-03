@@ -1,0 +1,10 @@
+{% macro start(i, id) %}
+{% if i is not divisibleby(2) %}
+<tr class="waxon" onmouseover="wghilight(this)" onmouseout="wgwaxon(this, '{{ id }}')" id="{{ id }}">
+{% else %}
+<tr class="waxoff" onmouseover="wghilight(this)" onmouseout="wgwaxoff(this, '{{ id }}')" id="{{ id }}">
+{% endif %}
+{% endmacro %}
+{% macro end(i, id) %}
+</tr>
+{% endmacro %}

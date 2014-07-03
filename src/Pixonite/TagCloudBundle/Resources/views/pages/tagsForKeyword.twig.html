@@ -1,0 +1,26 @@
+{% set showBannerAdOnRightBar = true %}
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>{{ keyword }} {{ tagEntityName }} - {{ company_name }}</title>
+<meta name="description" content="Read about {{ keyword }} frauds or {{ keyword }} scams and see how to protect yourself from them. Post your own {{ keyword }} frauds to alert others of these type of {{ keyword }} scams.">
+<meta name="keywords" content="{{ keyword }} fraud, {{ keyword }} scams, scam, scams, fraud, frauds, scam reviews, complaints, auction, business, checks, credit card, dating, email, fraud requests, identity theft, loan Modification, lottery, money, nigerian, online, phishing, phone, timeshare" />
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="1 Week">
+<meta name="language" content="EN">
+<meta name="rating" content="general">
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1><img src="/images/icons/tags.gif" width="32" height="32" align="absmiddle" alt=""> {{ keyword }} {{ tagEntityName }}</h1>
+
+{% for beg in entries %}
+	{% include "BlogBundle:widgets:PrintBeg.twig.html" %}
+{% endfor %}
+
+{% endblock %}

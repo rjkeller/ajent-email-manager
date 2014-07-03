@@ -1,0 +1,18 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'AddCategory',
+	'form': 'AddCategory',
+	'alert': 'BlueAlert'
+}
+%}
+
+<h1>Add Category</h1>
+
+<p>Category Name: <input type="text" name="name" class="inputbox"></p>
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Add',
+	'noButton': 'Cancel'
+}
+%}

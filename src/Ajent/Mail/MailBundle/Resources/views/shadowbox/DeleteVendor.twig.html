@@ -1,0 +1,18 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'DeleteVendor',
+	'form': 'DeleteVendor',
+	'alert': 'BlueAlert'
+}
+%}
+
+<h1>Unsubscribe</h1>
+
+<p>Are you sure you want to unsubscribe from this vendor?</p>
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Yes',
+	'noButton': 'No'
+}
+%}

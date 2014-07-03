@@ -1,0 +1,18 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'DeleteAllFolder',
+	'form': 'DeleteAllFolder',
+	'alert': 'BlueAlert'
+}
+%}
+
+<h1>Delete All Messages in this Folder</h1>
+
+<p>Are you sure you want to delete all the emails in this folder?</p>
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Delete',
+	'noButton': 'Cancel'
+}
+%}

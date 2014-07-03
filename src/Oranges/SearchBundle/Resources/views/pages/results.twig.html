@@ -1,0 +1,6 @@
+<script type="text/javascript" src="/bundles/search/js/search_ajax.js"></script>
+<script type="text/javascript">search_query = '{{ search_query}}';</script>
+{% for message in results %}
+	<script type="text/javascript">search_allItems.push('{{ message['_id'] }}');</script>
+{% endfor %}
+{% include template %}

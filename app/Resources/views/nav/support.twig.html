@@ -1,0 +1,14 @@
+<h2>Support</h2>
+
+
+<ul class="leftnav">
+	<li{% if leftNavTab == "Activities" %} class="current"{% endif %}>
+		<a href="{{ path('SupportBundleKnowledgeBase') }}">Knowledge Base</a>
+	</li>
+	<li{% if leftNavTab == "Favorites" %} class="current"{% endif %}>
+		<a href="{{ path('SupportBundleNewTicket') }}">New Ticket</a>
+	</li>
+	<li{% if leftNavTab == "Favorites" %} class="current"{% endif %}>
+		<a href="{{ path('SupportBundlePhone') }}">Give us a call</a>
+	</li>
+</ul>

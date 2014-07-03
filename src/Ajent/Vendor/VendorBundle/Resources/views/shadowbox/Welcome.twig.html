@@ -1,0 +1,26 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'Welcome'
+}
+%}
+
+<h1 style="font-size: 1.6em">Welcome to @AJENT</h1>
+
+<p>Remember to use:</p>
+
+<h2>{{ user['username'] }}@{{ default_email_domain }}</h2>
+
+<p>When signing up for a new subscription, newsletter, or purchase an item!</p>
+
+<p>For ways you can use Ajent, <a class="button" href="{{ path('AjentBundleWhatIsAjent') }}">Click Here</a></p>
+
+<p>&nbsp;</p>
+
+		</div>
+		</div>
+		<div class="shadowboxBottom">
+			&nbsp;
+		</div>
+		</form>
+	</div>
+</div>

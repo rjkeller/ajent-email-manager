@@ -1,0 +1,74 @@
+{% if error['title'] != null %}
+<div class="redbox">
+	<div class="redbox3">
+		<div class="redbox2">
+			<div class="redboxContent line">
+				<div class="unit" style="width: 80px; text-align: center;">
+					<img src="/bundles/frontend/images/errorbox-img.gif" alt="" width="40" height="34">
+				</div>
+				<div class="unit" style="width: 450px;">
+
+				    <h2>{{ error['title'] }}</h2>
+				    {% if error['message'] | length == 1 %}
+				        {{ error['message'][0] | raw }}
+				    {% else %}
+				        {% for errorItem in error['message'] %}
+				            - {{ errorItem | raw }}<br>
+				        {% endfor %}
+				    {% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endif %}
+
+{% if success['title'] != null %}
+<div class="greenbox">
+	<div class="greenbox2">
+		<div class="greenboxContent line">
+			<div class="unit" style="width: 80px; text-align: center;">
+				<img src="/bundles/frontend/images/happybox-img.gif" alt="" width="40" height="34">
+			</div>
+			<div class="unit" style="width: 450px;">
+
+			    <h2>{{ success['title'] }}</h2>
+			    {% if success['message'] | length == 1 %}
+			        {{ success['message'][0] | raw }}
+			    {% else %}
+			        {% for successItem in success['message'] %}
+			            - {{ successItem | raw }}<br>
+			        {% endfor %}
+			    {% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+
+{% if warning['title'] != null %}
+<div class="messagebox">
+<img src="/bundles/frontend/images/yellowbox-top.gif" alt="" width="583" height="11" border="0" class="navimg">
+
+<div class="yellowbox">
+    <table width="565" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="50"><img src="/bundles/frontend/images/warningbox-img.gif" align="absmiddle"></td>
+            <td style="color:#333">
+			    <h2>{{ warning['title'] }}</h2>
+			    {% if warning['message'] | length == 1 %}
+			        {{ warning['message'][0] | raw }}
+			    {% else %}
+			        {% for warningItem in warning['message'] %}
+			            - {{ warningItem | raw }}<br>
+			        {% endfor %}
+			    {% endif %}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<img src="/bundles/frontend/images/yellowbox-bottom.gif" alt="" width="583" height="11" class="navimg">
+</div>
+{% endif %}

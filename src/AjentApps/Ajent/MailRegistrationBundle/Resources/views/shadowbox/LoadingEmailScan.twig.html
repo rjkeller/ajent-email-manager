@@ -1,0 +1,73 @@
+<head><title>Signup - Ajent</title>
+
+<link rel="stylesheet" type="text/css" href="/css/ajent.css">
+<link rel="stylesheet" type="text/css" href="/bundles/frontend/style/alertbox.css">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script type="text/javascript" language="JavaScript" src="/lightbox.js"></script>
+<style type="text/css"> form { margin: 0; }</style>
+
+<script type="text/javascript" src="/ajax.js"></script>
+<script type="text/javascript">
+function performScan()
+{
+	pingPage("{{ path('AjentBundleViewVendors') }}?scanVendors=1");
+}
+
+
+
+
+avail_elem = 0;
+function progress_bar() {
+    progress_status = $('#progressbar').progressbar('value');
+    progress_status_avail = ['twentyfive-percent', 'fifty-percent', 'seventyfive-percent', 'onehundred-percent'];
+    if (progress_status != '100') {
+        $.ajax({
+            url: '/sign-up/import_mail/progress?' + progress_status_avail[avail_elem],
+            success: function(msg) {
+				msg = parseInt(msg);
+			    $("#progressbar").progressbar({ value: msg });
+                avail_elem++;
+
+				if (msg != 100)
+                	progress_bar();
+				else
+				{
+					window.location.href = '{{ path('AjentBundleViewVendors') }}?page={{ lastPage }}';
+				}
+            }
+        });
+    }
+}
+
+$(document).ready(function() {
+  $("#progressbar").progressbar({ value: 0 });
+});
+
+</script>
+</head>
+<body onload="initLightbox();showLightbox(document.getElementById('LoadingBox'));progress_bar();performScan();">
+
+
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'redir': '/',
+	'name': 'LoadingBox',
+	'form': 'LoadingBox',
+	'alert': 'BlueAlert',
+	'noCloseButton': true
+}
+%}
+
+<img src="/bundles/ajent/images/loading.gif" width="331" height="93" alt="">
+
+<p>Patience is a virtue! (And also an important step as we scan your email subscriptions. Please do not click away from this screen. It should only take a couple of minutes at most.)</p>
+
+<div id="progressbar"></div>
+
+{% include "FrontendBundle:shadowbox:noButtons.twig.html" %}
+
+</body>
+</html>

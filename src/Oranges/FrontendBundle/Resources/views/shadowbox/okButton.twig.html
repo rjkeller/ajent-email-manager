@@ -1,0 +1,19 @@
+				</td></tr>
+				<tr><td colspan="2" align="center">
+					{% if submitForm is defined %}
+					<input type="submit" class="button" value="OK"></td>
+					{% else %}
+						{% if cmd is defined %}
+						<input type="button" onclick="{{ cmd }};hideLightbox();" class="button" value="{% if label is defined %}{{ label }}{% else %}OK{% endif %}"></td>
+						{% else %}
+						<input type="button" onclick="hideLightbox()" class="button" value="{% if label is defined %}{{ label }}{% else %}OK{% endif %}"></td>
+						{% endif %}
+					{% endif %}
+				</tr></table>
+			</div>
+		</div>
+		<div style="background: url(/resources/images/shadowbox/shadowbox-bl.gif) no-repeat left bottom;">
+			<div style="background: transparent url(/resources/images/shadowbox/shadowbox-br.gif) repeat-x scroll right bottom; height: 7px; margin-left: 5px;"></div>
+		</div>
+	</div>
+</div>

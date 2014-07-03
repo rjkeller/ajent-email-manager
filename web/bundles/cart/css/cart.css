@@ -1,0 +1,41 @@
+
+/*background: url('/images/link-box.gif') no-repeat;*/
+a.addFunds { background: url('/bundles/cart/images/AddFunds.gif') no-repeat; }
+a.addFunds:hover { background: url('/bundles/cart/images/AddFundsHover.gif') no-repeat; }
+
+a.autoFund { background: url('/bundles/cart/images/AutoFund.gif') no-repeat; }
+a.autoFund:hover { background: url('/bundles/cart/images/AutoFundHover.gif') no-repeat; }
+
+a.fundAlert { background: url('/bundles/cart/images/Alerting.gif') no-repeat; }
+a.fundAlert:hover { background: url('/bundles/cart/images/AlertingHover.gif') no-repeat; }
+
+a.payNow { background: url('/bundles/cart/images/PayNow.gif') no-repeat; }
+a.payNow:hover { background: url('/bundles/cart/images/PayNowHover.gif') no-repeat; }
+
+a.editButton { background: url('/bundles/cart/images/buttons/edit.gif') no-repeat; }
+a.editButton:hover { background: url('/bundles/cart/images/buttons/edit_hover.gif') no-repeat; }
+
+a.cancelButton { background: url('/bundles/cart/images/buttons/cancel.gif') no-repeat; }
+a.cancelButton:hover { background: url('/bundles/cart/images/buttons/cancel_hover.gif') no-repeat; }
+
+
+#currentBalance { background: url('/bundles/cart/images/current-balance.gif') no-repeat; width: 276px; height: 71px;
+ 	font: bold 3em Arial;
+	color: #71D078;
+	padding-top: 33px;
+	margin-top: 10px;
+}
+
+.price_box {
+	width: 193px;
+	height: 71px;
+	text-align: center;
+ 	font: bold 3em Arial;
+	color: #71D078;
+	padding-top: 25px;
+	margin-top: 10px;
+}
+
+.current_balance_small { background: url('/bundles/cart/images/current-balance-small.gif') no-repeat; }
+
+.current_order_small { background: url('/bundles/cart/images/current-order-small.gif') no-repeat; }

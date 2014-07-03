@@ -1,0 +1,53 @@
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>FAQ - Ajent</title>
+{% endblock metatags %}
+
+
+{% block content %}
+
+<h1>FAQ</h1>
+
+<div class="line">
+	<div class="unit size3of4">
+		<div style="padding: 10px 20px 0 0; margin-right:39px; background: url('/bundles/ajent/images/line-vertical.jpg') repeat-y top right;">
+
+<h2>What is Ajent?</h2>
+
+<p><strong class="ajent">Ajent</strong> is the SMART email subscription service that simplifies your life by helping you better sort, manage and share messages from daily deals, retailers, travel sites and blogs. <strong class="ajent">Ajent</strong> keeps your inbox free so that you never have to give out your personal email address to a newsletter, travel service or store again. At the same time, it allows you to see what your friends are interested in, share your own interests with others, and manage all of your email subscriptions in one easy place.</p>
+
+<h2>How does Ajent work?</h2>
+
+<ol>
+	<li>Sign up and receive your own simple, easy-to-remember <strong class="ajent">Ajent</strong> email address.</li>
+	<li>Move your existing email subscriptions to your <strong class="ajent">Ajent</strong> account.</li>
+	<li>Visit <strong class="ajent">Ajent</strong> to easily manage your consumer related email traffic.</li>
+	<li>Share your favorite things with your friends!</li>
+</ol>
+
+<h2>How do I sign up?</h2>
+
+<p>Visit our <a href="{{ path('UserBundleRegister') }}">Sign Up page</a>, where all we need is your name and basic email account information to get started. We’ll connect your email account to your <strong class="ajent">Ajent</strong> account so that your email subscriptions go directly to <strong class="ajent">Ajent</strong> from now on. Then we’ll give you an easy-to-remember <strong class="ajent">Ajent</strong> email address so you won’t have to give out your personal address the next time a store or company asks you for your email.</p>
+
+<h2>How long will it take me to sign up?</h2>
+
+<p>Signing up is quick and painless. It only takes a moment to create your <strong class="ajent">Ajent</strong> account. It takes a few more moments for us to scan your email subscriptions and verify which ones should come to <strong class="ajent">Ajent</strong>. You can choose to complete this process now, or finish it later. </p>
+
+<h2>What if I lose my Ajent password or forget my email address?</h2>
+
+<p>Simply visit our <a href="{{ path('AjentBundleContactUs') }}">Help page</a> and we’ll be happy to reconnect you with your <strong class="ajent">Ajent</strong> account.</p>
+
+<h2>How can I tell my friends about Ajent?</h2>
+
+<p>We appreciate your enthusiasm about spreading the word about <strong class="ajent">Ajent</strong>! You can <a href="{{ path('UserBundleRegister') }}">click here</a> to send a beta invite to friends.</p>
+
+		</div>
+	</div>
+	<div class="unit size1of4">
+		{% include 'AjentHomePageBundle:nav:rightBar.twig.html' %}
+	</div>
+</div>
+{% endblock content %}

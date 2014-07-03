@@ -1,0 +1,539 @@
+@import url('/css/ajent-email.css');
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 0.9em;
+	color: #666;
+	line-height: 150%;
+	background: url('/bundles/ajent/images/footer-background.jpg');
+}
+
+
+
+
+
+
+.mainPage { background: white; padding-bottom: 1px; }
+
+.pageContent { margin: auto; width: 990px; min-height: 500px; }
+
+#top { height: 80px; }
+
+#top ul.authNav li { padding: 0 30px; }
+
+
+#topnav {
+	font-size: 0.8em;
+	color: #8c8c8c;
+	text-transform: uppercase;
+	height: 30px;
+	float: right;
+	margin: 70px 0 0 0;
+	line-height: 100%;
+}
+
+a {
+	color: #cc3333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #666;
+}
+
+.newHighlight { background: #F5F5F5; }
+
+strong { color: #333;}
+
+#logo { padding: 10px 0; float: left;}
+
+.topHeader { margin: 15px 0 0 35px; }
+
+#links { font-size: 0.8em; line-height: 100%; padding-left: 30px; }
+
+#topnav li,
+#links li { list-style: none; float: left; border-right: 1px solid #ccc; padding: 0 20px; margin: 0; text-align: center; }
+
+#links li { padding: 0 20px; }
+#links li.firstItem { width: 40px; text-align:left; padding: 0 5px 0 0; }
+
+#topnav a:hover { text-decoration: none; font-weight: bold; color: #cd3333;}
+
+#copyright { color: #666; font-size: 0.7em; float: right; }
+
+h1 { color: #cc3333; font: normal 1.3em MryDlReg; background: url('/bundles/ajent/images/line-horizontal.jpg') repeat-x bottom left; }
+h1 a { color: #cc3333;}
+h2 { color: #333; font-size: 1.1em; margin-top: 0; }
+table h2 { margin: 0; }
+h3 { color: #333; font-size: 0.9em; text-transform: uppercase; margin-bottom: 2px; padding-bottom: 2px; }
+h4 { margin-top: 0; color: #333; margin-bottom: 7px;}
+
+ul { padding-left: 20px; }
+ul li {
+	list-style-image: url('/bundles/ajent/images/how-it-works/bullet.jpg');
+	margin-bottom: 20px;
+}
+
+.authVersion li { margin-bottom: 0;}
+
+.how-it-works h2 {
+	color: black;
+	text-transform: none;
+	margin-top: 3px;
+	font-size: 1em;
+}
+
+ol.steps2 {
+	background: url('/bundles/ajent/images/how-it-works/steps-box.jpg') no-repeat;
+	width: 960px;
+	height: 168px;
+	padding-left: 0;
+	height: 168px;
+	margin: 0;
+}
+ol.steps2:after { content: ".";display: block;height: 0;clear: both;visibility: hidden; }
+
+ol.steps2 .img {
+	text-align: center;
+	height: 77px;
+}
+ol.steps2 .num {
+	padding: 0 10px 30px 0;
+}
+
+ol.steps2 li {
+	list-style: none;
+	float: left;
+	padding: 15px;
+	width: 210px;
+	font: 0.8em Arial;
+}
+
+
+ol.steps {
+	background: url('/bundles/ajent/images/steps.gif') no-repeat;
+	width: 909px;
+	padding-left: 0;
+	height: 82px;
+	margin: 0;
+}
+ol.steps:after { content: ".";display: block;height: 0;clear: both;visibility: hidden; }
+
+ol.steps li {
+	list-style: none;
+	float: left;
+	width: 167px;
+	padding: 10px 10px 0 50px;
+	font: 0.8em Arial;
+}
+
+.wallBox p { margin-top: 0; margin-bottom: 7px; }
+
+.buttons { float: right; }
+
+#footer {
+	background: url('/bundles/ajent/images/footer-background.jpg');
+}
+
+#footer2 {
+	background: url('/bundles/ajent/images/footer-top-background.jpg') repeat-x;
+	padding-top: 10px;
+}
+
+#footer2 .pageContent {
+	min-height: 35px;
+}
+
+.authVersion {
+	line-height: 100%;
+	font-size: 0.85em;
+}
+
+.authVersion #mainContent h1 {
+	background: none;
+	margin: 0;
+}
+
+.authVersion #mainContent {
+	margin: 0;
+}
+
+
+table { text-align: left; }
+
+.inputbox, .textbox {
+    border: 1px solid #e5e4e1;
+    font-size: 1em;
+}
+.inputbox {
+    width: 200px;
+	height: 18px;
+	color: #666;
+}
+
+
+.superButton {
+	background: url('/bundles/ajent/images/button-left.png') no-repeat top left;
+	padding-left: 3px;
+	height: 20px;
+	float: left;
+}
+
+.superButton input {
+	background: #ce3234 url('/bundles/ajent/images/button-right.png') no-repeat top right;
+	padding: 2px 13px 0 10px;
+	height: 20px;
+
+	color: white;
+	text-align: center;
+	border: none;
+	font: bold 0.9em MryDlReg;
+	text-transform: uppercase;
+}
+
+.awesome, .button {
+	background: url('/bundles/ajent/images/button.gif') no-repeat;
+	width: 82px;
+	height: 21px;
+	color: white;
+	text-align: center;
+	border: none;
+	font: bold 0.9em MryDlReg;
+	text-transform: uppercase;
+	padding-top: 4px;
+}
+
+.awesome:hover, .button:hover, .superButton input:hover {
+	color: #ccc;
+}
+
+
+.smallButton {
+	background: url('/bundles/ajent/images/button-small.gif') no-repeat;
+	width: 46px;
+	height: 18px;
+}
+
+.disabledButton {
+	background: url('/bundles/ajent/images/button-disabled.gif') no-repeat;
+}
+
+.emailItem a {
+	font-weight: normal; 
+}
+
+div.currentEmail {
+	background: #f5f5f5 url('/bundles/mail/images/active_message.jpg') no-repeat top left;
+}
+
+.emailItem {
+	background: #fff url('/bundles/mail/images/inactive_message.jpg') no-repeat top left;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 10px 10px 20px;
+	line-height: 130%;
+	cursor: pointer;
+}
+
+.emailItem .author {
+	color: black;
+}
+
+.emailItem .subject {
+	color: #696969;
+}
+
+
+.yellowbox,.greenbox {
+	font-size: 0.9em;
+	line-height: 140%;
+}
+
+/** Registration Page Form Box **/
+
+.helpBlurb {
+	position: absolute;
+	font-size: 0.8em;
+	line-height: 100%;
+	color: white;
+	margin-top: -32px;
+	margin-left: 5px;
+	visibility: hidden;
+	background: url('/bundles/ajent/images/help-blurb/bottom.png') no-repeat bottom left;
+}
+.helpBlurb div {
+	width: 170px;
+	padding: 10px 10px 5px 30px;
+	background: url('/bundles/ajent/images/help-blurb/top.png') no-repeat;
+	margin-bottom: 11px;
+}
+
+.helpBlurb a {
+	color: white;
+}
+
+a.helpLink {
+	color: #cc3333;
+	border-bottom: 1px dotted #cc3333;
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+a.helpLink:hover {
+	border-bottom: none;
+	text-decoration: none;
+}
+
+div.innerFormBox {
+	margin: 0;
+}
+
+.formBox input,
+.formBox select,
+.formBox label {
+	margin: 5px;
+}
+
+
+.styleTable { border-collapse: collapse; line-height: 160%; }
+.styleTable th { color: #000; border-top: 1px solid #e5e5e5;  border-bottom: 1px solid #e5e5e5; padding: 0; }
+.styleTable th div { background: #e5e5e5; margin: 1px 0; }
+.styleTable td { border-bottom: 1px solid #e5e5e5; }
+.styleTable a { display: block; }
+.styleTable a:hover { color: #2d2d2d;}
+
+.styleTable .current td { background: #f5f5f5; }
+.styleTable .current td a { color: black; }
+
+.alert {
+	background: #fff url('/bundles/ajent/images/alert-border-top.jpg') no-repeat top left;
+}
+
+.innerAlert
+{
+	margin-top: 10px;
+	background: #fff url('/bundles/ajent/images/alert-border-bottom.jpg') no-repeat bottom left;
+}
+
+.ajent { color: black; }
+
+.mailTable h3 { background: url('/bundles/mail/images/inbox-title.jpg'); margin: 0; padding: 7px; color: #150c0c; }
+
+#mainContent { margin-left: 30px; }
+#mainContent h1 { font-weight: bold; text-transform: uppercase; margin: 20px 0 0 0; padding: 0 0 3px 0; }
+
+
+.borderTable { border: 1px solid #e5e5e5; margin: 0; }
+
+.emailBoxItem { margin-top: 5px }
+
+.nextResults { background: #ccc; text-align: center; padding: 7px; text-align: center; }
+.nextResults a { color: #cc3333; }
+
+
+#mailToolbar { visibility: hidden; }
+
+.deadList { margin: 0; padding: 0; }
+.deadList li { list-style-image: none; }
+
+/* **************** SHADOWBOX ***************** */
+
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; color: black; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay {
+	filter:alpha(opacity=40); /* Transparency */
+	opacity:0.4; /* Transparency */
+	background-color: #111;
+}
+
+* html #overlay{
+	background-color: #111;
+	back\ground-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/lightbox-overlay.png", sizingMethod="scale");
+}
+
+.lc { display: none; background: white; }
+
+.shadowboxContent {
+	background: transparent url('/bundles/ajent/images/shadowbox/box-middle.png') repeat-y scroll right top;
+	padding: 15px 30px;
+}
+
+.shadowboxContent label {
+	text-transform: uppercase;
+}
+
+.shadowboxContent h1 {
+	font-weight: bold;
+	color: black;
+	margin-top: 0;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+.shadowboxTop {
+	background: url('/bundles/ajent/images/shadowbox/box-top.png') no-repeat;
+	height: 16px;
+	margin-left: 11px;
+}
+
+.shadowboxBottom {
+	background: url(/bundles/ajent/images/shadowbox/box-bottom.png) no-repeat left bottom;
+	height:18px;
+	margin-left: 11px;
+}
+
+.ui-datepicker { font-size: 0.8em !important;}
+
+
+/******* TABBOX *********/
+.tabbox-top { background: white; clear:both; }
+.tabbox-top div { margin: 0 9px; border-top: 1px solid #d1d1d1; }
+.tabbox-top-right { float: right; background: url('/bundles/ajent/images/tabbox/tab-box-tr.png') no-repeat top right; width: 50px; height: 8px; }
+.tabbox-top-left { float: left; background: url('/bundles/ajent/images/tabbox/tab-box-tl.png') no-repeat top left; height: 8px; width: 50px; }
+
+.tabbox { background: url('/bundles/ajent/images/tabbox/tab-background.png'); border: 1px solid #d1d1d1; }
+
+.tabbox-bottom { background: white; clear:both;  }
+.tabbox-bottom div { margin: 0 8px; border-bottom: 1px solid #d1d1d1; }
+.tabbox-bottom-left { float: left; background: url('/bundles/ajent/images/tabbox/tab-box-bl.png') no-repeat bottom left; width: 50px; height: 8px; }
+.tabbox-bottom-right { float: right; background: url('/bundles/ajent/images/tabbox/tab-box-br.png') no-repeat bottom right; width: 50px; height: 8px; }
+
+.tabboxContent { clear: both; border-left: 1px solid #d1d1d1; border-right: 1px solid #d1d1d1; }
+
+
+
+/********* MESSAGE BOXES ********/
+.error-box { width: 587px; background: url('/bundles/ajent/images/errorbox/error-box-middle.jpg') repeat-y; padding: 0 2px; }
+.error-box-top { width: 587px; height: 13px; background: url('/bundles/ajent/images/errorbox/error-box-top.jpg'); }
+.error-box-bottom { width: 587px; height: 13px; background: url('/bundles/ajent/images/errorbox/error-box-bottom.jpg'); }
+
+.error-box p,
+.happy-box p { margin: 0;}
+.error-box h3,
+.happy-box h3 { font-family: Arial; text-transform: uppercase; border-bottom: 1px dotted #999; margin: 0;}
+.error-box ul,
+.happy-box ul { margin: 3px 0; padding: 0 20px; }
+.error-box ul li { list-style-image: url('/bundles/ajent/images/errorbox/error-bullet.png'); margin: 0; }
+.happy-box ul li { margin: 0; }
+
+
+.happy-box { width: 588px; background: url('/bundles/ajent/images/happybox/happy-box-middle.png') repeat-y; }
+.happy-box-top { width: 588px; height: 11px; background: url('/bundles/ajent/images/happybox/happy-box-top.png'); }
+.happy-box-bottom { width: 588px; height: 13px; background: url('/bundles/ajent/images/happybox/happy-box-bottom.png'); }
+
+
+.happy-box,
+.error-box {
+	font-size: 1.1em;
+}
+
+/********* TABS ********/
+
+.tabs { padding: 0; height: 28px; margin: 0 0 0 5px; }
+.tabs li {
+	list-style: none;
+	float: left;
+	width: 117px;
+	height: 28px;
+	margin-left: 10px;
+	background: url('/bundles/ajent/images/tabbox/tab.gif');
+}
+
+.tabs li.active {
+	background: url('/bundles/ajent/images/tabbox/tab-active.gif') no-repeat;
+}
+
+.tabs li.active a {
+	color: white;
+}
+
+.tabs li a {
+	display: block;
+	line-height: 250%;
+	text-align: center;
+}
+
+.tabs li.img {
+	background: none;
+	width: 30px;
+}
+
+.categories a.edit {
+	float: right;margin:8px 8px 0 0;
+}
+
+.categories:hover a.edit {
+	visibility:visible;
+}
+
+
+.tabContent {
+	background: white;
+	border: 1px solid #d8d8d8;
+	border-top: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+.fixedTab {
+	width: 740px;
+}
+
+.flexTab {
+	margin-right:10px;
+	padding: 0;
+}
+
+.rightFlexTab {
+	float: right; width: 200px; margin-right: 3px;
+}
+
+.alerts { background: white; padding: 5px; width: 184px; border: 1px solid #ccc; }
+
+img { border: none; }
+
+@font-face {
+    font-family: 'MryDlReg';
+    src: url('/css/MryDlReg.eot');
+    src: url('/css/MryDlReg.eot?#iefix') format('embedded-opentype'),
+         url('/css/MryDlReg.woff') format('woff'),
+         url('/css/MryDlReg.ttf') format('truetype'),
+         url('/css/MryDlReg.svg#MarydaleRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#searchBox {
+	margin-top: 10px;
+}
+
+
+/* **************** GRIDS ***************** */
+.line:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.lastUnit:after{content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";visibility:hidden; clear:both;height:0 !important;display:block;line-height:0;}
+.line{*zoom:1;}
+.unit{float:left;}
+.size1of1{float:none;}
+.size1of2{width:50%;}
+.size1of3{width:33.33333%;}
+.size2of3{width:66.66666%;}
+.size1of4{width:25%;}
+.size3of4{width:75%;}
+.size1of5{width:20%;}
+.size2of5{width:40%;}
+.size3of5{width:60%;}
+.size4of5{width:80%;}

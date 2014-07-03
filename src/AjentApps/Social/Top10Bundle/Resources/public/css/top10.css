@@ -1,0 +1,56 @@
+.socialBox {
+	border-bottom: 1px solid #dadada;
+	background: #f2f2f2;
+	height: 26px;
+	padding-top: 7px;
+	cursor: pointer;
+
+	color: #a7a084;
+	font-family: 'Palatino Linotype', Palatino, 'Times New Roman';
+	font-size: 1.1em;
+}
+
+.socialBox:hover {
+	background: white;
+}
+
+.number1:hover {
+	background: url("/bundles/top10/images/number1.png") no-repeat scroll 0 0 #F2F2F2;
+}
+
+.top {
+	border-top: 1px solid #dadada;
+}
+
+.socialBox .number {
+	width: 28px;
+	text-align: center;
+	padding-top: 5px;
+	color: #b4b4b4;
+	font-size: 0.8em;
+	font-weight: bold;
+	font-family: Helvetica, sans-serif;
+}
+
+.number1 {
+	background: #f2f2f2 url('/bundles/top10/images/number1.png') no-repeat;
+	color: white;
+	font-weight: bold;
+}
+
+.number1 .number {
+	color: white;
+}
+
+.top10h1 {
+	margin: 0 0 10px 5px;
+	text-align: left;
+	color: #a7a084;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.leftNav ul {
+	margin-top: 5px;
+	padding-left: 15px;
+}

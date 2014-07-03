@@ -1,0 +1,35 @@
+MailBundleMyContacts:
+    pattern: /contacts
+    defaults: { _controller: MailBundle:ViewContacts:index }
+
+MailBundleGetMessage:
+    pattern: /messages/{message_id}
+    defaults: { _controller: MailBundle:ViewMessage:index }
+
+MailBundleGetMessageBody:
+    pattern: /messages/{message_id}/body
+    defaults: { _controller: MailBundle:ViewMessage:ajax }
+
+MailBundleCompose:
+    pattern: /compose_email
+    defaults: { _controller: MailBundle:Compose:index }
+
+MailBundleGetMessageBodyCategory:
+    pattern: /messages/{message_id}/category
+    defaults: { _controller: MailBundle:Category:messageCategoryMenu }
+
+MailBundleGetMessageBodyNewCategory:
+    pattern: /messages/{message_id}/body/addCategory/{new_category}
+    defaults: { _controller: MailBundle:CategoryModifier:addCategory }
+
+MailBundleGetMessageBodyEditCategory:
+    pattern: /messages/{message_id}/body/changeCategory/{category_id}
+    defaults: { _controller: MailBundle:CategoryModifier:changeCategory }
+
+MailBundleWelcome:
+    pattern: /welcome_message
+    defaults: { _controller: MailBundle:Welcome:index }
+
+MailBundleTagCloud:
+    pattern: /tag_cloud
+    defaults: { _controller: MailBundle:TagCloud:index }

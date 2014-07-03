@@ -1,0 +1,127 @@
+<div class="unit size1of4 box socialPost">
+	<h1 class="red"><a href="#">{{ msg.Category['name'] }}</a></h1>
+
+		<div class="socialHeader">
+			<div class="line">
+				<div class="unit size4of5">
+					<img src="
+					{% render 'SocialBundle:ProfilePicture:index' with {
+						'user_id': msg['user_id']
+						}
+					%}
+					" align="left" width="45" height="45"><h3>{{ msg.AuthorUserProfile['name'] }}</h3>
+					<p>{{ msg.Date }}</p>
+				</div>
+				<div class="unit size1of5" style="text-align: right;">
+					{% if msg['is_favorite'] %}
+					<img src="/bundles/social/images/icons/favorite.png" align="absmiddle">&nbsp;
+					{% endif %}
+					<div style="width: 30px; height: 30px;padding: 5px;background-position: center center;" class="{{ msg.Category.CategoryClass }}">
+						&nbsp;
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="socialContent">
+			{% if msg['picture_id'] is defined %}
+				<img src="{{ path('SocialBundleViewWallPostPic', {
+						'post_id': msg['_id']
+							}
+						)
+					}}"><br>
+			{% endif %}
+
+			<span style="color: #6b6b6b">
+				{{ msg.Message | raw }}
+			</span>
+
+			{% if msg['url'] is defined %}
+				<br><a href="{{ msg['url'] }}">Follow This Link</a>
+			{% endif %}
+		</div>
+		<div class="line socialButtons">
+			{% include "SocialBundle:shadowbox:AddComment.twig.html"
+				with {
+					'incr': msg['_id']
+				}
+			%}
+
+			<div class="unit size1of3">
+				<form method="POST">
+				{% render 'FormsBundle:PrintCid:index' with { 'form_name': 'MakeFavorite' } %}
+				<input type="hidden" name="id" value="{{ msg['_id'] }}">
+
+				<button>
+					Favorite
+					<img src="/bundles/social/images/icons/favorite.png" align="absmiddle">
+				</button>
+				</form>
+			</div>
+			<div class="unit size1of3">
+				<button onclick="showLightbox(document.getElementById('AddComment{{ msg['_id'] }}'));">
+					Comment
+					<img src="/bundles/social/images/icons/comments.png" align="absmiddle">
+				</button>
+			</div>
+			<div class="unit size1of3">
+				<button onmouseout="mclosetime();" onmouseover="mopen('SettingsBox{{ msg['_id'] }}');">
+					Settings
+					<img src="/bundles/social/images/icons/settings.png" align="absmiddle">
+				</button>
+					<div id="SettingsBox{{ msg['_id'] }}" class="menu" onmouseout="mclosetime()" onmouseover="mcancelclosetime()" style="visibility: hidden; float:right; width: 31%">
+						<ul>
+							{% if canHide %}
+							<li><a href="javascript:document.hidePost{{ msg['_id'] }}.submit()">Hide</a>
+								<form method="POST" name="hidePost{{ msg['_id'] }}">
+								{% render 'FormsBundle:PrintCid:index' with {
+									'form_name': 'HideWallPost'
+								} %}
+								<input type="hidden" name="id" value="{{ msg['_id'] }}">
+								</form>
+							</li>
+							{% endif %}
+							{% if canDelete %}
+							<li><a href="javascript:document.deletePost{{ msg['_id'] }}.submit()">Delete</a>
+								<form method="POST" name="deletePost{{ msg['_id'] }}">
+								{% render 'FormsBundle:PrintCid:index' with {
+									'form_name': 'DeleteWallPost'
+								} %}
+								<input type="hidden" name="id" value="{{ msg['_id'] }}">
+								</form>
+							</li>
+							{% endif %}
+							{% if canUnfollow and not msg.isPostedByMe %}
+							<li><a href="javascript:document.unfollowPost{{ msg['_id'] }}.submit()">Unfollow</a>
+								<form method="POST" name="unfollowPost{{ msg['_id'] }}">
+								{% render 'FormsBundle:PrintCid:index' with {
+									'form_name': 'UnfollowWallPost'
+								} %}
+								<input type="hidden" name="id" value="{{ msg['_id'] }}">
+								</form>
+							</li>
+							{% endif %}
+						</ul>
+					</div>
+
+			</div>
+		</div>
+
+
+		{% if msg['comments'] is defined %}
+			{% for comment in msg['comments'] %}
+			<div class="line" style="background: #fcf6e5; border-bottom: 1px solid #ccc; text-align: left; padding: 5px;">
+				<img src="
+				{% render 'SocialBundle:ProfilePicture:index' with {
+					'user_id': comment['author_user_id']
+					}
+				%}
+				" align="left" width="50" height="50">
+				
+				<strong>{{ comment['first_name'] }}</strong> {{ comment['message'] }}
+			</div>
+			{% endfor %}
+			<h1 style="background:none;color: #333; font-size: 1.1em; margin: 5px 0 2px 0; font-weight: bold;"><a href="#" style="color:rgb(205,51,51)">See All {{ msg['comments'] | length }} comments &raquo;</a></h1>
+		{% endif %}
+
+</div>

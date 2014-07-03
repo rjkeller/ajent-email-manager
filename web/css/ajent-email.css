@@ -1,0 +1,34 @@
+
+
+/** Mail Toolbar **/
+
+.toolbar { line-height: 200%; margin-bottom: 5px; height: 20px; }
+.toolbar h1 { margin: 0; float: left; }
+
+.toolbar ul { margin: 0; }
+.toolbar li { list-style: none; float: right; margin: 0; }
+.toolbar a { font-weight: normal; }
+
+.toolbar .toolbarButton { width: 100px; }
+.toolbar .leftToolbarButton { float: left; }
+
+
+/** Ajent Email Viewer **/
+.email_message {
+	font-family: Arial, sans-serif;
+	font-size: 0.8em;
+	color: #666;
+	line-height: 150%;
+}
+
+
+.email_message a {
+	color: #cc3333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.email_message a:hover {
+	text-decoration: underline;
+	color: #666;
+}

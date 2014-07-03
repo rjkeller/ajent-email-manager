@@ -1,0 +1,90 @@
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Register - {{ company_name }}</title>
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1>Sign up for {{ company_name }}</h1>
+
+{% include ":messageBox:errorBox.twig.html" %}
+{% include ":messageBox:happyBox.twig.html" %}
+
+<form method="POST" {{ form_enctype(form) }}>
+
+<table width="400">
+	<tr><td>Username:</td><td>Password:</td></tr>
+		<tr><td>{{ form_widget(form.username, { 'attr': {'class': 'inputbox'} }) }}</td><td>{{ form_widget(form.password, { 'attr': {'class': 'inputbox'} }) }}</td>
+	</tr>
+</table>
+
+	E-Mail Address:<br>
+	{{ form_widget(form.email, { 'attr': {'class': 'inputbox'} }) }}<br>
+	&nbsp;<br>
+	How did you hear about us?<br>
+	{{ form_widget(form.how_did_you_hear_about_us, { 'attr': {'class': 'inputbox'} }) }}<br>
+	&nbsp;<br>
+	Company Name (optional):<br>
+	{{ form_widget(form.company_name, { 'attr': {'class': 'inputbox'} }) }}<br>
+	&nbsp;<br>
+	<table width="400">
+		<tr><td>Billing First Name:</td><td>Billing Last Name:</td></tr>
+			<tr><td>{{ form_widget(form.first_name, { 'attr': {'class': 'inputbox'} }) }}</td><td>{{ form_widget(form.last_name, { 'attr': {'class': 'inputbox'} }) }}</td>
+		</tr>
+	</table>
+	&nbsp;<br>
+	Billing Address:<br>
+	{{ form_widget(form.address1, { 'attr': {'class': 'inputbox'} }) }}<br>
+	Billing Address 2:<br>
+	{{ form_widget(form.address2, { 'attr': {'class': 'inputbox'} }) }}<br>
+	<table width="400">
+		<tr><td>Billing City:</td><td>Billing State:</td></tr>
+			<tr><td>{{ form_widget(form.city, { 'attr': {'class': 'inputbox'} }) }}</td><td>{{ form_widget(form.state, { 'attr': {'class': 'inputbox'} }) }}</td>
+		</tr>
+		<tr><td>Billing Zip:</td><td>Billing Country:</td></tr>
+			<tr><td>{{ form_widget(form.zip, { 'attr': {'class': 'inputbox'} }) }}</td><td>{{ form_widget(form.country, { 'attr': {'class': 'inputbox'} }) }}</td>
+		</tr>
+		<tr><td>Credit Card Number:</td><td>Expiration Date:</td></tr>
+			<tr><td>{{ form_widget(form.credit_card_number, { 'attr': {'class': 'inputbox'} }) }}</td>
+				<td>{{ form_widget(form.credit_card_expiration_month, { 'attr': {'class': 'inputbox'} }) }}
+					{{ form_widget(form.credit_card_expiration_year, { 'attr': {'class': 'inputbox'} }) }}</td>
+		</tr>
+
+	</table>
+	&nbsp;<br>
+	CVV <a href="http://en.wikipedia.org/wiki/Card_Security_Code" target="_new">?</a>:<br>
+	{{ form_widget(form.credit_card_cvv, { 'attr': {'class': 'inputbox'} }) }}<br>
+
+
+    {{ form_rest(form) }}
+
+{#
+<center>
+<table width="400">
+	<tr><td colspan="2"><p>&nbsp;</p></td></tr>
+	<tr><td>First Name:</td><td>{{ frm.printField("reg_fname") }}</td></tr>
+	<tr><td>Last Name:</td><td>{{ frm.printField("reg_lname") }}</td></tr>
+	<tr><td>Your Email:</td><td>{{ frm.printField("reg_email") }}</td></tr>
+	<tr></tr>
+	<tr><td>Username:</td><td>{{ frm.printField("reg_user") }}</td></tr>
+	<tr><td>Password:</td><td>{{ frm.printField("reg_pass") }}</td></tr>
+	<tr><td>Confirm Password:</td><td>{{ frm.printField("reg_passc") }}</td></tr>
+
+</table><br>
+<label><input type="checkbox" name="receiveEmailAlerts" checked> I'd like to receive email updates from {{ company_name }} about new product updates.</a></label>
+#}
+{#
+	<label>{{ frm.printField("agree") }} I understand and agree the <a href="#">{{ company_name }} Terms of Service</a></label>
+#}
+<br>&nbsp;<br>
+
+<input type="submit" value="Register" class="button" id="btnSubmit">
+</center>
+</form>
+
+{% endblock %}

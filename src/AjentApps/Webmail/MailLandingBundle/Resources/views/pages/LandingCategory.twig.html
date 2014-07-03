@@ -1,0 +1,99 @@
+{# only show the category if there are vendors in the cateogry #}
+	<div class="unit size1of3">
+
+	<div class="box{% if isFirst %} firstBox{% endif %}">
+		<h1 class="category_title {{ category.CategoryClass }}">
+
+			<div class="editBox">
+				<div class="line"><a onmouseout="mclosetime('editButton{{ category['_id'] }}');" onmouseover="mopen('editCategoryBox{{ category['_id'] }}', 'editButton{{ category['_id'] }}');" id="editButton{{ category['_id'] }}" class="editButton">&nbsp;</a>
+				</div>
+				<div id="editCategoryBox{{ category['_id'] }}" class="menu" onmouseout="mclosetime('editButton{{ category['_id'] }}')" onmouseover="mcancelclosetime('editButton{{ category['_id'] }}')" style="visibility: hidden; width: 75px;">
+					<ul>
+						<li><a href="javascript:showLightbox(document.getElementById('EditCategory{{ category['_id'] }}'))">Edit</a>
+							{% include "MailBundle:shadowbox:EditCategory.twig.html"
+								with {
+									'incr': category['_id'],
+									'category_name': category['name']
+								}
+							%}
+						</li>
+						<li><a href="javascript:showLightbox(document.getElementById('DeleteCategory{{ category['_id'] }}'))">Remove</a>
+							{% include "MailBundle:shadowbox:DeleteCategory.twig.html"
+								with {
+									'incr': category['_id']
+								}
+							%}
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<span class="innerTitle">
+				<a href="{{ path('MailBundleViewCategory', {'category': category['name'] } ) }}">{{ category.Name }}{% if category['num_new_messages'] is defined %} ({{ category['num_new_messages'] }}){% endif %}</a>
+			</span>
+		</h1>
+
+		<div class="line mainBox">
+			<div class="allItems" style="width: 336px; overflow: hidden; padding: 0">
+				<div id="categoryItems{{ category['_id'] }}" style="width:5000px; padding: 0" class="line">
+			{% set i = 0 %}
+			{% set numVendors = 5 %}
+			{% for vendor in vendors %}
+				{% if (i % numVendors) == 0 %}
+					{% if i != 0 %}
+						</div>
+					{% endif %}
+					<div class="line vendors" style="float:left;width:316px;margin: 5px 0 0 10px;">
+				{% endif %}
+			<div class="line iconBox{% if vendor['num_new_messages'] > 0 %} numBox highlightCell{% endif %}{% if i == 0 %} top{% endif %}"
+				onclick="window.location.href='{{ path('VendorBundleViewCategoryVendor', { 'vendor_id': vendor['_id'], 'category_name': category['name'] } ) }}'">
+					<img src="http://www.google.com/s2/favicons?domain={{ vendor['email_suffix'] }}" style="border: 1px solid #d0d0d0" width="16" height="16" align="absmiddle">
+					<span class="mainText">{{ vendor.TruncatedVendorName | raw }}</span>
+					{% if vendor['num_new_messages'] > 0 %}
+						<span class="new_messages">{{ vendor['num_new_messages'] }}</span>
+					{% endif %}
+					{% if vendor.hasAlerts %}
+					<a href="{{ path('AlertsBundleRedirectToAlert', { 'vendor_id': vendor['_id'] } ) }}">
+						<img src="/bundles/vendor/images/alerts-small.png">
+					</a>
+					{% endif %}
+
+					{{ addon_manager.setVariable('vendor', vendor) }}
+					{% render 'AddonBundle:Addon:printBlock' with {
+							'addon_page': 'ViewVendorsPage',
+							'block': 'VendorIcons'
+						}
+					%}
+			</div>
+
+				{% set i = i + 1 %}
+			{% endfor %}
+					{% if i > 0 %}
+					</div>
+					{% endif %}
+				</div>
+				
+				<div class="line link">
+					{% set i = 0 %}
+					{% set j = 0 %}
+					{% if vendors | length > numVendors %}
+					{% for vendor in vendors %}
+						{% if i % numVendors == 0 %}
+							{% set j = j + 1 %}
+							<a href="javascript:selectBox('categoryItems{{ category['_id'] }}', {{ j - 1 }})"><img src="/bundles/ajenthomepage/images/pagination{% if i == 0%}-selected{% endif %}.png" id="pag_categoryItems{{ category['_id'] }}{{ j - 1 }}"></a>
+						{% endif %}
+						{% set i = i + 1 %}
+					{% endfor %}
+					{% endif %}
+				</div>
+			</div>
+		</div>
+
+	</div>
+{#
+	<div class="dots line">
+	&nbsp;
+	</div>
+#}
+</div>

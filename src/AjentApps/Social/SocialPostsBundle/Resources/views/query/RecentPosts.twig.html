@@ -1,0 +1,14 @@
+{% for msg in results %}
+	{% include "SocialBundle:widget:WallPost.twig.html"
+		with {
+			'msg': msg,
+			'canHide': true,
+			'canUnfollow': true,
+			'canDelete': false
+		}
+	%}	
+{% else %}
+	<div style="padding: 10px;">
+	There are no items to display.
+	</div>
+{% endfor %}

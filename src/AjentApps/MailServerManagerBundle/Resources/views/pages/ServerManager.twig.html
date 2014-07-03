@@ -1,0 +1,75 @@
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Server Manager - Ajent</title>
+{% endblock metatags %}
+
+
+{% block content %}
+
+<h1>Server Manager</h1>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Stats</th>
+		<th>IP Address</th>
+		<th>Location</th>
+	</tr>
+	{% for server in servers %}
+	<tr>
+		<td>{{ server['name'] }}</td>
+		<td>{{ server['stats'] }}</td>
+		<td>{{ server['ip'] }}</td>
+		<td>{{ server['location'] }}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+
+<h2>Server Status</h2>
+
+<table>
+	<tr>
+		<td>Cron Enabled:</td>
+		<td>{{ server_settings['is_cron_enabled'] }}
+	</tr>
+</table>
+
+<h2>Postfix Logs</h2>
+
+<table width="100%">
+	<tr>
+		<th>Server</th>
+		<th>Entry</th>
+		<th>Date</th>
+	</tr>
+	{% for log in postfix_logs %}
+	<tr>
+		<td>{{ log['server_id'] }}</td>
+		<td>{{ log['log_entry'] }}</td>
+		<td>{{ log['date'] }}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+<h2>Cron Logs</h2>
+
+<table width="100%">
+	<tr>
+		<th>Server</th>
+		<th>Entry</th>
+		<th>Date</th>
+	</tr>
+	{% for log in cron_logs %}
+	<tr>
+		<td>{{ log['server_id'] }}</td>
+		<td>{{ log['log_entry'] }}</td>
+		<td>{{ log['date'] }}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+{% endblock content %}

@@ -1,0 +1,13 @@
+#emailFooter {
+	background: url("/bundles/ajent/images/line-horizontal.jpg") repeat-x scroll left top transparent;
+ 	color: #666; font-size: 0.9em;
+	padding-top: 10px;
+}
+
+
+body {
+	background: none;
+}
+
+.emailContent { margin-left: 50px; }
+.emailAddress { color: #cc3333;}

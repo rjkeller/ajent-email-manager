@@ -1,0 +1,41 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'EmailExpiration',
+	'form': 'EmailExpiration',
+	'alert': 'BlueAlert'
+}
+%}
+
+
+<h1>Set a Reminder for this Email</h1>
+
+<table width="100%" cellpadding="3">
+	<tr>
+		<td align="right"><label for="datepicker2">Date</label></td>
+		<td><input type="text" id="datepicker2" class="inputbox" size="30" name="date"></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><label for="expirationMessage">Message</label></td>
+		<td><textarea name="message" class="textbox" id="expirationMessage" style="width:200px;" rows="5"></textarea></td>
+	</tr>
+	<tr valign="top">
+		<td align="right"><label for="incr">Alert Beforehand:</label></td>
+		<td>
+			<select name="incr" id="incr">
+				<option value="15min">15 Minutes</option>
+				<option value="1day">1 Day</option>
+				<option value="1day">1 Week</option>
+				<option value="1day">1 Month</option>
+			</select>
+		</td>
+	</tr>
+</table>
+
+
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Create',
+	'noButton': 'Cancel'
+}
+%}

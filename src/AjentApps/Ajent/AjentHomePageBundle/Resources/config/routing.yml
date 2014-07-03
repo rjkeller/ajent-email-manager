@@ -1,0 +1,27 @@
+Index:
+    pattern: /
+    defaults: { _controller: AjentHomePageBundle:Index:index }
+
+AjentBundleFaq:
+    pattern: /faq
+    defaults: { _controller: AjentHomePageBundle:StaticPage:ViewPage, page: faq }
+
+AjentBundlePrivacyPolicy:
+    pattern: /privacy-policy
+    defaults: { _controller: AjentHomePageBundle:StaticPage:ViewPage, page: PrivacyPolicy }
+
+AjentBundleContactUs:
+    pattern: /contact-us
+    defaults: { _controller: AjentHomePageBundle:StaticPage:ViewPage, page: ContactUs }
+
+AjentBundleWhatIsAjent:
+    pattern: /how-it-works
+    defaults: { _controller: AjentHomePageBundle:StaticPage:ViewPage, page: HowItWorks }
+
+TermsOfService:
+    pattern: /terms-of-service
+    defaults: { _controller: AjentHomePageBundle:StaticPage:ViewPage, page: TermsOfService }
+
+SupportBundle:
+    pattern: /help
+    defaults: { _controller: AjentHomePageBundle:Help:index }

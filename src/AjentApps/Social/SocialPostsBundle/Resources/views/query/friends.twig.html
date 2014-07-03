@@ -1,0 +1,7 @@
+{% for friend in results %}
+<div class="line">
+<a href="#"><img src="http://ajent.adiop.com/mef/config/picture.php?w=30&amp;h=30&amp;img=http://ajent.adiop.com//mef/upload/2011/07/rihanna-for-vp.jpg"> {{ friend['name'] }}
+</div>
+{% else %}
+	<p>Search for friends above.</p>
+{% endfor %}

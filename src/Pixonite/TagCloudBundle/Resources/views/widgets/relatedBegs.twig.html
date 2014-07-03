@@ -1,0 +1,8 @@
+{% if hasRows %}
+
+<h3>Related Begs</h3>
+{% for beg in begs %}
+<a href="{{ beg.CategoryUrl }}/{{ beg['url'] }}">{{ beg.Title | raw }}</a><br>
+{% endfor %}
+
+{% endif %}

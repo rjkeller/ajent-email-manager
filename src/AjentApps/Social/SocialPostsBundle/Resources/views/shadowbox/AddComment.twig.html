@@ -1,0 +1,18 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'AddComment',
+	'form': 'AddComment',
+	'alert': 'BlueAlert'
+}
+%}
+
+<h1>Add Comment</h1>
+
+<textarea name="message" class="textbox" style="width:100%;" rows="5"></textarea>
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Add',
+	'noButton': 'Cancel'
+}
+%}

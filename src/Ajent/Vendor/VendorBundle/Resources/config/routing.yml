@@ -1,0 +1,3 @@
+MailBundleVendor:
+    pattern: /mail/vendor
+    defaults: { _controller: VendorBundle:EditVendors:index }

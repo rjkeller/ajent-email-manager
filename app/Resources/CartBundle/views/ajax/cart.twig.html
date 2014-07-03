@@ -1,0 +1,63 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+<div id="cart">
+{% if printTableHeader %}
+<h1><img src="/bundles/cart/images/MyCart_sm.gif" width="32" height="32" align="absmiddle">
+My Cart</h1>
+
+<table id="mymsg" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="10%">&nbsp;</td>
+    <td width="5%">&nbsp;</td>
+  </tr>
+{% endif %}
+
+{% for data in cartItems %}
+{{ tableWax.start(cartItems) }}
+    <td align="center"><a href="#"><img src="{{ data.Image }}" width="24" height="24" border="0" align="absmiddle"></a></td>
+    <td><a href="#">{{ data['name'] | raw }}</a></td>
+    <td align="center"><a href="#"><span class="style2">${{ data.Price }}</span>{{ data.Term }}</a></td>
+{% if printTableHeader %}
+    <td align="center"><a href="javascript:remove('rmv{{ data.id }}')"><img src="/bundles/cart/images/integrity_fail.png" width="16" height="16"></a>
+{% include "CartBundle:shadowbox:removeCartItem.twig.html" with {'shadowboxName': data.ShadowboxName,
+	'shadowboxCmd': data.ShadowboxCommand} %}
+
+{% endif %}
+</td>
+{{ tableWax.end(cartItems) }}
+{% endfor %}
+
+{% if cartItems.num_rows > 0 %} {# if query was ran #}
+  <tr><td colspan="4">&nbsp;</td></tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td align="right"><strong>Total: </strong></td>
+    <td align="center"><span class="style2"><strong>${{ total }}</strong></span></td>
+    <td align="center">&nbsp;</td>
+  </tr>
+{% if printTableHeader %}
+  <tr><td colspan="4">&nbsp;</td></tr>
+  <tr>
+	<td width="6%">&nbsp;</td>
+	<td align="left" width="73%">
+		<button type="button" onclick="remove('rmve')" class="button" style="float:left;">
+			<img src="/bundles/cart/images/integrity_fail.png" align="absmiddle" height="20"> Cancel
+		</button>
+	</td>
+	<td colspan="2" align="left">
+		<button type="button" onclick="window.location.href='/purchase/checkout'" class="button" style="float:right;">
+			<img src="/bundles/cart/images/billing_mds.gif" align="absmiddle" height="20"> Checkout
+		</button>
+	</td>
+  </tr>
+{% endif %}
+{% else %}
+    <tr class="waxoff" onmouseover="this.className='hilight'" onmouseout="this.className='waxoff'">
+      <td colspan="4" align="center">You have nothing in your cart.</td>
+    </tr>
+{% endif %}
+{% if printTableHeader %}
+</table>
+</div>
+{% endif %}

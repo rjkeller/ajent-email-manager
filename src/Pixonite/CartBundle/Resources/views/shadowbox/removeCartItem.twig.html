@@ -1,0 +1,16 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': shadowboxName,
+	'alert': 'BlueAlert'
+}
+%}
+
+
+Are you sure you want to remove this item from your cart?
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'cmd': shadowboxCmd,
+	'noButton': 'Cancel'
+}
+%}

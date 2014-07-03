@@ -1,0 +1,54 @@
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Welcome to Ajent!</title>
+{% endblock metatags %}
+
+
+{% block content %}
+
+<h1>Vendor Search Results</h1>
+
+<p><strong>Unsubscribe:</strong> Unsubscribe and remove emails from this vendor.<br>
+<strong>Switch:</strong> Change your current subscribed email to your @ajent.com email </p>
+
+<table class="styleTable" width="100%" border="0" cellpadding="5" cellspacing="0">
+	<tr>
+		<th style="text-align:left">Email From</th>
+{#		<th>Add to Ajent</th>	#}
+		<th style="text-align:center"></th>
+		<th style="text-align:center">Subscribe</th>
+	</tr>
+	{% for vendor in vendors %}
+		{#
+		 # if an option has already been selected for this vendor, then hide it
+		 # from the user.
+		 #}
+			<tr>
+				<td>{{ vendor['vendor_name'] }}</td>
+				<td align="center">
+
+				</td>
+				<td align="center">
+		                	<a href="http://{{ vendor['vendor_url'] }}" target="_blank"><input type="image" src="/bundles/mail/images/vendors/switch.png"></a>
+				</td>
+			</tr>
+	{% endfor %}              
+</table>
+
+<p><a href="{{ path('AjentBundleViewVendors') }}">Back to Vendor Scan</a></p>
+
+<p>Any Vendor we did miss?</p>
+<form method="GET" action="{{ path('AjentBundleVendorSearch') }}">
+	<input type="text" id="input4" value="Vendor name" title="Vender name" name="q" class="inputbox" style="width:330px" onclick="this.select()">
+	<input type="submit" class="button" name="" value="Add new" id="submit">
+</form>
+
+<form method="GET" action="{{ path('AjentBundleEmailScanSuccess') }}">
+	<p>&nbsp;</p>
+	<input type="submit" class="button" name="" value="Next" id="submitNext">
+</form>
+
+{% endblock content %}

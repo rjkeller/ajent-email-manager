@@ -1,0 +1,8 @@
+<ul class="tabs">
+	<li{% if leftNavTab == "Activities" %} class="active"{% endif %}>
+		<a href="{{ path('SocialBundleEditProfile') }}">My Info</a>
+	</li>
+	<li{% if leftNavTab == "Vendors" %} class="active"{% endif %}>
+		<a href="{{ path('MailBundleVendor') }}">My Subscriptions</a>
+	</li>
+</ul>

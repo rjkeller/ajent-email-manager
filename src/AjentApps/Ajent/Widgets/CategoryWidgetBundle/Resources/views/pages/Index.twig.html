@@ -1,0 +1,40 @@
+{% for category in categories %}
+
+	{% set vendors = controller.getVendors(category) %}
+
+	<li{#% if leftNavTab == category['name'] %} class="active"{% endif %#}>
+	<a href="{{ path('MailBundleViewCategory', { 'category': category['name'] } ) }}"
+		onmouseover="mopen('category{{ category['_id'] }}');"
+		onmouseout="mclosetime();">{{ category.Name }}</a>
+{% if vendors | length > 0 %}
+
+	<div id="category{{ category['_id'] }}" class="menu" onmouseout="mclosetime()" onmouseover="mcancelclosetime()" style="visibility: hidden; float:right;">
+
+	<ul>
+		{% for vendorCategory in vendors %}
+		<li><a href="{{ path('VendorBundleViewCategoryVendor', { 'category_name': category['name'],  'vendor_id': vendorCategory['vendor_id'] } ) }}">{{ vendorCategory.Vendor['name'] }}</a></li>
+		{% endfor %}
+	</ul>
+
+	</div>
+{% endif %}
+	</li>
+
+{% endfor %}
+
+
+<li class="img newCategory"><a href="javascript:showLightbox(document.getElementById('AddCategory'))"><img src="/bundles/categorywidget/images/add-new.png" align="absmiddle"> new category</a>
+{% include "CategoryWidgetBundle:shadowbox:AddCategory.twig.html" %}
+</li>
+
+<div style="float:right;padding-top:11px">
+<form method="POST">
+<select name="sort" style="width: 150px;" class="inputbox" onchange="this.form.submit();">
+	<option value="">Sort</option>
+	<option value="newest_message"{% if sort_by is defined and sort_by == 'newest_message' %} selected{% endif %}>Most Recent</option>
+	<option value="num_messages"{% if sort_by is defined and sort_by == 'num_messages' %} selected{% endif %}>Quantity</option>
+</select>&nbsp;
+<input type="text" name="search" style="width: 150px;" class="inputbox" value="Search" onclick='this.select()' onchange="this.form.submit();">
+
+</form>
+</div>

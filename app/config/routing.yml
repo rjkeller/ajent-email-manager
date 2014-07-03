@@ -1,0 +1,83 @@
+TagCloudBundleTagsKeyword:
+    pattern: /tags/{keyword}
+    defaults: { _controller: AjentBundle:ShowTags:index }
+
+UserBundleLogin:
+    pattern:  /login
+    defaults: { _controller: UserBundle:login:index }
+
+UserBundleHiWidget:
+    pattern:  /users/HiWidget
+    defaults: { _controller: UserBundle:HiWidget:index }
+
+UserBundleForgotPassword:
+    pattern:  /user/reset-password
+    defaults: { _controller: UserBundle:ForgotPassword:index }
+
+UserBundleForgotPasswordReset:
+    pattern:  /user/reset-password/{request_id}
+    defaults: { _controller: UserBundle:ForgotPassword:reset }
+
+UserBundleLogout:
+    pattern: /logout
+    defaults: { _controller: UserBundle:Logout:index }
+
+MailBundle:
+    resource: @MailBundle/Resources/config/routing.yml
+
+MailRegistrationBundle:
+    resource: @MailRegistrationBundle/Resources/config/routing.yml
+
+AjentHomePageBundle:
+    resource: @AjentHomePageBundle/Resources/config/routing.yml
+
+SearchBundle:
+    resource: @SearchBundle/Controller
+    type:     annotation
+
+LoggingBundle:
+    resource: @LoggingBundle/Controller
+    type:     annotation
+
+VendorScanBundle:
+    resource: @VendorScanBundle/Controller
+    type:     annotation
+
+VendorBundle:
+    resource: @VendorBundle/Resources/config/routing.yml
+
+
+TagCloudBundle:
+    resource: @TagCloudBundle/Resources/config/routing.yml
+
+SocialPostsBundle:
+    resource: @SocialPostsBundle/Controller
+    type:     annotation
+
+UserAdminBundle:
+    resource: @UserAdminBundle/Resources/config/routing.yml
+
+AppStoreBundle:
+    resource: @AppStoreBundle/Controller
+    type:     annotation
+
+BillingBundle:
+    resource: @BillingBundle/Resources/config/routing.yml
+
+CartBundle:
+    resource: @CartBundle/Resources/config/routing.yml
+
+AlertBundle:
+    resource: @AlertBundle/Resources/config/routing.yml
+
+SocialMailBundle:
+    resource: @SocialMailBundle/Controller
+    type:     annotation
+
+Top10Bundle:
+    resource: @Top10Bundle/Controller
+    type:     annotation
+
+MailServerManagerBundle:
+    resource: @MailServerManagerBundle/Controller
+    type:     annotation

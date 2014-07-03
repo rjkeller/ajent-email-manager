@@ -1,0 +1,43 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Compose - Ajent</title>
+<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+{% endblock metatags %}
+
+
+
+{% block content %}
+<h1>Compose</h1>
+
+<form method="POST">
+{% render 'FormsBundle:PrintCid:index' with { 'form_name': 'ComposeEmail' } %}
+
+<table cellpadding="3" width="100%">
+	<tr>
+		<td width="35">To:</td>
+		<td><input type="text" name="to" class="inputbox" style="width: 100%"></td>
+	</tr>
+	<tr>
+		<td>Cc:</td>
+		<td><input type="text" name="cc" class="inputbox" style="width: 100%"></td>
+	</tr>
+	<tr>
+		<td>Bcc:</td>
+		<td><input type="text" name="bcc" class="inputbox" style="width: 100%"></td>
+	</tr>
+	<tr>
+		<td>Subject:</td>
+		<td><input type="text" name="subject" class="inputbox" style="width: 100%"></td>
+	</tr>
+</table>
+
+<textarea name="message" class="ckeditor"></textarea>
+<br>
+<input type="submit" value="Send Email" class="button">
+</form>
+
+{% endblock content %}

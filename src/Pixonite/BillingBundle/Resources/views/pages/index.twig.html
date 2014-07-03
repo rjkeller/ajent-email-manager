@@ -1,0 +1,101 @@
+{% set tab = 'billing' %}
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% extends "::layout.twig.html" %}
+
+{% block headTag %}
+<style type="text/css">
+{literal}
+<!--
+.style2 {color: #FF0000}
+.style4 {color: #009933}
+-->
+{/literal}
+</style>
+<script type="text/javascript">
+
+addFunds = new Image(); 
+addFunds.src = "/bundles/billing/images/AddFundsHover.gif";
+fundAlert = new Image(); 
+fundAlert.src = "/bundles/billing/images/AlertingHover.gif";
+autoFund = new Image(); 
+autoFund.src = "/bundles/billing/images/AutoFundHover.gif";
+
+</script>
+<link rel="stylesheet" type="text/css" href="/bundles/billing/css/billing.css">
+{% endblock %}
+{% block content %}
+
+{# include file="shadowbox/billing_balanceNotification.smarty" #}
+{# include file="shadowbox/comingSoon.smarty" #}
+
+
+<h1><img src="/bundles/billing/images/billing_mds.gif" alt="My Domains" width="32" height="32" align="absmiddle">
+Billing</h1>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+	<td align="center">
+		<div id="currentBalance">
+			${{ balance }}
+		</div>
+		<br>&nbsp;<br>
+		<div style="width:330px;">
+		<a class="linkbox addFunds" href="funds_add.php">Add Funds</a>
+		<a class="linkbox fundAlert" href="{Shadowbox->showShadowbox name="balance_notification"}">Alerting</a>
+		<a class="linkbox autoFund" href="{Shadowbox->showShadowbox name="comingSoon"}">Auto Fill</a>
+		</div>
+	</td>
+	<td width="200" rowspan="6">
+		{{ contact|raw }}
+		
+		<p><a href="profile_edit.php"><img src="/bundles/billing/images/edit_user.png" width="16" height="16" align="absmiddle"> Edit My Information</a></p>
+		<p>{{ billing }}<br>
+		<a href="billing_default.php"><img src="/bundles/billing/images/deletecell.png" width="16" height="16" align="absmiddle"> Edit Payment Details</a>
+			</p>
+		</td>
+</tr>
+</table>
+
+<h1><img src="/bundles/billing/images/billing_mds.gif" alt="" width="32" height="32" align="absmiddle">
+Recent Activity </h1>
+<table class="tablelist" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody>
+			<tr>
+				<th width="6%">&nbsp;</th>
+				<th width="73%" align="left">Invoice</th>
+				<th width="10%"> Date</th>
+				<th width="5%">Amount</th>
+				<th width="5%">Balance</th>
+			</tr>
+			{% for invoice in invoicelist %}
+            {{ tableWax.start(invoicelist) }}
+				<td align="center"><a href="{{ invoice.InvoiceUrl }}"><img src="{{ invoice.Image }}" width="24" height="24" border="0" align="absmiddle"></a></td>
+				<td align="left"><a href="{{ invoice.InvoiceUrl }}">{{ invoice['description'] | raw }}</a></td>
+				<td align="center"><a href="{{ invoice.InvoiceUrl }}">{{ invoice.Date }}</a></div></td>
+				<td align="center"><a style="color:red;" href="{{ invoice.InvoiceUrl }}" class="style2">{{ invoice.Amount }}</a></td>
+				<td align="center" class="style4">{{ invoice.Balance }}</td>
+            {{ tableWax.end(invoicelist) }}
+            {% endfor %}
+            {% if invoicelist.num_rows <= 0 %}
+			<tr><td colspan="5" align="center">There are no invoices to display</td></tr>
+			{% endif %}
+			<tr>
+				<td colspan="2">{% if searchResults.hasPrev() %}
+					<a href="{{ searchResults.prevLink }}">&lt; Back</a>
+					{% endif %}</td>
+				<td colspan="2" align="right">{% if searchResults.hasNext() %}
+					<a href="{{ searchResults.nextLink }}">Next &gt;</a>
+					{% endif %}</td>
+			</tr>
+			<tr>
+				<td colspan="5" align="center">{% if searchResults.min() != 0 or searchResults.max() != 0 %}
+					Displaying {{ searchResults.min() }} - {{ searchResults.max() }} of {{ searchResults.total() }}
+					{% endif %}</td>
+			</tr>
+</tbody></table>
+<p>&nbsp;</p>
+<form method="POST">
+{#{ searchResults.printSearchBox() }#}
+</form>
+
+{% endblock content %}

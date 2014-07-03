@@ -1,0 +1,94 @@
+.socialPost {
+	text-align: center;
+	position: relative;
+}
+
+.socialPost .socialInnerPost {
+	border: 1px solid #ccc;
+	box-shadow: 3px 3px 5px rgba(200, 200, 200, 0.7);
+	background: white;
+	margin: 13px 5px;
+}
+
+.socialHeader {
+	padding: 10px 5px 0;
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+	height: 50px;
+}
+.socialHeader h3 {
+	font-size: 1em;
+	margin: 0;
+	color: #727272;
+}
+.socialHeader p {
+	margin: 0;
+	color: #8f8f8f;
+	font: 0.85em/170% Helvetica,sans-serif;
+}
+
+.socialHeader img {
+	padding-right: 5px;
+}
+
+.socialButtons {
+	text-align: center;
+}
+
+.socialButtons button {
+	background: url('/bundles/ajenthomepage/images/grey-button.png') repeat-x;
+	border: 1px solid white;
+	width: 100%;
+	text-transform: lowercase;
+	color: #fff;
+	padding: 2px 0;
+	height: 26px;
+	font: bold 0.9em Helvetica, sans-serif;
+}
+
+.socialButtons button:hover {
+	background: url('/bundles/ajenthomepage/images/grey-button-hover.png') repeat-x;
+}
+
+.socialContent {
+	padding: 5px;
+	text-align: left;
+}
+
+.photoFrame {
+	background: url('/bundles/social/images/photo_frame.jpg') no-repeat;
+	width: 200px;
+	height: 222px;
+	margin: auto;
+	text-align: left;
+}
+
+.photo {
+	vertical-align: middle;
+	text-align: center;
+	padding: 30px 25px 0 20px;
+	height: 155px;
+}
+
+.photo img {
+	max-width: 155px;
+	max-height: 155px;
+}
+
+.photoFrame .caption {
+	padding: 5px 15px 0 10px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+div.numbers {
+	background: #F3F2E8 url('/bundles/social/images/top5.png') no-repeat;
+	padding-left: 40px;
+}
+
+.content .shareButton {
+	float: left;
+	font-size: 1.8em;
+	padding: 0 21px;
+	height: 40px;
+}

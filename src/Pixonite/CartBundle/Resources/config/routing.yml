@@ -1,0 +1,19 @@
+CartBundleCart:
+    pattern:  /purchase/cart
+    defaults: { _controller: CartBundle:cart:index }
+
+CartBundleCartAjaxRemoveCartItem:
+    pattern:  /purchase/cart/ajax/remove/{cart_entry_id}
+    defaults: { _controller: CartBundle:cart:ajaxRemoveCartItem }
+
+CartBundleCartAjaxCancelOrder:
+    pattern:  /purchase/cart/ajax/cancel_order
+    defaults: { _controller: CartBundle:cart:ajaxCancelOrder }
+
+CartBundleCheckout:
+    pattern: /purchase/checkout
+    defaults: { _controller: CartBundle:checkout:index }
+
+CartBundleProcess:
+    pattern: /purchase/process
+    defaults: { _controller: CartBundle:process:index }

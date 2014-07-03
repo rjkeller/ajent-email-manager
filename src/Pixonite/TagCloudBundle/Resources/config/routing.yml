@@ -1,0 +1,7 @@
+TagCloudBundleTags:
+    pattern:  /tags
+    defaults: { _controller: TagCloudBundle:ShowTags:index }
+
+TagCloudBundleTagsKeyword:
+    pattern: /tags/{keyword}
+    defaults: { _controller: TagCloudBundle:ShowTags:showBegsForPhrase }

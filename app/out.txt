@@ -1,0 +1,4455 @@
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dd9be79a2957e1e000028
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dd94179a2957e1e000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dd9be79a2957e1e000024
+    [mime_file_id] => 4f8dd9be79a2957e1e000021
+    [vendor_id] => 4f96d23f79a295d132000000
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1333025268
+    [creation_date] => 1333025268
+    [recipient_user_id] => 60
+    [from_address] => "DemoDemo" <info@demodemo.com>
+    [to_address] => <rjkeller@kellertechnologies.com>
+    [subject] => Tutorial SALE!! - 75% off, AND FREE Text formats! - 2 days only!!!
+    [from_name] => DemoDemo
+    [from_email] => info@demodemo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dd9bf79a2957e1e000077
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dd94179a2957e1e000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dd9bf79a2957e1e000073
+    [mime_file_id] => 4f8dd9bf79a2957e1e000070
+    [vendor_id] => 4f96d23f79a295d132000000
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327932304
+    [creation_date] => 1327932304
+    [recipient_user_id] => 60
+    [from_address] => "DemoDemo" <info@demodemo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => Tutorial SALE!! - 75% off, AND FREE Text formats! - 2 days only!!!
+    [from_name] => DemoDemo
+    [from_email] => info@demodemo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dd9c079a2957e1e00009e
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dd94179a2957e1e000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dd9c079a2957e1e00009a
+    [mime_file_id] => 4f8dd9c079a2957e1e000097
+    [vendor_id] => 4f96d23f79a295d132000003
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332438781
+    [creation_date] => 1332438781
+    [recipient_user_id] => 60
+    [from_address] => "Facebook" <update@em.facebookmail.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => TRF Environmental Inc. will be refreshed on March 30th
+    [from_name] => Facebook
+    [from_email] => update@em.facebookmail.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dd9c279a2957e1e0000dd
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dd94179a2957e1e000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f8dd9c279a2957e1e0000d9
+    [mime_file_id] => 4f8dd9c279a2957e1e0000d6
+    [vendor_id] => 4f96d23f79a295d132000005
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1330187248
+    [creation_date] => 1330187248
+    [recipient_user_id] => 60
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-20% off entire purchase. valid 3/4 only.
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dd9c279a2957e1e000178
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dd94179a2957e1e000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dd9c279a2957e1e000174
+    [mime_file_id] => 4f8dd9c279a2957e1e000171
+    [vendor_id] => 4f96d23f79a295d132000005
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327400311
+    [creation_date] => 1327400311
+    [recipient_user_id] => 60
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Top Coupons: Target, Florida's Natural, See's Candies, New York & Co and More
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dda5979a2957d1e000051
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dda4279a295811e000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dda5979a2957d1e00004d
+    [mime_file_id] => 4f8dda5979a2957d1e00004a
+    [vendor_id] => 4f96d23f79a295d132000008
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1333196081
+    [creation_date] => 1333196081
+    [recipient_user_id] => 61
+    [from_address] => "DemoWolf" <info@demowolf.com>
+    [to_address] => <rjkeller@kellertechnologies.com>
+    [subject] => Tutorial SALE!! - 75% off, AND FREE Text formats! - ENDS TODAY!!
+    [from_name] => DemoWolf
+    [from_email] => info@demowolf.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dda5b79a2957d1e0000de
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dda4279a295811e000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dda5b79a2957d1e0000da
+    [mime_file_id] => 4f8dda5b79a2957d1e0000d7
+    [vendor_id] => 4f96d23f79a295d13200000a
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1328021802
+    [creation_date] => 1328021802
+    [recipient_user_id] => 61
+    [from_address] => "DemoDemo" <info@demodemo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => Tutorial SALE!! - 75% off, AND FREE Text formats! - ENDS TODAY!!
+    [from_name] => DemoDemo
+    [from_email] => info@demodemo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f6e79a2950816000060
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f6e79a295081600005e
+    [mime_file_id] => 4f849f6e79a295081600005b
+    [vendor_id] => 4f96d23f79a295d13200000c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332351794
+    [creation_date] => 1332351794
+    [recipient_user_id] => 45
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => 
+    [subject] => Frugalo has been acquired
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f7379a2950816000172
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f7379a2950816000170
+    [mime_file_id] => 4f849f7379a295081600016d
+    [vendor_id] => 4f96d23f79a295d13200000e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1302244921
+    [creation_date] => 1302244921
+    [recipient_user_id] => 45
+    [from_address] => JIDE Software <sales@jidesoft.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => JIDE TreeMap is released
+    [from_name] => JIDE Software
+    [from_email] => sales@jidesoft.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa2d79a2950c16000006
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f84fa2d79a2950c16000004
+    [mime_file_id] => 4f84fa2d79a2950c16000001
+    [vendor_id] => 4f96d23f79a295d132000010
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1330187248
+    [creation_date] => 1330187248
+    [recipient_user_id] => 46
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-20% off entire purchase. valid 3/4 only.
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa2e79a2950c1600001f
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa2e79a2950c1600001d
+    [mime_file_id] => 4f84fa2d79a2950c1600001a
+    [vendor_id] => 4f96d23f79a295d132000010
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1327400311
+    [creation_date] => 1327400311
+    [recipient_user_id] => 46
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Top Coupons: Target, Florida's Natural, See's Candies, New York & Co and More
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3079a2950c1600005f
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3079a2950c1600005d
+    [mime_file_id] => 4f84fa3079a2950c1600005a
+    [vendor_id] => 4f96d23f79a295d132000013
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1332351794
+    [creation_date] => 1332351794
+    [recipient_user_id] => 46
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => 
+    [subject] => Frugalo has been acquired
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa2f79a2950c1600002b
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa2f79a2950c16000029
+    [mime_file_id] => 4f84fa2f79a2950c16000026
+    [vendor_id] => 4f96d23f79a295d132000015
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1332433525
+    [creation_date] => 1332433525
+    [recipient_user_id] => 46
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => March 2012 Newsletter: Countdown to 3 Million Domains
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa2f79a2950c1600004e
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa2f79a2950c1600004c
+    [mime_file_id] => 4f84fa2f79a2950c16000049
+    [vendor_id] => 4f96d23f79a295d132000015
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1325797839
+    [creation_date] => 1325797839
+    [recipient_user_id] => 46
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => January 2012 Namecheap News - Renewal Promo, EFF Donation
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3079a2950c16000076
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3079a2950c16000074
+    [mime_file_id] => 4f84fa3079a2950c16000071
+    [vendor_id] => 4f96d23f79a295d132000013
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1327455012
+    [creation_date] => 1327455012
+    [recipient_user_id] => 46
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => Hey Roger - Frugalo now supports Yahoo
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3079a2950c1600008c
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3079a2950c1600008a
+    [mime_file_id] => 4f84fa3079a2950c16000087
+    [vendor_id] => 4f96d23f79a295d132000013
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1326918202
+    [creation_date] => 1326918202
+    [recipient_user_id] => 46
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => OMG Roger! It's Frugalo's Weekly Deal Breakdown!
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3179a2950c160000a2
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3179a2950c160000a0
+    [mime_file_id] => 4f84fa3179a2950c1600009d
+    [vendor_id] => 4f96d23f79a295d13200001a
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1333467360
+    [creation_date] => 1333467360
+    [recipient_user_id] => 46
+    [from_address] => "Purdue Alumni Association" <purduealumni@purdue.edu>
+    [to_address] => Mr. Roger Lynn Keller <rjkeller@gmail.com>
+    [subject] => Save the Date for Alumni Weekend: Sept. 27-29
+    [from_name] => Purdue Alumni Association
+    [from_email] => purduealumni@purdue.edu
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3379a2950c160000f4
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3379a2950c160000f2
+    [mime_file_id] => 4f84fa3379a2950c160000ef
+    [vendor_id] => 4f96d23f79a295d13200001c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1333977660
+    [creation_date] => 1333977660
+    [recipient_user_id] => 46
+    [from_address] => "Purdue Research Park"<marketing@prf.org>
+    [to_address] => Roger Keller <rjkeller@gmail.com>
+    [subject] => Purdue Research Park Innovation Express eNewsletter
+    [from_name] => Purdue Research Park
+    [from_email] => marketing@prf.org
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3379a2950c16000115
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3379a2950c16000113
+    [mime_file_id] => 4f84fa3379a2950c16000110
+    [vendor_id] => 4f96d23f79a295d13200001c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1331044860
+    [creation_date] => 1331044860
+    [recipient_user_id] => 46
+    [from_address] => "Purdue Research Park"<marketing@prf.org>
+    [to_address] => Roger Keller <rjkeller@gmail.com>
+    [subject] => Purdue Research Park Innovation Express eNewsletter
+    [from_name] => Purdue Research Park
+    [from_email] => marketing@prf.org
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3379a2950c16000135
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3379a2950c16000133
+    [mime_file_id] => 4f84fa3379a2950c16000130
+    [vendor_id] => 4f96d23f79a295d13200001c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1329421680
+    [creation_date] => 1329421680
+    [recipient_user_id] => 46
+    [from_address] => "Purdue Research Park"<marketing@prf.org>
+    [to_address] => Roger Keller <rjkeller@gmail.com>
+    [subject] => Purdue Research Park Innovation Express eNewsletter
+    [from_name] => Purdue Research Park
+    [from_email] => marketing@prf.org
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3579a2950c16000155
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3579a2950c16000153
+    [mime_file_id] => 4f84fa3579a2950c16000150
+    [vendor_id] => 4f96d23f79a295d132000020
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1313262259
+    [creation_date] => 1313262259
+    [recipient_user_id] => 46
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Win a River Cruise vacation for two
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3579a2950c1600017c
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3579a2950c1600017a
+    [mime_file_id] => 4f84fa3579a2950c16000177
+    [vendor_id] => 4f96d23f79a295d132000020
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1311966083
+    [creation_date] => 1311966083
+    [recipient_user_id] => 46
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Enter to win a Grand Circle vacation for two in Europe
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3579a2950c160001a1
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3579a2950c1600019f
+    [mime_file_id] => 4f84fa3579a2950c1600019c
+    [vendor_id] => 4f96d23f79a295d132000020
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1307634988
+    [creation_date] => 1307634988
+    [recipient_user_id] => 46
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Win a River Cruise vacation for two
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88533379a2950c16000228
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88533379a2950c16000226
+    [mime_file_id] => 4f88533379a2950c16000223
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332351794
+    [creation_date] => 1332351794
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => 
+    [subject] => Frugalo has been acquired
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88533379a2950c16000242
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88533379a2950c16000240
+    [mime_file_id] => 4f88533379a2950c1600023d
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327455012
+    [creation_date] => 1327455012
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => Hey Roger - Frugalo now supports Yahoo
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88533379a2950c1600025b
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88533379a2950c16000259
+    [mime_file_id] => 4f88533379a2950c16000256
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1326918202
+    [creation_date] => 1326918202
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => OMG Roger! It's Frugalo's Weekly Deal Breakdown!
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88533479a2950c16000274
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88533479a2950c16000272
+    [mime_file_id] => 4f88533479a2950c1600026f
+    [vendor_id] => 4f96d23f79a295d132000028
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1313262259
+    [creation_date] => 1313262259
+    [recipient_user_id] => 47
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Win a River Cruise vacation for two
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853df79a2950f160000c0
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853df79a2950f160000be
+    [mime_file_id] => 4f8853df79a2950f160000bb
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332351794
+    [creation_date] => 1332351794
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => 
+    [subject] => Frugalo has been acquired
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853df79a2950f160000df
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853df79a2950f160000dd
+    [mime_file_id] => 4f8853df79a2950f160000da
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327455012
+    [creation_date] => 1327455012
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => Hey Roger - Frugalo now supports Yahoo
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853e079a2950f160000fe
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853e079a2950f160000fc
+    [mime_file_id] => 4f8853e079a2950f160000f9
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1326918202
+    [creation_date] => 1326918202
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => OMG Roger! It's Frugalo's Weekly Deal Breakdown!
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853e179a2950f1600011d
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853e179a2950f1600011b
+    [mime_file_id] => 4f8853e179a2950f16000118
+    [vendor_id] => 4f96d23f79a295d132000028
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1313262259
+    [creation_date] => 1313262259
+    [recipient_user_id] => 47
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Win a River Cruise vacation for two
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853fb79a2953126000006
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f8853fb79a2953126000004
+    [mime_file_id] => 4f8853fb79a2953126000001
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1330187248
+    [creation_date] => 1330187248
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-20% off entire purchase. valid 3/4 only.
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853fc79a2953126000044
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853fc79a2953126000042
+    [mime_file_id] => 4f8853fc79a295312600003f
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327400311
+    [creation_date] => 1327400311
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Top Coupons: Target, Florida's Natural, See's Candies, New York & Co and More
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853ff79a29531260000c0
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853ff79a29531260000be
+    [mime_file_id] => 4f8853ff79a29531260000bb
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332351794
+    [creation_date] => 1332351794
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => 
+    [subject] => Frugalo has been acquired
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853ff79a29531260000df
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853ff79a29531260000dd
+    [mime_file_id] => 4f8853ff79a29531260000da
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327455012
+    [creation_date] => 1327455012
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => Hey Roger - Frugalo now supports Yahoo
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853ff79a29531260000fe
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853ff79a29531260000fc
+    [mime_file_id] => 4f8853ff79a29531260000f9
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1326918202
+    [creation_date] => 1326918202
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => OMG Roger! It's Frugalo's Weekly Deal Breakdown!
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88540079a295312600011d
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88540079a295312600011b
+    [mime_file_id] => 4f88540079a2953126000118
+    [vendor_id] => 4f96d23f79a295d132000028
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1313262259
+    [creation_date] => 1313262259
+    [recipient_user_id] => 47
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Win a River Cruise vacation for two
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854c579a2950d1600006a
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f8854c579a2950d16000068
+    [mime_file_id] => 4f8854c579a2950d16000065
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1330187248
+    [creation_date] => 1330187248
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-20% off entire purchase. valid 3/4 only.
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854c979a2950d16000124
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854c979a2950d16000122
+    [mime_file_id] => 4f8854c979a2950d1600011f
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332351794
+    [creation_date] => 1332351794
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => 
+    [subject] => Frugalo has been acquired
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854c979a2950d16000143
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854c979a2950d16000141
+    [mime_file_id] => 4f8854c979a2950d1600013e
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327455012
+    [creation_date] => 1327455012
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => Hey Roger - Frugalo now supports Yahoo
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854c979a2950d16000162
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854c979a2950d16000160
+    [mime_file_id] => 4f8854c979a2950d1600015d
+    [vendor_id] => 4f96d23f79a295d132000024
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1326918202
+    [creation_date] => 1326918202
+    [recipient_user_id] => 47
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => OMG Roger! It's Frugalo's Weekly Deal Breakdown!
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854cd79a2950d1600022c
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854cd79a2950d1600022a
+    [mime_file_id] => 4f8854cd79a2950d16000227
+    [vendor_id] => 4f96d23f79a295d132000039
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1302244921
+    [creation_date] => 1302244921
+    [recipient_user_id] => 47
+    [from_address] => JIDE Software <sales@jidesoft.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => JIDE TreeMap is released
+    [from_name] => JIDE Software
+    [from_email] => sales@jidesoft.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88570d79a2950916000054
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88570d79a2950916000052
+    [mime_file_id] => 4f88570d79a295091600004f
+    [vendor_id] => 4f96d23f79a295d13200003b
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1333189336
+    [creation_date] => 1333189336
+    [recipient_user_id] => 51
+    [from_address] => "Koovs.com" <newsletter@koovs.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Domyos My Top Purple Rs.399/ Wildcraft Wallet Y Black Rs.245/ HPAll Weather Backpack Rs.2237
+
+    [from_name] => Koovs.com
+    [from_email] => newsletter@koovs.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88570f79a2950916000066
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88570f79a2950916000064
+    [mime_file_id] => 4f88570f79a2950916000061
+    [vendor_id] => 4f96d23f79a295d13200003d
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332433525
+    [creation_date] => 1332433525
+    [recipient_user_id] => 51
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => March 2012 Newsletter: Countdown to 3 Million Domains
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88570f79a295091600009d
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88570f79a295091600009b
+    [mime_file_id] => 4f88570f79a2950916000098
+    [vendor_id] => 4f96d23f79a295d13200003d
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1325797839
+    [creation_date] => 1325797839
+    [recipient_user_id] => 51
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => January 2012 Namecheap News - Renewal Promo, EFF Donation
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88571179a29509160000b8
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88571179a29509160000b6
+    [mime_file_id] => 4f88571179a29509160000b3
+    [vendor_id] => 4f96d23f79a295d132000040
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1322016317
+    [creation_date] => 1322016317
+    [recipient_user_id] => 51
+    [from_address] => JIDE Software <sales@jidesoft.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => JIDE Software announce JIDE 3.3.0 release with several new components
+    [from_name] => JIDE Software
+    [from_email] => sales@jidesoft.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88571179a2950916000103
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88571179a2950916000101
+    [mime_file_id] => 4f88571179a29509160000fe
+    [vendor_id] => 4f96d23f79a295d132000040
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1302244921
+    [creation_date] => 1302244921
+    [recipient_user_id] => 51
+    [from_address] => JIDE Software <sales@jidesoft.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => JIDE TreeMap is released
+    [from_name] => JIDE Software
+    [from_email] => sales@jidesoft.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8db2a879a2952307000011
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f8db2a879a2952307000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d132000043
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334686376
+    [creation_date] => 1334686376
+    [recipient_user_id] => 52
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => scantest1@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8db2e879a2952107000012
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f8db2e879a2952107000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d132000045
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334686440
+    [creation_date] => 1334686440
+    [recipient_user_id] => 53
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => scantest2@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8db31b79a2952207000011
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f8db31b79a2952207000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d132000047
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334686491
+    [creation_date] => 1334686491
+    [recipient_user_id] => 54
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => scantest3@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8db34279a295210700002d
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f8db34279a295210700001f
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d132000049
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334686530
+    [creation_date] => 1334686530
+    [recipient_user_id] => 55
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => scantest4@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8db39779a2951e07000011
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f8db39779a2951e07000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d13200004b
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334686615
+    [creation_date] => 1334686615
+    [recipient_user_id] => 56
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => scantest5@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dbb1279a2952407000029
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f8dbb1279a295240700001b
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d13200004d
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334688530
+    [creation_date] => 1334688530
+    [recipient_user_id] => 57
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => scantest6@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dbbb579a2957d1e000010
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f8dbbb579a2957d1e000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d13200004f
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334688693
+    [creation_date] => 1334688693
+    [recipient_user_id] => 58
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => scantest7@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dd94179a2957e1e000010
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f8dd94179a2957e1e000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d132000051
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334696257
+    [creation_date] => 1334696257
+    [recipient_user_id] => 60
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => alltest2@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dd9bf79a2957e1e000050
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dd94179a2957e1e000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dd9bf79a2957e1e00004c
+    [mime_file_id] => 4f8dd9bf79a2957e1e000049
+    [vendor_id] => 4f96d23f79a295d132000000
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1328021802
+    [creation_date] => 1328021802
+    [recipient_user_id] => 60
+    [from_address] => "DemoDemo" <info@demodemo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => Tutorial SALE!! - 75% off, AND FREE Text formats! - ENDS TODAY!!
+    [from_name] => DemoDemo
+    [from_email] => info@demodemo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dda4279a295811e000012
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f8dda4279a295811e000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d132000054
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334696514
+    [creation_date] => 1334696514
+    [recipient_user_id] => 61
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => alltest3@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dda5879a2957d1e000028
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dda4279a295811e000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dda5879a2957d1e000024
+    [mime_file_id] => 4f8dda5879a2957d1e000021
+    [vendor_id] => 4f96d23f79a295d132000008
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1333277080
+    [creation_date] => 1333277080
+    [recipient_user_id] => 61
+    [from_address] => "DemoWolf" <info@demowolf.com>
+    [to_address] => <rjkeller@kellertechnologies.com>
+    [subject] => Sale extended... wrong promo code given yesterday
+    [from_name] => DemoWolf
+    [from_email] => info@demowolf.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84746c79a2950e1600000d
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f84746c79a2950e16000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d132000057
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334080620
+    [creation_date] => 1334080620
+    [recipient_user_id] => 43
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => rjkeller2@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84766679a2950b1600000d
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f84766679a2950b16000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d132000059
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334081126
+    [creation_date] => 1334081126
+    [recipient_user_id] => 44
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => rjkeller3@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8477d679a295ec36000003
+    [body_file_id] => 4f8477d679a295ec36000001
+    [body_type] => text/plain
+    [category_id] => 4f84766679a2950b16000002
+    [creation_date] => 1334080175
+    [date] => 1334080175
+    [folder] => inbox
+    [from_address] => Pixonite LLC <rjkeller@pixonite.com>
+    [from_email] => rjkeller@pixonite.com
+    [from_name] => Pixonite LLC
+    [has_attachments] => 
+    [is_external_message] => 
+    [is_invisible] => 
+    [is_public] => 
+    [is_read] => 1
+    [mime_file_id] => 
+    [recipient_user_id] => 44
+    [subject] => test email
+    [tag_id] => 0
+    [to_address] => ajentestemail@gmail.com
+    [type] => standard
+    [type_id] => standard
+    [vendor_id] => 4f96d23f79a295d13200005b
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84781679a295f336000003
+    [body_file_id] => 4f84781679a295f336000001
+    [body_type] => text/plain
+    [category_id] => 4f84766679a2950b16000002
+    [creation_date] => 1334080175
+    [date] => 1334080175
+    [folder] => inbox
+    [from_address] => Pixonite LLC <rjkeller@pixonite.com>
+    [from_email] => rjkeller@pixonite.com
+    [from_name] => Pixonite LLC
+    [has_attachments] => 
+    [is_external_message] => 
+    [is_invisible] => 
+    [is_public] => 
+    [is_read] => 1
+    [mime_file_id] => 
+    [recipient_user_id] => 44
+    [subject] => test email
+    [tag_id] => 0
+    [to_address] => ajentestemail@gmail.com
+    [type] => standard
+    [type_id] => standard
+    [vendor_id] => 4f96d23f79a295d13200005b
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8478ae79a2950337000003
+    [body_file_id] => 4f8478ae79a2950337000001
+    [body_type] => text/plain
+    [category_id] => 4f84766679a2950b16000002
+    [creation_date] => 1334080175
+    [date] => 1334080175
+    [folder] => inbox
+    [from_address] => Pixonite LLC <rjkeller@pixonite.com>
+    [from_email] => rjkeller@pixonite.com
+    [from_name] => Pixonite LLC
+    [has_attachments] => 
+    [is_external_message] => 
+    [is_invisible] => 
+    [is_public] => 
+    [is_read] => 1
+    [mime_file_id] => 
+    [recipient_user_id] => 44
+    [subject] => test email
+    [tag_id] => 0
+    [to_address] => ajentestemail@gmail.com
+    [type] => standard
+    [type_id] => standard
+    [vendor_id] => 4f96d23f79a295d13200005b
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84791e79a2951137000003
+    [body_file_id] => 4f84791e79a2951137000001
+    [body_type] => text/plain
+    [category_id] => 4f84766679a2950b16000002
+    [creation_date] => 1334080175
+    [date] => 1334080175
+    [folder] => inbox
+    [from_address] => Pixonite LLC <rjkeller@pixonite.com>
+    [from_email] => rjkeller@pixonite.com
+    [from_name] => Pixonite LLC
+    [has_attachments] => 
+    [is_external_message] => 
+    [is_invisible] => 
+    [is_public] => 
+    [is_read] => 1
+    [mime_file_id] => 
+    [recipient_user_id] => 44
+    [subject] => test email
+    [tag_id] => 0
+    [to_address] => ajentestemail@gmail.com
+    [type] => standard
+    [type_id] => standard
+    [vendor_id] => 4f96d23f79a295d13200005b
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84796279a2951837000003
+    [body_file_id] => 4f84796279a2951837000001
+    [body_type] => text/plain
+    [category_id] => 4f84766679a2950b16000002
+    [creation_date] => 1334080175
+    [date] => 1334080175
+    [folder] => inbox
+    [from_address] => Pixonite LLC <rjkeller@pixonite.com>
+    [from_email] => rjkeller@pixonite.com
+    [from_name] => Pixonite LLC
+    [has_attachments] => 
+    [is_external_message] => 
+    [is_invisible] => 
+    [is_public] => 
+    [is_read] => 1
+    [mime_file_id] => 
+    [recipient_user_id] => 44
+    [subject] => test email
+    [tag_id] => 0
+    [to_address] => ajentestemail@gmail.com
+    [type] => standard
+    [type_id] => standard
+    [vendor_id] => 4f96d23f79a295d13200005b
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f847da279a2957637000003
+    [body_file_id] => 4f847da279a2957637000001
+    [body_type] => text/plain
+    [category_id] => 4f84766679a2950b16000002
+    [creation_date] => 1334080175
+    [date] => 1334080175
+    [folder] => inbox
+    [from_address] => Pixonite LLC <rjkeller@pixonite.com>
+    [from_email] => rjkeller@pixonite.com
+    [from_name] => Pixonite LLC
+    [has_attachments] => 
+    [is_external_message] => 
+    [is_invisible] => 
+    [is_public] => 
+    [is_read] => 
+    [mime_file_id] => 
+    [recipient_user_id] => 44
+    [subject] => test email
+    [tag_id] => 0
+    [to_address] => ajentestemail@gmail.com
+    [type] => standard
+    [type_id] => standard
+    [vendor_id] => 4f96d23f79a295d13200005b
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f847de079a2958037000003
+    [body_file_id] => 4f847de079a2958037000001
+    [body_type] => text/plain
+    [category_id] => 4f84766679a2950b16000002
+    [creation_date] => 1334080175
+    [date] => 1334080175
+    [folder] => inbox
+    [from_address] => Pixonite LLC <rjkeller@pixonite.com>
+    [from_email] => rjkeller@pixonite.com
+    [from_name] => Pixonite LLC
+    [has_attachments] => 
+    [is_external_message] => 
+    [is_invisible] => 
+    [is_public] => 
+    [is_read] => 
+    [mime_file_id] => 
+    [recipient_user_id] => 44
+    [subject] => test email
+    [tag_id] => 0
+    [to_address] => ajentestemail@gmail.com
+    [type] => standard
+    [type_id] => standard
+    [vendor_id] => 4f96d23f79a295d13200005b
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f847e0679a2958537000003
+    [body_file_id] => 4f847e0679a2958537000001
+    [body_type] => text/plain
+    [category_id] => 4f84766679a2950b16000002
+    [creation_date] => 1334080175
+    [date] => 1334080175
+    [folder] => inbox
+    [from_address] => Pixonite LLC <rjkeller@pixonite.com>
+    [from_email] => rjkeller@pixonite.com
+    [from_name] => Pixonite LLC
+    [has_attachments] => 
+    [is_external_message] => 
+    [is_invisible] => 
+    [is_public] => 
+    [is_read] => 
+    [mime_file_id] => 
+    [recipient_user_id] => 44
+    [subject] => test email
+    [tag_id] => 0
+    [to_address] => ajentestemail@gmail.com
+    [type] => standard
+    [type_id] => standard
+    [vendor_id] => 4f96d23f79a295d13200005b
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f847e4179a2958c37000003
+    [body_file_id] => 4f847e4179a2958c37000001
+    [body_type] => text/plain
+    [category_id] => 4f84766679a2950b16000002
+    [creation_date] => 1334080175
+    [date] => 1334080175
+    [folder] => inbox
+    [from_address] => Pixonite LLC <rjkeller@pixonite.com>
+    [from_email] => rjkeller@pixonite.com
+    [from_name] => Pixonite LLC
+    [has_attachments] => 
+    [is_external_message] => 
+    [is_invisible] => 
+    [is_public] => 
+    [is_read] => 
+    [mime_file_id] => 
+    [recipient_user_id] => 44
+    [subject] => test email
+    [tag_id] => 0
+    [to_address] => ajentestemail@gmail.com
+    [type] => standard
+    [type_id] => standard
+    [vendor_id] => 4f96d23f79a295d13200005b
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f847eb279a295a937000003
+    [body_file_id] => 4f847eb279a295a937000001
+    [body_type] => text/plain
+    [category_id] => 4f84766679a2950b16000002
+    [creation_date] => 1334080175
+    [date] => 1334080175
+    [folder] => inbox
+    [from_address] => Pixonite LLC <rjkeller@pixonite.com>
+    [from_email] => rjkeller@pixonite.com
+    [from_name] => Pixonite LLC
+    [has_attachments] => 
+    [is_external_message] => 
+    [is_invisible] => 
+    [is_public] => 
+    [is_read] => 
+    [mime_file_id] => 
+    [recipient_user_id] => 44
+    [subject] => test email
+    [tag_id] => 0
+    [to_address] => ajentestemail@gmail.com
+    [type] => standard
+    [type_id] => standard
+    [vendor_id] => 4f96d23f79a295d13200005b
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849e5779a2950a1600000e
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d132000066
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334091351
+    [creation_date] => 1334091351
+    [recipient_user_id] => 45
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => rjkeller4@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849e7979a2950a16000018
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f849e7979a2950a16000016
+    [mime_file_id] => 4f849e7979a2950a16000013
+    [vendor_id] => 4f96d23f79a295d132000068
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1330187248
+    [creation_date] => 1330187248
+    [recipient_user_id] => 45
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-20% off entire purchase. valid 3/4 only.
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849e7a79a2950a16000024
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f849e7a79a2950a16000022
+    [mime_file_id] => 4f849e7a79a2950a1600001f
+    [vendor_id] => 4f96d23f79a295d132000068
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327615845
+    [creation_date] => 1327615845
+    [recipient_user_id] => 45
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-save 20% off your entire purchase for Buzzclub member. valid 1/28 only. If you are not a Buzz Card M
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849e7a79a2950a1600002f
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849e7a79a2950a1600002d
+    [mime_file_id] => 4f849e7a79a2950a1600002a
+    [vendor_id] => 4f96d23f79a295d132000068
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327400311
+    [creation_date] => 1327400311
+    [recipient_user_id] => 45
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Top Coupons: Target, Florida's Natural, See's Candies, New York & Co and More
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849e7b79a2950a1600003a
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849e7b79a2950a16000038
+    [mime_file_id] => 4f849e7b79a2950a16000035
+    [vendor_id] => 4f96d23f79a295d13200006c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332433525
+    [creation_date] => 1332433525
+    [recipient_user_id] => 45
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => March 2012 Newsletter: Countdown to 3 Million Domains
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849e7b79a2950a1600004a
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849e7b79a2950a16000048
+    [mime_file_id] => 4f849e7b79a2950a16000045
+    [vendor_id] => 4f96d23f79a295d13200006c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1328110834
+    [creation_date] => 1328110834
+    [recipient_user_id] => 45
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => February 2012 Namecheap News - Super Bowl Trivia, Namecheap Tips, TRUSTe Privacy!
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849e7b79a2950a16000059
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849e7b79a2950a16000057
+    [mime_file_id] => 4f849e7b79a2950a16000054
+    [vendor_id] => 4f96d23f79a295d13200006c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1325797839
+    [creation_date] => 1325797839
+    [recipient_user_id] => 45
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => January 2012 Namecheap News - Renewal Promo, EFF Donation
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f1479a2950d1600000c
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f849f1479a2950d1600000a
+    [mime_file_id] => 4f849f1479a2950d16000007
+    [vendor_id] => 4f96d23f79a295d132000068
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1330187248
+    [creation_date] => 1330187248
+    [recipient_user_id] => 45
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-20% off entire purchase. valid 3/4 only.
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f1479a2950d1600001b
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f849f1479a2950d16000019
+    [mime_file_id] => 4f849f1479a2950d16000016
+    [vendor_id] => 4f96d23f79a295d132000068
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327615845
+    [creation_date] => 1327615845
+    [recipient_user_id] => 45
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-save 20% off your entire purchase for Buzzclub member. valid 1/28 only. If you are not a Buzz Card M
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f1579a2950d1600002a
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f1579a2950d16000028
+    [mime_file_id] => 4f849f1479a2950d16000025
+    [vendor_id] => 4f96d23f79a295d132000068
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327400311
+    [creation_date] => 1327400311
+    [recipient_user_id] => 45
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Top Coupons: Target, Florida's Natural, See's Candies, New York & Co and More
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f1679a2950d16000039
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f1679a2950d16000037
+    [mime_file_id] => 4f849f1679a2950d16000034
+    [vendor_id] => 4f96d23f79a295d13200006c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332433525
+    [creation_date] => 1332433525
+    [recipient_user_id] => 45
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => March 2012 Newsletter: Countdown to 3 Million Domains
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f1679a2950d16000048
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f1679a2950d16000046
+    [mime_file_id] => 4f849f1679a2950d16000043
+    [vendor_id] => 4f96d23f79a295d13200006c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1328110834
+    [creation_date] => 1328110834
+    [recipient_user_id] => 45
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => February 2012 Namecheap News - Super Bowl Trivia, Namecheap Tips, TRUSTe Privacy!
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f1679a2950d16000057
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f1679a2950d16000055
+    [mime_file_id] => 4f849f1679a2950d16000052
+    [vendor_id] => 4f96d23f79a295d13200006c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1325797839
+    [creation_date] => 1325797839
+    [recipient_user_id] => 45
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => January 2012 Namecheap News - Renewal Promo, EFF Donation
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f6b79a2950816000006
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f849f6b79a2950816000004
+    [mime_file_id] => 4f849f6b79a2950816000001
+    [vendor_id] => 4f96d23f79a295d132000068
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1330187248
+    [creation_date] => 1330187248
+    [recipient_user_id] => 45
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-20% off entire purchase. valid 3/4 only.
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f6b79a2950816000015
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f849f6b79a2950816000013
+    [mime_file_id] => 4f849f6b79a2950816000010
+    [vendor_id] => 4f96d23f79a295d132000068
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327615845
+    [creation_date] => 1327615845
+    [recipient_user_id] => 45
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-save 20% off your entire purchase for Buzzclub member. valid 1/28 only. If you are not a Buzz Card M
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f6c79a2950816000024
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f6c79a2950816000022
+    [mime_file_id] => 4f849f6c79a295081600001f
+    [vendor_id] => 4f96d23f79a295d132000068
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327400311
+    [creation_date] => 1327400311
+    [recipient_user_id] => 45
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Top Coupons: Target, Florida's Natural, See's Candies, New York & Co and More
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f6d79a2950816000033
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f6d79a2950816000031
+    [mime_file_id] => 4f849f6d79a295081600002e
+    [vendor_id] => 4f96d23f79a295d13200006c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332433525
+    [creation_date] => 1332433525
+    [recipient_user_id] => 45
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => March 2012 Newsletter: Countdown to 3 Million Domains
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f6d79a2950816000042
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f6d79a2950816000040
+    [mime_file_id] => 4f849f6d79a295081600003d
+    [vendor_id] => 4f96d23f79a295d13200006c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1328110834
+    [creation_date] => 1328110834
+    [recipient_user_id] => 45
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => February 2012 Namecheap News - Super Bowl Trivia, Namecheap Tips, TRUSTe Privacy!
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f6d79a2950816000051
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f6d79a295081600004f
+    [mime_file_id] => 4f849f6d79a295081600004c
+    [vendor_id] => 4f96d23f79a295d13200006c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1325797839
+    [creation_date] => 1325797839
+    [recipient_user_id] => 45
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => January 2012 Namecheap News - Renewal Promo, EFF Donation
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f6e79a2950816000074
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f6e79a2950816000072
+    [mime_file_id] => 4f849f6e79a295081600006f
+    [vendor_id] => 4f96d23f79a295d13200000c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327455012
+    [creation_date] => 1327455012
+    [recipient_user_id] => 45
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => Hey Roger - Frugalo now supports Yahoo
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f6e79a2950816000087
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f6e79a2950816000085
+    [mime_file_id] => 4f849f6e79a2950816000082
+    [vendor_id] => 4f96d23f79a295d13200000c
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1326918202
+    [creation_date] => 1326918202
+    [recipient_user_id] => 45
+    [from_address] => Frugalo <feedback@frugalo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => OMG Roger! It's Frugalo's Weekly Deal Breakdown!
+    [from_name] => Frugalo
+    [from_email] => feedback@frugalo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f6f79a295081600009a
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f6f79a2950816000098
+    [mime_file_id] => 4f849f6f79a2950816000095
+    [vendor_id] => 4f96d23f79a295d13200007e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1333467360
+    [creation_date] => 1333467360
+    [recipient_user_id] => 45
+    [from_address] => "Purdue Alumni Association" <purduealumni@purdue.edu>
+    [to_address] => Mr. Roger Lynn Keller <rjkeller@gmail.com>
+    [subject] => Save the Date for Alumni Weekend: Sept. 27-29
+    [from_name] => Purdue Alumni Association
+    [from_email] => purduealumni@purdue.edu
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f7079a29508160000b2
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f7079a29508160000b0
+    [mime_file_id] => 4f849f7079a29508160000ad
+    [vendor_id] => 4f96d23f79a295d13200007e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1333370700
+    [creation_date] => 1333370700
+    [recipient_user_id] => 45
+    [from_address] => "Purdue Alumni Association" <purduealumni@purdue.edu>
+    [to_address] => Mr. Roger Lynn Keller <rjkeller@gmail.com>
+    [subject] => Purdue Alumni Club of Chicago - Annual meeting and social
+    [from_name] => Purdue Alumni Association
+    [from_email] => purduealumni@purdue.edu
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f7079a29508160000c9
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f7079a29508160000c7
+    [mime_file_id] => 4f849f7079a29508160000c4
+    [vendor_id] => 4f96d23f79a295d13200007e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1331978400
+    [creation_date] => 1331978400
+    [recipient_user_id] => 45
+    [from_address] => "Purdue Alumni Association" <purduealumni@purdue.edu>
+    [to_address] => Mr. Roger Lynn Keller <rjkeller@gmail.com>
+    [subject] => Find your pot of gold this St. Patrick's Day!
+    [from_name] => Purdue Alumni Association
+    [from_email] => purduealumni@purdue.edu
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f7179a29508160000e0
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f7179a29508160000de
+    [mime_file_id] => 4f849f7179a29508160000db
+    [vendor_id] => 4f96d23f79a295d132000082
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1313262259
+    [creation_date] => 1313262259
+    [recipient_user_id] => 45
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Win a River Cruise vacation for two
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f7179a29508160000fd
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f7179a29508160000fb
+    [mime_file_id] => 4f849f7179a29508160000f8
+    [vendor_id] => 4f96d23f79a295d132000082
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1311966083
+    [creation_date] => 1311966083
+    [recipient_user_id] => 45
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Enter to win a Grand Circle vacation for two in Europe
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f7179a2950816000118
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f7179a2950816000116
+    [mime_file_id] => 4f849f7179a2950816000113
+    [vendor_id] => 4f96d23f79a295d132000082
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1307634988
+    [creation_date] => 1307634988
+    [recipient_user_id] => 45
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Win a River Cruise vacation for two
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f7379a2950816000133
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f7379a2950816000131
+    [mime_file_id] => 4f849f7379a295081600012e
+    [vendor_id] => 4f96d23f79a295d13200000e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1322016317
+    [creation_date] => 1322016317
+    [recipient_user_id] => 45
+    [from_address] => JIDE Software <sales@jidesoft.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => JIDE Software announce JIDE 3.3.0 release with several new components
+    [from_name] => JIDE Software
+    [from_email] => sales@jidesoft.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f849f7379a2950816000153
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f849e5779a2950a16000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f849f7379a2950816000151
+    [mime_file_id] => 4f849f7379a295081600014e
+    [vendor_id] => 4f96d23f79a295d13200000e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1313274124
+    [creation_date] => 1313274124
+    [recipient_user_id] => 45
+    [from_address] => JIDE Software <sales@jidesoft.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => JIDE Software announces JIDE 3.2.0 release with many exciting new features
+    [from_name] => JIDE Software
+    [from_email] => sales@jidesoft.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84f6d379a295091600000e
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d132000088
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1334114003
+    [creation_date] => 1334114003
+    [recipient_user_id] => 46
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => rjkeller10@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa2d79a2950c16000013
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f84fa2d79a2950c16000011
+    [mime_file_id] => 4f84fa2d79a2950c1600000e
+    [vendor_id] => 4f96d23f79a295d132000010
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1327615845
+    [creation_date] => 1327615845
+    [recipient_user_id] => 46
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-save 20% off your entire purchase for Buzzclub member. valid 1/28 only. If you are not a Buzz Card M
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa2f79a2950c1600003d
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa2f79a2950c1600003b
+    [mime_file_id] => 4f84fa2f79a2950c16000038
+    [vendor_id] => 4f96d23f79a295d132000015
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1328110834
+    [creation_date] => 1328110834
+    [recipient_user_id] => 46
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => February 2012 Namecheap News - Super Bowl Trivia, Namecheap Tips, TRUSTe Privacy!
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3279a2950c160000be
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3279a2950c160000bc
+    [mime_file_id] => 4f84fa3279a2950c160000b9
+    [vendor_id] => 4f96d23f79a295d13200001a
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1333370700
+    [creation_date] => 1333370700
+    [recipient_user_id] => 46
+    [from_address] => "Purdue Alumni Association" <purduealumni@purdue.edu>
+    [to_address] => Mr. Roger Lynn Keller <rjkeller@gmail.com>
+    [subject] => Purdue Alumni Club of Chicago - Annual meeting and social
+    [from_name] => Purdue Alumni Association
+    [from_email] => purduealumni@purdue.edu
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f84fa3279a2950c160000d9
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f84f6d379a2950916000003
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f84fa3279a2950c160000d7
+    [mime_file_id] => 4f84fa3279a2950c160000d4
+    [vendor_id] => 4f96d23f79a295d13200001a
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1331978400
+    [creation_date] => 1331978400
+    [recipient_user_id] => 46
+    [from_address] => "Purdue Alumni Association" <purduealumni@purdue.edu>
+    [to_address] => Mr. Roger Lynn Keller <rjkeller@gmail.com>
+    [subject] => Find your pot of gold this St. Patrick's Day!
+    [from_name] => Purdue Alumni Association
+    [from_email] => purduealumni@purdue.edu
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88518d79a2953225000028
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d13200008e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334333837
+    [creation_date] => 1334333837
+    [recipient_user_id] => 47
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => rjkeller100@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88532f79a2950c160001c6
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f88532f79a2950c160001c4
+    [mime_file_id] => 4f88532f79a2950c160001c1
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1330187248
+    [creation_date] => 1330187248
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-20% off entire purchase. valid 3/4 only.
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88532f79a2950c160001d4
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f88532f79a2950c160001d2
+    [mime_file_id] => 4f88532f79a2950c160001cf
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1327615845
+    [creation_date] => 1327615845
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-save 20% off your entire purchase for Buzzclub member. valid 1/28 only. If you are not a Buzz Card M
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88532f79a2950c160001e1
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88532f79a2950c160001df
+    [mime_file_id] => 4f88532f79a2950c160001dc
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1327400311
+    [creation_date] => 1327400311
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Top Coupons: Target, Florida's Natural, See's Candies, New York & Co and More
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88533179a2950c160001ee
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88533179a2950c160001ec
+    [mime_file_id] => 4f88533179a2950c160001e9
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332433525
+    [creation_date] => 1332433525
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => March 2012 Newsletter: Countdown to 3 Million Domains
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88533179a2950c16000202
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88533179a2950c16000200
+    [mime_file_id] => 4f88533179a2950c160001fd
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1328110834
+    [creation_date] => 1328110834
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => February 2012 Namecheap News - Super Bowl Trivia, Namecheap Tips, TRUSTe Privacy!
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88533179a2950c16000215
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88533179a2950c16000213
+    [mime_file_id] => 4f88533179a2950c16000210
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1325797839
+    [creation_date] => 1325797839
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => January 2012 Namecheap News - Renewal Promo, EFF Donation
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853dc79a2950f16000006
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f8853dc79a2950f16000004
+    [mime_file_id] => 4f8853dc79a2950f16000001
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1330187248
+    [creation_date] => 1330187248
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-20% off entire purchase. valid 3/4 only.
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853dc79a2950f16000025
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f8853dc79a2950f16000023
+    [mime_file_id] => 4f8853dc79a2950f16000020
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327615845
+    [creation_date] => 1327615845
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-save 20% off your entire purchase for Buzzclub member. valid 1/28 only. If you are not a Buzz Card M
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853dc79a2950f16000044
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853dc79a2950f16000042
+    [mime_file_id] => 4f8853dc79a2950f1600003f
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327400311
+    [creation_date] => 1327400311
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Top Coupons: Target, Florida's Natural, See's Candies, New York & Co and More
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853de79a2950f16000063
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853de79a2950f16000061
+    [mime_file_id] => 4f8853de79a2950f1600005e
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332433525
+    [creation_date] => 1332433525
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => March 2012 Newsletter: Countdown to 3 Million Domains
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853de79a2950f16000082
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853de79a2950f16000080
+    [mime_file_id] => 4f8853de79a2950f1600007d
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1328110834
+    [creation_date] => 1328110834
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => February 2012 Namecheap News - Super Bowl Trivia, Namecheap Tips, TRUSTe Privacy!
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853de79a2950f160000a1
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853de79a2950f1600009f
+    [mime_file_id] => 4f8853de79a2950f1600009c
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1325797839
+    [creation_date] => 1325797839
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => January 2012 Namecheap News - Renewal Promo, EFF Donation
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853fb79a2953126000025
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f8853fb79a2953126000023
+    [mime_file_id] => 4f8853fb79a2953126000020
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1327615845
+    [creation_date] => 1327615845
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-save 20% off your entire purchase for Buzzclub member. valid 1/28 only. If you are not a Buzz Card M
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853fd79a2953126000063
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853fd79a2953126000061
+    [mime_file_id] => 4f8853fd79a295312600005e
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332433525
+    [creation_date] => 1332433525
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => March 2012 Newsletter: Countdown to 3 Million Domains
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853fd79a2953126000082
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853fd79a2953126000080
+    [mime_file_id] => 4f8853fd79a295312600007d
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1328110834
+    [creation_date] => 1328110834
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => February 2012 Namecheap News - Super Bowl Trivia, Namecheap Tips, TRUSTe Privacy!
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8853fd79a29531260000a1
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8853fd79a295312600009f
+    [mime_file_id] => 4f8853fd79a295312600009c
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1325797839
+    [creation_date] => 1325797839
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => January 2012 Namecheap News - Renewal Promo, EFF Donation
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854c679a2950d16000089
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f8854c679a2950d16000087
+    [mime_file_id] => 4f8854c679a2950d16000084
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1327615845
+    [creation_date] => 1327615845
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-save 20% off your entire purchase for Buzzclub member. valid 1/28 only. If you are not a Buzz Card M
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854c679a2950d160000a8
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854c679a2950d160000a6
+    [mime_file_id] => 4f8854c679a2950d160000a3
+    [vendor_id] => 4f96d23f79a295d13200002e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327400311
+    [creation_date] => 1327400311
+    [recipient_user_id] => 47
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Top Coupons: Target, Florida's Natural, See's Candies, New York & Co and More
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854c779a2950d160000c7
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854c779a2950d160000c5
+    [mime_file_id] => 4f8854c779a2950d160000c2
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1332433525
+    [creation_date] => 1332433525
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => March 2012 Newsletter: Countdown to 3 Million Domains
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854c779a2950d160000e6
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854c779a2950d160000e4
+    [mime_file_id] => 4f8854c779a2950d160000e1
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1328110834
+    [creation_date] => 1328110834
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => February 2012 Namecheap News - Super Bowl Trivia, Namecheap Tips, TRUSTe Privacy!
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854c879a2950d16000105
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854c879a2950d16000103
+    [mime_file_id] => 4f8854c879a2950d16000100
+    [vendor_id] => 4f96d23f79a295d132000093
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1325797839
+    [creation_date] => 1325797839
+    [recipient_user_id] => 47
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => January 2012 Namecheap News - Renewal Promo, EFF Donation
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854ca79a2950d16000181
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854ca79a2950d1600017f
+    [mime_file_id] => 4f8854ca79a2950d1600017c
+    [vendor_id] => 4f96d23f79a295d132000028
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1313262259
+    [creation_date] => 1313262259
+    [recipient_user_id] => 47
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Win a River Cruise vacation for two
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854cb79a2950d160001a1
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854cb79a2950d1600019f
+    [mime_file_id] => 4f8854cb79a2950d1600019c
+    [vendor_id] => 4f96d23f79a295d132000028
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1311966083
+    [creation_date] => 1311966083
+    [recipient_user_id] => 47
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Enter to win a Grand Circle vacation for two in Europe
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854cb79a2950d160001c1
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854cb79a2950d160001bf
+    [mime_file_id] => 4f8854cb79a2950d160001bc
+    [vendor_id] => 4f96d23f79a295d132000028
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1307634988
+    [creation_date] => 1307634988
+    [recipient_user_id] => 47
+    [from_address] => Grand Circle Travel <GrandCircleTravel@email.gct.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Win a River Cruise vacation for two
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@email.gct.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854cc79a2950d160001e1
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854cc79a2950d160001df
+    [mime_file_id] => 4f8854cc79a2950d160001dc
+    [vendor_id] => 4f96d23f79a295d132000039
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1322016317
+    [creation_date] => 1322016317
+    [recipient_user_id] => 47
+    [from_address] => JIDE Software <sales@jidesoft.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => JIDE Software announce JIDE 3.3.0 release with several new components
+    [from_name] => JIDE Software
+    [from_email] => sales@jidesoft.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8854cc79a2950d16000207
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88518d79a295322500001c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8854cc79a2950d16000205
+    [mime_file_id] => 4f8854cc79a2950d16000202
+    [vendor_id] => 4f96d23f79a295d132000039
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1313274124
+    [creation_date] => 1313274124
+    [recipient_user_id] => 47
+    [from_address] => JIDE Software <sales@jidesoft.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => JIDE Software announces JIDE 3.2.0 release with many exciting new features
+    [from_name] => JIDE Software
+    [from_email] => sales@jidesoft.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88552a79a2950c16000285
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f88552a79a2950c16000279
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d1320000ab
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334334762
+    [creation_date] => 1334334762
+    [recipient_user_id] => 48
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => rjkeller101@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88559979a2950916000038
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f88559979a295091600002c
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d1320000ad
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334334873
+    [creation_date] => 1334334873
+    [recipient_user_id] => 49
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => rjkeller102@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8855da79a295322500003a
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f8855da79a295322500002e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d1320000af
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334334938
+    [creation_date] => 1334334938
+    [recipient_user_id] => 50
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => rjkeller103@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88560379a295091600004a
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d1320000b1
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334334979
+    [creation_date] => 1334334979
+    [recipient_user_id] => 51
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => rjkeller104@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88570f79a2950916000082
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88570f79a2950916000080
+    [mime_file_id] => 4f88570f79a295091600007d
+    [vendor_id] => 4f96d23f79a295d13200003d
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1328110834
+    [creation_date] => 1328110834
+    [recipient_user_id] => 51
+    [from_address] => "Namecheap.com" <newsletter@namecheap.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => February 2012 Namecheap News - Super Bowl Trivia, Namecheap Tips, TRUSTe Privacy!
+    [from_name] => Namecheap.com
+    [from_email] => newsletter@namecheap.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88571179a29509160000de
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88571179a29509160000dc
+    [mime_file_id] => 4f88571179a29509160000d9
+    [vendor_id] => 4f96d23f79a295d132000040
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1313274124
+    [creation_date] => 1313274124
+    [recipient_user_id] => 51
+    [from_address] => JIDE Software <sales@jidesoft.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => JIDE Software announces JIDE 3.2.0 release with many exciting new features
+    [from_name] => JIDE Software
+    [from_email] => sales@jidesoft.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88571379a2950916000128
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88571379a2950916000126
+    [mime_file_id] => 4f88571379a2950916000123
+    [vendor_id] => 4f96d23f79a295d1320000b5
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1313756745
+    [creation_date] => 1313756745
+    [recipient_user_id] => 51
+    [from_address] => Grand Circle Travel <GrandCircleTravel@gcc.01o.com>
+    [to_address] => Kent Keller <RJKELLER@GMAIL.COM>
+    [subject] => Read Traveler Reviews of Tuscany & the Amalfi Coast
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@gcc.01o.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88571379a295091600015a
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88571379a2950916000158
+    [mime_file_id] => 4f88571379a2950916000155
+    [vendor_id] => 4f96d23f79a295d1320000b5
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 1
+    [date] => 1313094388
+    [creation_date] => 1313094388
+    [recipient_user_id] => 51
+    [from_address] => Grand Circle Travel <GrandCircleTravel@gcc.01o.com>
+    [to_address] => Kent Keller <RJKELLER@GMAIL.COM>
+    [subject] => Grand Circle's 2011 Photo Contest is your ticket to the world
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@gcc.01o.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f88571379a295091600018b
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f88560379a295091600003e
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f88571379a2950916000189
+    [mime_file_id] => 4f88571379a2950916000186
+    [vendor_id] => 4f96d23f79a295d1320000b5
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1311968757
+    [creation_date] => 1311968757
+    [recipient_user_id] => 51
+    [from_address] => Grand Circle Travel <GrandCircleTravel@gcc.01o.com>
+    [to_address] => Kent Keller <RJKELLER@GMAIL.COM>
+    [subject] => An update to our Privacy Policy
+    [from_name] => Grand Circle Travel
+    [from_email] => GrandCircleTravel@gcc.01o.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dd9c279a2957e1e00012b
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dd94179a2957e1e000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f8dd9c279a2957e1e000127
+    [mime_file_id] => 4f8dd9c279a2957e1e000124
+    [vendor_id] => 4f96d23f79a295d132000005
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327615845
+    [creation_date] => 1327615845
+    [recipient_user_id] => 60
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-save 20% off your entire purchase for Buzzclub member. valid 1/28 only. If you are not a Buzz Card M
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dda5979a2957d1e000079
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dda4279a295811e000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dda5979a2957d1e000075
+    [mime_file_id] => 4f8dda5979a2957d1e000072
+    [vendor_id] => 4f96d23f79a295d132000008
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1333024177
+    [creation_date] => 1333024177
+    [recipient_user_id] => 61
+    [from_address] => "DemoWolf" <info@demowolf.com>
+    [to_address] => <rjkeller@kellertechnologies.com>
+    [subject] => Tutorial SALE!! - 75% off, AND FREE Text formats! - 2 days only!!!
+    [from_name] => DemoWolf
+    [from_email] => info@demowolf.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dda5a79a2957d1e0000a1
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dda4279a295811e000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dda5a79a2957d1e00009d
+    [mime_file_id] => 4f8dda5a79a2957d1e00009a
+    [vendor_id] => 4f96d23f79a295d13200000a
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1333025268
+    [creation_date] => 1333025268
+    [recipient_user_id] => 61
+    [from_address] => "DemoDemo" <info@demodemo.com>
+    [to_address] => <rjkeller@kellertechnologies.com>
+    [subject] => Tutorial SALE!! - 75% off, AND FREE Text formats! - 2 days only!!!
+    [from_name] => DemoDemo
+    [from_email] => info@demodemo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dda5b79a2957d1e00011a
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dda4279a295811e000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dda5b79a2957d1e000116
+    [mime_file_id] => 4f8dda5b79a2957d1e000113
+    [vendor_id] => 4f96d23f79a295d13200000a
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327932304
+    [creation_date] => 1327932304
+    [recipient_user_id] => 61
+    [from_address] => "DemoDemo" <info@demodemo.com>
+    [to_address] => rjkeller@kellertechnologies.com
+    [subject] => Tutorial SALE!! - 75% off, AND FREE Text formats! - 2 days only!!!
+    [from_name] => DemoDemo
+    [from_email] => info@demodemo.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dda5c79a2957d1e000156
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dda4279a295811e000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f8dda5c79a2957d1e000152
+    [mime_file_id] => 4f8dda5c79a2957d1e00014f
+    [vendor_id] => 4f96d23f79a295d1320000bd
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1330187248
+    [creation_date] => 1330187248
+    [recipient_user_id] => 61
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-20% off entire purchase. valid 3/4 only.
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dda5d79a2957d1e0001a7
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dda4279a295811e000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/plain
+    [body_file_id] => 4f8dda5d79a2957d1e0001a3
+    [mime_file_id] => 4f8dda5d79a2957d1e0001a0
+    [vendor_id] => 4f96d23f79a295d1320000bd
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327615845
+    [creation_date] => 1327615845
+    [recipient_user_id] => 61
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Big Lots Coupon-save 20% off your entire purchase for Buzzclub member. valid 1/28 only. If you are not a Buzz Card M
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f8dda5d79a2957d1e0001f7
+    [type] => standard
+    [type_id] => standard
+    [folder] => inbox
+    [category_id] => 4f8dda4279a295811e000004
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 4f8dda5d79a2957d1e0001f3
+    [mime_file_id] => 4f8dda5d79a2957d1e0001f0
+    [vendor_id] => 4f96d23f79a295d1320000bd
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1327400311
+    [creation_date] => 1327400311
+    [recipient_user_id] => 61
+    [from_address] => "CouponGreat.com" <noreply@coupongreat.com>
+    [to_address] => rjkeller@gmail.com
+    [subject] => Top Coupons: Target, Florida's Natural, See's Candies, New York & Co and More
+    [from_name] => CouponGreat.com
+    [from_email] => noreply@coupongreat.com
+)
+...
+WARNING: vendor does not exist. Is this possible?
+Attempting to reset the vendor...
+Creating new category with => Array
+(
+    [_id] => 4f907ada79a2956608000010
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f907ada79a2956608000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f96d23f79a295d1320000c1
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334868698
+    [creation_date] => 1334868698
+    [recipient_user_id] => 62
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => scanz2@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+Creating new category with => Array
+(
+    [_id] => 4f90d80979a295063c000010
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f90d80979a295063c000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f90d80979a295063c00000d
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334892553
+    [creation_date] => 1334892553
+    [recipient_user_id] => 63
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => zzz1@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+Creating new category with => Array
+(
+    [_id] => 4f90dba079a295e83b000127
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f90dba079a295e83b000119
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f90dba079a295e83b000124
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1334893472
+    [creation_date] => 1334893472
+    [recipient_user_id] => 64
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => zzz2@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+Creating new category with => Array
+(
+    [_id] => 4f9333be79a295000d000011
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f9333be79a295000d00000d
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f9333be79a295000d00000e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1335047102
+    [creation_date] => 1335047102
+    [recipient_user_id] => 66
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => bob@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+Creating new category with => Array
+(
+    [_id] => 4f9333ce79a295030d000010
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f9333ce79a295030d000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f9333ce79a295030d00000d
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1335047118
+    [creation_date] => 1335047118
+    [recipient_user_id] => 67
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => bob2@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+Creating new category with => Array
+(
+    [_id] => 4f9370e479a295a917000011
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f9370e479a295a91700000d
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f9370e479a295a91700000e
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1335062756
+    [creation_date] => 1335062756
+    [recipient_user_id] => 69
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => ttest1@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...
+Creating new category with => Array
+(
+    [_id] => 4f9372c279a2955218000010
+    [type] => welcome
+    [type_id] => welcome
+    [folder] => inbox
+    [category_id] => 4f9372c279a2955218000002
+    [is_public] => 
+    [is_invisible] => 
+    [is_external_message] => 
+    [body_type] => text/html
+    [body_file_id] => 
+    [mime_file_id] => 
+    [vendor_id] => 4f9372c279a295521800000d
+    [tag_id] => 0
+    [has_attachments] => 
+    [is_read] => 
+    [date] => 1335063234
+    [creation_date] => 1335063234
+    [recipient_user_id] => 70
+    [from_address] => do-not-reply@ajent.com
+    [from_name] => 
+    [from_email] => do-not-reply@ajent.com
+    [to_address] => ttest2@ajent.com
+    [subject] => Welcome to Ajent!
+)
+...

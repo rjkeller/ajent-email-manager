@@ -1,0 +1,48 @@
+{% set is_logged_in = false %}
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Welcome to Ajent!</title>
+{% endblock metatags %}
+
+
+{% block content %}
+
+<h1>Email Scan Results</h1>
+
+<table cellpadding="4">
+	<tr>
+		<td><img src="/bundles/mail/images/vendors/switch.png" align="absmiddle" width="24" height="28"></td>
+		<td><strong>Switch</strong>: Move this subscription over to Ajent.</td>
+	</tr>
+	<tr>
+		<td><img src="/bundles/mail/images/vendors/unsubscribe.png" align="absmiddle" width="40" height="28"></td>
+		<td><strong>Unsubscribe</strong>: I don’t want to get these emails anymore — period!</td>
+	</tr>
+	<tr>
+		<td><img src="/bundles/mail/images/vendors/ignore.png" width="27" height="28"></td>
+		<td><strong>Ignore</strong>: I do not want this subscription switched to Ajent right now.</td>
+	</tr>
+</table>
+
+{% include 'MailRegistrationBundle:query:results.twig.html' %}
+
+{#
+{% include 'MailRegistrationBundle:shadowbox:AddNewVendor.twig.html' %}
+<p><a href="javascript:showLightbox(document.getElementById('AddNewVendor'))">Add an additional subscription</a>.</p>
+#}
+{#
+<p>Any additional subscriptions you would like to add?</p>
+<form method="GET" action="{{ path('AjentBundleVendorSearch') }}">
+	<input type="text" id="input4" value="Vendor name" title="Vender name" name="q" class="inputbox" style="width:330px" onclick="this.value = ''">
+	<input type="submit" class="button" name="" value="Add new" id="submit">
+</form>
+#}
+<form method="GET" action="{{ path('AjentBundleEmailScanMessages') }}">
+	<p>&nbsp;</p>
+	<input type="submit" class="button" name="" value="Finish" id="submitNext">
+</form>
+
+{% endblock content %}

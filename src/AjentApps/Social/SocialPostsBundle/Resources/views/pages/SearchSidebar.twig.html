@@ -1,0 +1,22 @@
+<div class="alerts">
+	<h3>
+	<form method="GET">
+	<select name="type" style="margin-bottom:3px" class="inputbox">
+			<option value="">Search</option>
+			<option value="favorites">My Favorites</option>
+			<option value="friends">Friends</option>
+			<option value="Followers">Followers</option>
+			<option value="Following">Following</option>
+			<option value="Comments">Comments</option>
+		</select>
+		<input type="text" class="inputbox" style="width:120px;" name="q"> <input type="submit" class="button" value="Search"><br>
+		&nbsp;
+	</form>
+
+	{{ spec.label }}</h3>
+
+	<div id="socialQueryResults">
+	{% render 'SearchBundle:Ajax:printList' with { 'adapterName': 'FavoritesSearch', 'spec': spec } %}
+	</div>
+
+</div>

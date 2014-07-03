@@ -1,0 +1,7 @@
+UserAdminBundleUserManager:
+    pattern:  /user-manager
+    defaults: { _controller: UserAdminBundle:UserManager:index }
+
+UserAdminBundleEditUser:
+    pattern:  /user-manager/{user_id}
+    defaults: { _controller: UserAdminBundle:UserEditor:index }

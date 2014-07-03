@@ -1,0 +1,16 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'rmve',
+	'alert': 'BlueAlert'
+}
+%}
+
+
+Are you sure you want to empty your cart?
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'cmd': 'ajaxpage(\'/purchase/cart/ajax/cancel_order\', \'cart\');',
+	'noButton': 'Cancel'
+}
+%}

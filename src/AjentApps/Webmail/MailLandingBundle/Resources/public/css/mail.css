@@ -1,0 +1,108 @@
+
+div.iconBox {
+	background: #fbfbfb;
+	color: #a7a084;
+	font-family: 'Palatino Linotype', Palatino, 'Times New Roman';
+	border-bottom: 1px solid #DADADA;
+	padding: 5px 0 5px 5px;
+	cursor: pointer;
+}
+
+div.iconBox:hover {
+	background-color: white;
+}
+
+div.highlightCell {
+	background-color: #f2f2f2;
+	color: #a7a084;
+}
+
+
+
+.vendors {
+	height: 166px;
+}
+
+.top {
+	border-top: 1px solid #DADADA;
+}
+
+.new_messages {
+	float: right;
+	font-weight: bold;
+	padding-top: 1px;
+	width: 23px;
+	text-align: center;
+	margin-right: 2%;
+}
+
+.cell {
+	vertical-align: middle;
+	display: table-cell;
+	font-size: 0.7em;
+	width: 100px;
+	height: 100px;
+}
+
+h3.highlightHeader {
+	text-transform: uppercase;
+}
+
+.cell img {
+	max-width: 95px;
+	max-height: 95px;
+}
+
+.fakeVendor {
+	display: none;
+}
+
+.dots {
+	background: #676767 url('/bundles/socialmail/images/dots.jpg') no-repeat top center;
+	height: 12px;
+	margin: 0 0 0 10px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+.iconBox a {
+	display: block;
+	color: #A7A084;
+	padding: 5px;
+	border-top: 1px solid #DADADA;
+	border-left: none;
+	border-right: none;
+}
+
+.iconBox a:hover {
+	background: white;
+}
+
+.littleBox .iconBox {
+	margin-left: 11px;
+}
+
+
+.editBox {
+	padding: 4px 2px 0 10px;
+	float: right;
+	position: relative;
+}
+
+.box h1 .editBox a {
+	font-family: 'Palatino Linotype', Palatino, 'Times New Roman';
+	text-transform: lowercase;
+	font-size: 1em;
+}
+
+.link {
+	padding: 5px 15px 15px 15px;
+	text-align: center;
+	height: 10px;
+}
+
+.link a {
+	color: #cc3333;
+	font-weight: bold;
+}
+

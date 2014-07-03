@@ -1,0 +1,77 @@
+	<h3>Inbox</h3>
+{% for message in messages %}
+	<div class="emailItem" id="msg{{ message['id'] }}" onclick="loadMessage('{{ message['id'] }}')">
+	<div class="line">
+		<script type="text/javascript">allMessages.push({{ message['id'] }});</script>
+		{# shadowbox stuff goes here #}
+		{% include "MailBundle:shadowbox:DeleteEmail.twig.html"
+			with {
+				'incr': message['id']
+			}
+		%}
+
+		{% include "MailBundle:shadowbox:MakeEmailPublic.twig.html"
+			with {
+				'incr': message['id']
+			}
+		%}
+
+		{% include "MailBundle:shadowbox:EmailMakeFavorite.twig.html"
+			with {
+				'incr': message['id']
+			}
+		%}
+
+		{% include "MailBundle:shadowbox:EmailAlert.twig.html"
+			with {
+				'incr': message['id']
+			}
+		%}
+
+		{% include "MailBundle:shadowbox:EmailExpiration.twig.html"
+			with {
+				'incr': message['id']
+			}
+		%}
+
+		{% include "MailBundle:shadowbox:ForwardEmail.twig.html"
+			with {
+				'incr': message['id']
+			}
+		%}
+
+
+		<div class="unit" style="width: 112px;">
+			<a href="javascript:loadMessage('{{ message['id'] }}')" class="author">
+				{{ message.FromEmail }}
+			</a>
+		</div>
+		<div class="unit" style="width: 45px;font-size: 0.8em;">{{ message.Date }}</div>
+	</div>
+	<div class="line emailBoxItem">
+		<div class="unit size1of1"><a href="javascript:loadMessage('{{ message['id'] }}')" class="subject">{{ message.TruncatedSubject | raw }}</a></div>
+	</div>
+	</div>
+{% else %}
+    <div style="padding: 10px;">
+	You have no messages.
+	</div>
+{% endfor %}
+
+{#% if searchResults.hasPrev() or searchResults.hasNext() %#}
+    <div class="nextResults">                	
+		{% if searchResults.hasPrev() %}
+		<a href="{{ searchResults.prevLink }}">&laquo;</a>
+		{% else %}
+		&laquo;
+		{% endif %}
+
+        <strong>{{ searchResults.min() }} - {{ searchResults.max() }}</strong> of <strong>{{ searchResults.total() }}</strong>
+
+	    {% if searchResults.hasNext() %}
+		<a href="{{ searchResults.nextLink }}">&raquo;</a>
+		{% else %}
+		&raquo;
+		{% endif %}
+	</div>
+{#% endif %#}

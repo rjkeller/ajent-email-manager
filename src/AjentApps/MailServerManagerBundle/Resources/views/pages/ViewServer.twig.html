@@ -1,0 +1,25 @@
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Server Manager - Ajent</title>
+{% endblock metatags %}
+
+
+{% block content %}
+
+<h1>Server - {{ server['name'] }}.ajent.net</h1>
+
+<h2>Graphs</h2>
+
+<img src="{{ server['munin_url'] }}/load-day.png" width="647" height="350"><br>
+&nbsp;<br>
+
+<img src="{{ server['munin_url'] }}/if_eth0-day.png" width="647" height="350"><br>
+&nbsp;<br>
+
+<img src="{{ server['munin_url'] }}/iostat-day.png" width="647" height="350"><br>
+&nbsp;<br>
+
+{% endblock content %}

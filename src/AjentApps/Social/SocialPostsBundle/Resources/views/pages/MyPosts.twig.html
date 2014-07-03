@@ -1,0 +1,76 @@
+{% import "FrontendBundle:macros:tableWax.twig.html" as tableWax %}
+{% set tab = 'support' %}
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>View Profile - {{ company_name_short }}</title>
+<link rel="stylesheet" type="text/css" href="/bundles/social/css/social.css">
+
+<script type="text/javascript">
+
+function addUrl()
+{
+	document.getElementById("addUrl").style.visibility = "hidden";
+	document.getElementById("urlBox").style.display = "table-row";
+}
+
+function addPhoto()
+{
+	document.getElementById("addPhoto").style.visibility = "hidden";
+	document.getElementById("photoBox").style.display = "table-row";
+}
+
+</script>
+{% endblock %}
+
+
+
+
+
+{% block tabs %}
+{% set leftNavTab = 'Activities' %}
+{% include 'SocialBundle:nav:Profile.twig.html' %}
+{% endblock %}
+
+{% block header %}
+<div class="line topHeader">
+	<div class="unit size1of5">
+		<h1>Profile</h1>
+	</div>
+	<div class="unit size4of5">
+		Find a product or service online that you want to share with your Ajent community? Post it here and let everyone know!
+	</div>
+</div>
+{% endblock %}
+
+
+
+
+
+{% block content %}
+
+<div class="socialTopBox">
+
+	<img src="/bundles/social/images/profile_pic2.jpg" align="left">
+	<h1>{{ profile['name'] }}</h1>
+
+</div>
+<div class="socialSortBox">
+	Sort By:
+	<a href="?orderby=date">Date &raquo;</a>
+	<a href="?orderby=is_favorite,date">Favorites &raquo;</a>
+	<a href="?orderby=comments">Comments &raquo;</a>
+</div>
+
+<div style="background: url('/bundles/social/images/background.jpg'); border: 1px solid #ccc; border-top: none; padding: 10px;">
+	<div class="line" id="socialPosts">
+
+	{% render 'SearchBundle:Ajax:printList' with {
+		'adapterName': 'MyPostsSearch', 'spec': spec } %}
+
+	</div>
+</div>
+
+{% endblock %}

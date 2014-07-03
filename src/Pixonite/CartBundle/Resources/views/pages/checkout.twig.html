@@ -1,0 +1,81 @@
+{% extends "::layout.twig.html" %}
+
+{% block metatags %}
+<script type="text/javascript" src="/js/wg.js"></script>
+<script type="text/javascript" src="/js/ajax.js"></script>
+<script type="text/javascript" src="/js/lightbox.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/bundles/cart/css/cart.css">
+{% endblock metatags %}
+
+{% block content %}
+{% include "CartBundle:shadowbox:cancelOrder.twig.html" %}
+
+<h1><img src="/bundles/cart/images/MyCart_sm.gif" width="32" height="32" align="absmiddle">Checkout</h1>
+
+{% if hasOrder %}
+<table width="100%"><tr align="center"><td width="50%">
+<div class="price_box current_balance_small">
+	${{ currentBalance }}
+</div>
+</td><td width="50%">
+<div class="price_box current_order_small" style="color: #f08484;">
+	${{ currentOrder }}
+</div>
+</td></tr>
+</table>
+
+<form method="POST" action="/purchase/process" name="sfm">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="right" width="50%">
+	<div style="text-align: left; width: 240px;">
+	{% for key, value in billingOptions %}
+        <label><input type="radio" name="billingMethod" value="{{ key }}"
+{% if key == "AccountBalance" %}
+ checked
+{% endif %}
+> {{ value.BillingMethodName }}</label><br>
+	{% endfor %}
+	</div>
+    </td>
+    <td align="right" width="50%">
+	<div style="text-align: left; width: 235px;">
+
+	<img src="/resources/images/visa.jpg" width="29" height="28" align="absmiddle"> Card On File:<br>
+    {{ creditCardString }}</td>
+	</tr>
+	<tr><td colspan="2"><br>
+		<a class="linkbox payNow" style="float:right;" href="javascript:document.forms['sfm'].submit()">Pay Now</a>	
+	</td></tr>
+</table>
+</form>
+
+{% endif %}{# $hasOrder #}
+
+<h1><img src="/bundles/cart/images/billing_mds.gif" alt="My Domains" width="32" height="32" align="absmiddle">Current Order</h1>
+
+<table id="mymsg" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td width="10%" align="center">&nbsp;</td>
+  </tr>
+{% include "CartBundle:ajax:cart.twig.html" with { 'printTableHeader': false } %}
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><table width="100%"><tr><td>
+
+      <a href="/purchase/cart" class="linkbox editButton">Edit</a>
+      <a href="javascript:showLightbox(document.getElementById('cancel'));" class="linkbox cancelButton"> Cancel</a>
+	</td>
+    <td align="right" style="color: #3300CC">
+		<a class="linkbox payNow" href="javascript:document.forms['sfm'].submit()" style="float:right;">Pay Now</a>	
+	</td></tr></table></td>
+  </tr>
+</table>
+
+{% endblock content %}

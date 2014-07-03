@@ -1,0 +1,26 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'MakeEmailPublic',
+	'form': 'MakeEmailPublic',
+	'alert': 'BlueAlert'
+}
+%}
+
+<h1>Share this email publicly</h1>
+
+<p>Are you sure you want to make this message public? Once it is made public, the whole world will be able to see it and it'd be impossible to permanently reverse this posting.</p>
+
+<table width="100%" cellpadding="3">
+	<tr valign="top">
+		<td align="right"><label for="sharePublicEmailMessage">Message</label></td>
+		<td><textarea name="message" class="textbox" id="sharePublicEmailMessage" style="width:220px;" rows="10"></textarea></td>
+	</tr>
+</table>
+
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'yesButton': 'Share',
+	'noButton': 'Cancel'
+}
+%}

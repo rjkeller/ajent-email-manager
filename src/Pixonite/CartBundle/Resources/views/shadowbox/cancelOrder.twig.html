@@ -1,0 +1,15 @@
+{% include "FrontendBundle:shadowbox:generic.twig.html"
+with {
+	'name': 'cancel',
+	'alert': 'BlueAlert'
+}
+%}
+
+
+Are you sure you want to cancel your order?
+
+{% include "FrontendBundle:shadowbox:yesNoButton.twig.html"
+with {
+	'cmd': 'window.location = \'/purchase/cancel\';'
+}
+%}

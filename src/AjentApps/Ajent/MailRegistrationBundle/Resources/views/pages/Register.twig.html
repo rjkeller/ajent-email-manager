@@ -1,0 +1,360 @@
+{% extends "::layout.twig.html" %}
+
+
+
+{% block metatags %}
+<title>Register - Ajent</title>
+
+<style type="text/css">
+
+#emailServerBox, #emailUsername, #emailPassword, #confirmBox, #goButton {
+	opacity: 0;
+	display: none;
+}
+
+</style>
+<script type="text/javascript" src="/jquery.js"></script>
+<script type="text/javascript">
+
+function hasTldAndSldEquals(data, sld)
+{
+	var data = data.split("@");
+	var data = data[1].split(".");
+	if (data == null || data.length <= 1)
+		return false;
+
+	return data[0] == sld;
+}
+
+function hasTld(data)
+{
+	var data = data.split("@");
+	var data = data[1].split(".");
+	return data.length > 1;
+}
+
+function sldEquals(data)
+{
+	var data = str.split("@");
+	var data = data[1].split(".");
+	return data[0] == data;
+}
+
+function endsWith(str, suffix) {
+    return str.indexOf(suffix, str.length - suffix.length) !== -1;
+}
+
+
+function showElements(textbox)
+{
+	var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+$/;
+	var address = textbox.value;
+	if (reg.test(address) == false)
+	{
+		$("#emailServerBox").stop().animate({
+			opacity: 0
+		}, "slow"	, "swing", function () {
+				    $(this).css({display:"none"});
+				});
+		$("#emailUsername").stop().animate({
+			opacity: 0
+		}, "slow"	, "swing", function () {
+				    $(this).css({display:"none"});
+				});
+		$("#emailPassword").stop().animate({
+			opacity: 0
+		}, "slow"	, "swing", function () {
+				    $(this).css({display:"none"});
+				});
+		$("#confirmBox").stop().animate({
+			opacity: 0
+		}, "slow"	, "swing", function () {
+				    $(this).css({display:"none"});
+				});
+		$("#goButton").stop().animate({
+			opacity: 0
+		}, "slow"	, "swing", function () {
+				    $(this).css({display:"none"});
+				});
+		return false;
+	}
+
+	if (hasTldAndSldEquals(address, "gmail") ||
+		hasTldAndSldEquals(address, "yahoo"))
+	{
+	    $("#emailPassword").css({display:"block"});
+
+		$("#emailServerBox").stop().animate({
+			opacity: 0
+		}, "slow", "swing", function () {
+				    $(this).css({display:"none"});
+				});
+		$("#emailUsername").stop().animate({
+			opacity: 0
+		}, "slow", "swing", function () {
+			    $(this).css({display:"none"});
+			});
+		$("#emailPassword").stop().animate({
+			opacity: 1
+		}, "slow");
+		$("#confirmBox").stop().animate({
+			opacity: 1
+		}, "slow");
+		$("#goButton").stop().animate({
+			opacity: 1
+		}, "slow");
+	}
+	else if (hasTld(address))
+	{
+	    $("#emailServerBox").css({display:"block"});
+	    $("#emailUsername").css({display:"block"});
+	    $("#emailPassword").css({display:"block"});
+	    $("#confirmBox").css({display:"block"});
+	    $("#goButton").css({display:"block"});
+
+		$("#emailServerBox").stop().animate({
+			opacity: 1
+		}, "slow");
+		$("#emailUsername").stop().animate({
+			opacity: 1
+		}, "slow");
+		$("#emailPassword").stop().animate({
+			opacity: 1
+		}, "slow");
+		$("#confirmBox").stop().animate({
+			opacity: 1
+		}, "slow");
+		$("#goButton").stop().animate({
+			opacity: 1
+		}, "slow");
+	}
+}
+
+
+
+
+
+var val_textBox;
+
+function fOnFocus(textbox)
+{
+  val_textBox = textbox.value;
+}
+
+function fOnBlur(textbox)
+{
+  if (val_textBox != textbox.value) {
+    showElements(textbox);
+  }
+}
+
+
+</script>
+{% endblock metatags %}
+
+
+{% block onLoad %}{% if isInviteCodeValid %}onAccountTypeChange();{% endif %}showElements(document.getElementById('form_old_email_address')){% endblock %}
+
+{% block content %}
+
+
+{% if not isInviteCodeValid %}
+<div class="line">
+	<div class="unit size1of2">
+		<div class="box">
+
+		<h1 class="red"><a href="#">Get an Invite Code!</a></h1>
+
+		<div style="padding: 5px;">
+
+		<p>Want to be one of <strong class="ajent">Ajent</strong>’s first beta users and enjoy an easy-to-use email subscription management service? Give us your info below and we’ll send you an invite code!</p>
+
+		<form method="POST" name="RequestBetaInviteForm">
+		<input type="hidden" name="cid" value="RequestBetaInviteForm">
+
+		<table cellpadding="3">
+			<tr>
+				<td align="right"><label for="betaInviteName">Name</label></td>
+				<td><input type="text" id="betaInviteName" class="inputbox" size="30" name="name"></td>
+			</tr>
+			<tr>
+				<td align="right"><label for="email">Email</label></td>
+				<td><input type="text" id="email" class="inputbox" size="30" name="email"></td>
+			</tr>
+			<tr><td><input type="submit" class="awesome green" name="" value="Go" id="submitGo">
+		    </td></tr>
+		</table>
+
+		</form>
+
+		</div>
+	</div>
+
+	</div>
+	<div class="unit size1of2">
+		<div class="box">
+
+		<h1 class="green"><a href="#">Invited to join Ajent?</a></h1>
+
+		<div style="padding: 5px;">
+<p>Did you receive an invite code to be an <strong class="ajent">Ajent</strong> beta user? Enter it below. </p>
+
+<form method="POST">
+<input type="hidden" name="cid" value="CheckInviteCode">
+<p>Invite Code: <input type="text" class="inputbox" name="invite_code"></p>
+<div id="nextBox" class="login-box-row corners">
+    <input type="submit" class="awesome green" name="" value="Go" id="submitGo">
+</div>
+</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+{% else %}
+
+<div class="box">
+
+<h1 class="red"><a href="#">Register for an Ajent Email Account!</a></h1>
+
+<form method="POST" novalidate="novalidate" action="{{ path('UserBundleRegister') }}"{{ form_enctype(form) }}>
+<input type="hidden" name="cid" value="registration_form">
+<input type="hidden" name="invite_code" value="{{ invite_code }}">
+
+<div class="line formBox">
+	<div class="unit size1of5">
+    	<label for="username">Desired Username:</label>
+	</div>
+	<div class="unit size1of5">
+		{{ form_widget(form.username, { 'attr': {'class': 'inputbox'} }) }}
+	</div>
+</div>
+<div class="line formBox">
+	<div class="unit size1of5">
+    	<label for="password">Create Password:</label>
+	</div>
+	<div class="unit size1of5">
+		{{ form_widget(form.password, { 'attr': {'class': 'inputbox'} }) }}
+	</div>
+</div>
+<div class="line formBox">
+	<div class="unit size1of5">
+    	<label for="field3">Confirm Password:</label>
+	</div>
+	<div class="unit size1of5">
+		{{ form_widget(form.password_confirm, { 'attr': {'class': 'inputbox'} }) }}
+	</div>
+</div>
+<div class="line formBox">
+	<div class="unit size1of5">
+    	<label for="field3">First Name:</label>
+	</div>
+	<div class="unit size1of5">
+		{{ form_widget(form.first_name, { 'attr': {'class': 'inputbox'} }) }}
+	</div>
+</div>
+<div class="line formBox">
+	<div class="unit size1of5">
+    	<label for="field3">Last Name:</label>
+	</div>
+	<div class="unit size1of5">
+		{{ form_widget(form.last_name, { 'attr': {'class': 'inputbox'} }) }}
+	</div>
+</div>
+
+<h2>Scan and Import your existing emails</h2>
+<div class="line formBox">
+	<div class="unit size1of5">
+    	<label for="username">Your Email Address:</label>
+	</div>
+	<div class="unit size1of5">
+		{{ form_widget(form.old_email_address, { 'attr':
+			{
+				'class': 'inputbox',
+				'onkeyup': 'showElements(this)',
+				'onchange': 'this.select()',
+				'onfocus': 'showElements(this)',
+				'onblur': 'showElements(this)',
+				'oninput': 'showElements(this)',
+				'ontextinput': 'showElements(this)'
+			} }) }}
+	</div>
+	<div class="unit size3of5">
+		<div style="padding-left:35px;">
+		<a href="#" onmouseout="mclosetime();" onmouseover="mopen('usernameBlurb');" class="helpLink"><img src="/bundles/ajent/images/help_icon.jpg" alt="" width="31" height="26" align="absmiddle"></a>
+
+		<span class="helpBlurb" id="usernameBlurb" onmouseover="mcancelclosetime()" 
+		            onmouseout="mclosetime()">
+			<div>
+			Enter the email account where you receive the majority of email subscriptions (like daily deals, newsletters and receipts). Ajent will scan your inbox and allow you to choose which subscriptions to now receive @ Ajent.<br>&nbsp;<br>
+
+			If you have an IMAP account, consult your email provider for your email settings.<br>&nbsp;<br>
+
+			If you skip this step, please note that no existing vendors will appear in your inbox. Instead, edit your settings with existing daily deal sites, subscriptions and  newsletters to now receive those emails at your @ajent.com address. And be sure to give out your @ajent.com email address from now on when you buy things online or in person, purchase travel tickets, or sign up for a newsletter!
+			</div>
+		</span>
+		</div>
+	</div>
+
+</div>
+<div class="line formBox" id="emailUsername">
+	<div class="unit size1of5">
+    	<label for="field3">Your Email Username:</label>
+	</div>
+	<div class="unit size1of5">
+		{{ form_widget(form.old_email_username, { 'attr': {'class': 'inputbox'} }) }}
+	</div>
+</div>
+
+<div class="line formBox" id="emailPassword">
+	<div class="unit size1of5">
+    	<label for="field3">Your Email Password:</label>
+	</div>
+	<div class="unit size1of5">
+		{{ form_widget(form.old_email_password, { 'attr': {'class': 'inputbox'} }) }}
+	</div>
+	<div class="unit size3of5">
+		<div style="padding-left:35px;">
+		<a href="#" onmouseout="mclosetime();" onmouseover="mopen('passwordBlurb');" class="helpLink"><img src="/bundles/ajent/images/help_icon.jpg" alt="" width="31" height="26" align="absmiddle"></a>
+
+		<span class="helpBlurb" id="passwordBlurb" onmouseover="mcancelclosetime()" 
+		            onmouseout="mclosetime()">
+			<div>
+			We need your email password in order to pull your existing email subscriptions out of your regular email inbox and into your Ajent account. This is a safe process and we protect your password.
+			</div>
+		</span>
+		</div>
+	</div>
+
+</div>
+<div class="line formBox" id="emailServerBox">
+	<div class="unit size1of5">
+    	<label for="password">Email Server:</label>
+	</div>
+	<div class="unit size1of5">
+		{{ form_widget(form.old_email_mail_server, { 'attr': {'class': 'inputbox'} }) }}
+	</div>
+
+</div>
+<div class="line formBox">
+{#
+	<div class="unit size1of1">
+		<label>{{ form_widget(form.allow_personal_emails) }} Copy my personal emails to my Ajent account</label>
+	</div>
+#}
+	<div class="unit size1of1">
+		<label>{{ form_widget(form.accept_license_agreement) }} I agree to the <a href="{{ path('TermsOfService') }}">Ajent Terms of Service</a></label>
+	</div>
+
+	<div class="unit size1of1">
+    	<input type="submit" class="awesome green" name="" value="Go" id="submitGo">
+	</div>
+</div>
+{{ form_rest(form) }}
+</form>
+
+
+</div>
+{% endif %}
+
+{% endblock content %}
